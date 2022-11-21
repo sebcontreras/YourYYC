@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="calgary.png" />
+    <None Remove="city_map.png" />
+    <None Remove="event_sample.png" />
+    <None Remove="getting_there.png" />
+    <None Remove="help_button.png" />
+    <None Remove="home_button.png" />
+    <None Remove="itinerary.png" />
+    <None Remove="language_preferences.png" />
+    <None Remove="local_eats.png" />
+    <None Remove="local_events.png" />
+    <None Remove="main_background.png" />
+    <None Remove="placesToSee.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="calgary.png" />
+    <Resource Include="city_map.png" />
+    <Resource Include="event_sample.png" />
+    <Resource Include="getting_there.png" />
+    <Resource Include="help_button.png" />
+    <Resource Include="home_button.png" />
+    <Resource Include="itinerary.png" />
+    <Resource Include="language_preferences.png" />
+    <Resource Include="local_eats.png" />
+    <Resource Include="local_events.png" />
+    <Resource Include="main_background.png" />
+    <Resource Include="placesToSee.png" />
+  </ItemGroup>
+
+</Project>
