@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="back_button.png" />
     <None Remove="calgary.png" />
     <None Remove="city_map.png" />
     <None Remove="event_sample.png" />
@@ -20,9 +21,11 @@
     <None Remove="local_events.png" />
     <None Remove="main_background.png" />
     <None Remove="placesToSee.png" />
+    <None Remove="small_home_button.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="back_button.png" />
     <Resource Include="calgary.png" />
     <Resource Include="city_map.png" />
     <Resource Include="event_sample.png" />
@@ -35,6 +38,7 @@
     <Resource Include="local_events.png" />
     <Resource Include="main_background.png" />
     <Resource Include="placesToSee.png" />
+    <Resource Include="small_home_button.png" />
   </ItemGroup>
 
 </Project>

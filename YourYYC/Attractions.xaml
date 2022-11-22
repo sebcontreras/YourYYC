@@ -11,15 +11,24 @@
         <ImageBrush ImageSource="/calgary.png"/>
     </Window.Background>
     <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="217*"/>
+        </Grid.RowDefinitions>
 
         <Rectangle HorizontalAlignment="Center" Height="70" Stroke="Black" VerticalAlignment="Top" Width="1380" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        <Button Name="HomeButton" Margin="34,3,1136,881">
-            <Image Source="home_button.png"/>
+        <Button Name="BackButton" Margin="30,6,1300,16" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Image Source="back_button.png"/>
         </Button>
-        <Button Name="LanguageButton" Margin="1049,10,282,884">
+        <Button Name="HomeButton" Margin="100,6,1215,16" BorderBrush="{x:Null}">
+            <Image Source="small_home_button.png"/>
+        </Button>
+        <Rectangle HorizontalAlignment="Left" Height="51" Margin="201,10,0,0" VerticalAlignment="Top" Width="4" Fill="#FFBDBDBD" RadiusX="1" RadiusY="1"/>
+        <TextBlock Text="Attractions" FontWeight="Bold" Margin="236,13,975,23" FontFamily="Calibri" FontSize="36" Foreground="#FFD94539"/>
+        <Button Name="LanguageButton" Margin="1049,10,282,16">
             <Image Source="language_preferences.png"/>
         </Button>
-        <Button Name="HelpButton" Margin="1119,8,213,887">
+        <Button Name="HelpButton" Margin="1119,8,213,19">
             <Image Source="help_button.png"/>
         </Button>
         <Button Content="Preferences" HorizontalAlignment="Left" Height="53" Margin="1193,5,0,0" VerticalAlignment="Top" Width="151" Click="Button_Click" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
@@ -33,7 +42,7 @@
             </Button.RenderTransform>
         </Button>
 
-        <ScrollViewer HorizontalAlignment="Left" Height="694" Margin="0,95,0,0" VerticalAlignment="Top" Width="1370" Background="#D8D9D9D9">
+        <ScrollViewer HorizontalAlignment="Left" Height="694" Margin="0,15,0,0" VerticalAlignment="Top" Width="1370" Background="#D8D9D9D9" Grid.Row="1">
             <StackPanel>
 
                 <StackPanel>
@@ -85,23 +94,23 @@
 
         </ScrollViewer>
 
-        <Rectangle HorizontalAlignment="Center" Height="123" Stroke="Black" VerticalAlignment="Top" Width="1380" Margin="0,825,0,0" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        <Button Name="PlacesToSeeButton" Margin="100,835,1160,10">
+        <Rectangle HorizontalAlignment="Center" Height="123" Stroke="Black" VerticalAlignment="Top" Width="1380" Margin="0,745,0,0" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25" Grid.Row="1"/>
+        <Button Name="PlacesToSeeButton" Margin="100,755,1160,10" Grid.Row="1">
             <Image Source="placesToSee.png" Width="120"></Image>
         </Button>
-        <Button Name="LocalEventsButton" Margin="316,835,944,10">
-            <Image Source="local_events.png"></Image>
+        <Button Name="LocalEventsButton" Margin="316,755,944,10" Grid.Row="1">
+            <Image Source="local_events.png" Height="93" Width="110"></Image>
         </Button>
-        <Button Name="LocalEatsButton" Margin="522,835,738,10">
+        <Button Name="LocalEatsButton" Margin="522,755,738,10" Grid.Row="1">
             <Image Source="local_eats.png"></Image>
         </Button>
-        <Button Name="CityMapButton" Margin="740,835,520,10">
+        <Button Name="CityMapButton" Margin="740,755,547,10" Grid.Row="1">
             <Image Source="city_map.png"></Image>
         </Button>
-        <Button Name="GettingThereButton" Margin="956,830,298,5">
+        <Button Name="GettingThereButton" Margin="956,750,298,5" Grid.Row="1">
             <Image Source="getting_there.png"></Image>
         </Button>
-        <Button Name="ItineraryButton" Margin="1160,835,100,10">
+        <Button Name="ItineraryButton" Margin="1160,755,100,10" Grid.Row="1">
             <Image Source="itinerary.png"></Image>
         </Button>
     </Grid>
