@@ -31,15 +31,12 @@
         <Button Name="HelpButton" Margin="1119,8,213,19">
             <Image Source="images/help_button.png"/>
         </Button>
-        <Button Content="Preferences" HorizontalAlignment="Left" Height="53" Margin="1193,5,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.283"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
+        <Button Content="Preferences" HorizontalAlignment="Left" Height="46" Margin="1203,12,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
         </Button>
 
         <ScrollViewer HorizontalAlignment="Left" Height="694" Margin="0,15,0,0" VerticalAlignment="Top" Width="1370" Background="#D8D9D9D9" Grid.Row="1">

@@ -26,15 +26,12 @@
         <Button Name="HelpButton" Margin="1119,8,213,887">
             <Image Source="images/help_button.png"/>
         </Button>
-        <Button Content="Preferences" HorizontalAlignment="Left" Height="53" Margin="1193,5,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.283"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
+        <Button Content="Preferences" HorizontalAlignment="Left" Height="46" Margin="1203,12,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
         </Button>
 
         <Rectangle HorizontalAlignment="Center" Height="123" Stroke="Black" VerticalAlignment="Top" Width="1380" Margin="0,745,0,0" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25" Grid.Row="1"/>
@@ -56,11 +53,40 @@
         <Button Name="ItineraryButton" Margin="1160,755,100,10" Grid.Row="1">
             <Image Source="images/itinerary.png"></Image>
         </Button>
-        <Grid UseLayoutRounding="True" Margin="10,10,10,169" Grid.Row="1">
-            <Rectangle>
-                <Image Source="images/preferences_popup.png" RenderTransformOrigin="0.5,0.5" Grid.Row="1" Height="auto">
-                </Image>
+        <Grid UseLayoutRounding="True" Margin="10,27,10,152" Grid.Row="1">
+            <Rectangle RadiusX="20" RadiusY="20">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/images/preferences_popup.png"/>
+                </Rectangle.Fill>
             </Rectangle>
+            <Button Content="2 -3 Days" HorizontalAlignment="Left" Height="43" Margin="40,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="1 Week" HorizontalAlignment="Left" Height="43" Margin="289,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="2 Weeks" HorizontalAlignment="Left" Height="43" Margin="560,248,0,0" VerticalAlignment="Top" Width="204" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="I live here!" HorizontalAlignment="Left" Height="43" Margin="831,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </Grid>
     </Grid>
 </Window>
