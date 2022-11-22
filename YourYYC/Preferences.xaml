@@ -59,6 +59,7 @@
                     <ImageBrush ImageSource="/images/preferences_popup.png"/>
                 </Rectangle.Fill>
             </Rectangle>
+            <!--I'm here options-->
             <Button Content="2 -3 Days" HorizontalAlignment="Left" Height="43" Margin="40,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
                 <Button.Resources>
                     <Style TargetType="Border">
@@ -66,24 +67,112 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="1 Week" HorizontalAlignment="Left" Height="43" Margin="289,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+            <Button Content="1 Week" HorizontalAlignment="Left" Height="43" Margin="262,248,0,0" VerticalAlignment="Top" Width="204" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.362,0.492" BorderThickness="0,0,0,0">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="2 Weeks" HorizontalAlignment="Left" Height="43" Margin="560,248,0,0" VerticalAlignment="Top" Width="204" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+            <Button Content="2 Weeks" HorizontalAlignment="Left" Height="43" Margin="502,248,0,0" VerticalAlignment="Top" Width="204" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="I live here!" HorizontalAlignment="Left" Height="43" Margin="831,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+            <Button Content="I live here!" HorizontalAlignment="Left" Height="43" Margin="736,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <!--I'm interested in options-->
+            <Button Content="Sightseeing" HorizontalAlignment="Left" Height="43" Margin="40,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Food" HorizontalAlignment="Left" Height="43" Margin="272,382,0,0" VerticalAlignment="Top" Width="204" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Art" HorizontalAlignment="Left" Height="43" Margin="503,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Nature" HorizontalAlignment="Left" Height="43" Margin="736,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Science" HorizontalAlignment="Left" Height="43" Margin="972,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="History" HorizontalAlignment="Left" Height="43" Margin="40,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Shopping" HorizontalAlignment="Left" Height="43" Margin="40,451,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Party and Music" HorizontalAlignment="Left" Height="43" Margin="273,451,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Road Trips" HorizontalAlignment="Left" Height="43" Margin="503,451,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Family Friendly" HorizontalAlignment="Left" Height="43" Margin="736,451,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+
+            <!--Selection options-->
+            <Button Content="Clear Selections" HorizontalAlignment="Left" Height="46" Margin="289,614,0,0" VerticalAlignment="Top" Width="353" Background="#757575" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Content="Done" HorizontalAlignment="Left" Height="46" Margin="736,614,0,0" VerticalAlignment="Top" Width="353" Background="#FFD94539" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
