@@ -16,6 +16,7 @@
     <None Remove="getting_there.png" />
     <None Remove="help_button.png" />
     <None Remove="home_button.png" />
+    <None Remove="images\preferences_popup.png" />
     <None Remove="itinerary.png" />
     <None Remove="language_preferences.png" />
     <None Remove="local_eats.png" />
@@ -30,7 +31,6 @@
     <Resource Include="images\calgary.png" />
     <Resource Include="images\city_map.png" />
     <Resource Include="images\event_sample.png" />
-    <Resource Include="images\find_what_you_love.png" />
     <Resource Include="images\getting_there.png" />
     <Resource Include="images\help_button.png" />
     <Resource Include="images\home_button.png" />
@@ -40,6 +40,7 @@
     <Resource Include="images\local_events.png" />
     <Resource Include="images\main_background.png" />
     <Resource Include="images\placesToSee.png" />
+    <Resource Include="images\preferences_popup.png" />
     <Resource Include="images\small_home_button.png" />
   </ItemGroup>
 
