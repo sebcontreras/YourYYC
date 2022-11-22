@@ -31,7 +31,7 @@
         <Button Name="HelpButton" Margin="1119,8,213,19">
             <Image Source="help_button.png"/>
         </Button>
-        <Button Content="Preferences" HorizontalAlignment="Left" Height="53" Margin="1193,5,0,0" VerticalAlignment="Top" Width="151" Click="Button_Click" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+        <Button Content="Preferences" HorizontalAlignment="Left" Height="53" Margin="1193,5,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
