@@ -10,46 +10,64 @@
     <Window.Background>
         <ImageBrush ImageSource="images/main_background.png"/>
     </Window.Background>
-    <Grid Margin="30">
-
-        <Rectangle HorizontalAlignment="Center" Height="70" Stroke="Black" VerticalAlignment="Top" Width="1380" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        <Button Name="HomeButton" Margin="34,3,1136,881">
-            <Image Source="images/home_button.png"/>
+    
+    <Canvas>
+        
+        <!-- Top Navigation Bar -->
+        <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
+        
+        <!-- Home Button / Logo -->
+        <Button Name="HomeButton" Height="50" Width="222" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="40" Background="Transparent">
+            <Image Source="images/HomeButton.png"/>
         </Button>
-        <Button Name="LanguageButton" Margin="1049,10,282,884">
-            <Image Source="images/language_preferences.png"/>
-        </Button>
-        <Button Name="HelpButton" Margin="1119,8,213,887">
-            <Image Source="images/help_button.png"/>
-        </Button>
-        <Button Content="Preferences" HorizontalAlignment="Left" Height="46" Margin="1203,12,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </Button.Resources>
+        
+        <!-- Language Button -->
+        <Button Name="LanguageButton" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LanguageButton.png"/>
         </Button>
 
-
-        <Rectangle HorizontalAlignment="Center" Height="123" Stroke="Black" VerticalAlignment="Top" Width="1380" Margin="0,825,0,0" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        <Button Name="PlacesToSeeButton" Margin="100,835,1160,10">
-            <Image Source="images/placesToSee.png" Width="120"></Image>
-        </Button>
-        <Button Name="LocalEventsButton" Margin="316,835,944,10">
-            <Image Source="images/local_events.png"></Image>
-        </Button>
-        <Button Name="LocalEatsButton" Margin="522,835,738,10">
-            <Image Source="images/local_eats.png"></Image>
-        </Button>
-        <Button Name="CityMapButton" Margin="740,835,520,10">
-            <Image Source="images/city_map.png"></Image>
-        </Button>
-        <Button Name="GettingThereButton" Margin="956,830,298,5">
-            <Image Source="images/getting_there.png"></Image>
-        </Button>
-        <Button Name="ItineraryButton" Margin="1160,835,100,10">
-            <Image Source="images/itinerary.png"></Image>
+        <!-- Help Button -->
+        <Button Name="HelpButton" Height="30" Width="30" Canvas.Left="1160" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/HelpButton.png"/>
         </Button>
 
-    </Grid>
+        <!-- Preferences Button -->
+        <Button Name="PreferencesButton" Height="50" Width="165" Canvas.Left="1220" Canvas.Top="40" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/PreferencesButton.png"/>
+        </Button>
+
+        <!-- Navigation Bar -->
+        <Rectangle Height="120" Width ="1390" Canvas.Left="25" Canvas.Bottom="25" Canvas.Right="25" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
+        
+        <!-- Places to see button -->
+        <Button Name="PlacesToSeeButton" Height="80" Width="118" Canvas.Left="111" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/PlacesToSeeButton.png"/>
+        </Button>
+
+        <!-- Local Events button -->
+        <Button Name="LocalEventsButton" Height="80" Width="118" Canvas.Left="335" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LocalEventsButton.png"/>
+        </Button>
+
+        <!-- Local Eats button -->
+        <Button Name="LocalEatsButton" Height="83" Width="91" Canvas.Left="565" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LocalEatsButton.png"/>
+        </Button>
+
+        <!-- City Map button -->
+        <Button Name="CityMapButton" Height="83" Width="83" Canvas.Left="789" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/CityMapButton.png"/>
+        </Button>
+
+        <!-- Getting There button -->
+        <Button Name="GettingThereButton" Height="83" Width="125" Canvas.Left="988" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/GettingThereButton.png"/>
+        </Button>
+
+        <!-- Itinerary button -->
+        <Button Name="ItineraryButton" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/ItineraryButton.png"/>
+        </Button>
+
+    </Canvas>
 </Window>
