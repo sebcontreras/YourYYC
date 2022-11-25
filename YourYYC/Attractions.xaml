@@ -5,43 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YourYYC"
         mc:Ignorable="d"
-        Title="Attractions" Height="1024" Width="1440"
+        Title="Attractions" SizeToContent="WidthAndHeight"
+        WindowStyle="SingleBorderWindow"
         >
-    <Window.Background>
-        <ImageBrush ImageSource="images/calgary.png"/>
-    </Window.Background>
-    <Grid Margin="30">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="217*"/>
-        </Grid.RowDefinitions>
 
-        <Rectangle HorizontalAlignment="Center" Height="70" Stroke="Black" VerticalAlignment="Top" Width="1380" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        <Button Name="BackButton" Margin="30,6,1300,16" BorderBrush="{x:Null}" Foreground="{x:Null}">
-            <Image Source="images/back_button.png"/>
-        </Button>
-        <Button Name="HomeButton" Margin="100,6,1215,16" BorderBrush="{x:Null}">
-            <Image Source="images/small_home_button.png"/>
-        </Button>
-        <Rectangle HorizontalAlignment="Left" Height="51" Margin="201,10,0,0" VerticalAlignment="Top" Width="4" Fill="#FFBDBDBD" RadiusX="1" RadiusY="1"/>
-        <TextBlock Text="Attractions" FontWeight="Bold" Margin="236,13,975,23" FontFamily="Calibri" FontSize="36" Foreground="#FFD94539"/>
-        <Button Name="LanguageButton" Margin="1049,10,282,16">
-            <Image Source="images/language_preferences.png"/>
-        </Button>
-        <Button Name="HelpButton" Margin="1119,8,213,19">
-            <Image Source="images/help_button.png"/>
-        </Button>
-        <Button Content="Preferences" HorizontalAlignment="Left" Height="46" Margin="1203,12,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ScaleTransform x:Key="windowScaleTransform" ScaleX="0.5" ScaleY="0.5" />
+        </ResourceDictionary>
+    </Window.Resources>
 
-        <ScrollViewer HorizontalAlignment="Left" Height="694" Margin="0,15,0,0" VerticalAlignment="Top" Width="1370" Background="#D8D9D9D9" Grid.Row="1">
+    <Canvas Height="1024" Width="1440" Cursor="Hand" LayoutTransform="{StaticResource windowScaleTransform}">
+        <Canvas.Background>
+            <ImageBrush ImageSource="images/PageBackground.png"/>
+        </Canvas.Background>
+
+        <!-- Attractions List as a Scrollable Page -->
+        <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
+            <!-- Scrollable Page BG as image -->
             <StackPanel>
-
                 <StackPanel>
                     <TextBlock Text="Recommended for you" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
@@ -91,24 +73,72 @@
 
         </ScrollViewer>
 
-        <Rectangle HorizontalAlignment="Center" Height="123" Stroke="Black" VerticalAlignment="Top" Width="1380" Margin="0,745,0,0" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25" Grid.Row="1"/>
-        <Button Name="PlacesToSeeButton" Margin="100,755,1160,10" Grid.Row="1">
-            <Image Source="images/placesToSee.png" Width="120"></Image>
+        <!-- Top Navigation Bar -->
+        <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
+
+        <!-- Attractions Page Title Button / Logo -->
+        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="189">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="images/AttractionsPageTitle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!-- Home Button / Logo -->
+        <Button Name="HomeButton" Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="110" Canvas.Top="50" Background="Transparent">
+            <Image Source="images/HomeButton.png"/>
         </Button>
-        <Button Name="LocalEventsButton" Margin="316,755,944,10" Grid.Row="1">
-            <Image Source="images/local_events.png" Height="93" Width="110"></Image>
+
+        <!-- Back Button / Logo -->
+        <Button Name="BackButton" Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="50" Background="Transparent">
+            <Image Source="images/BackButton.png"/>
         </Button>
-        <Button Name="LocalEatsButton" Margin="522,755,738,10" Grid.Row="1">
-            <Image Source="images/local_eats.png"></Image>
+
+        <!-- Language Button -->
+        <Button Name="LanguageButton" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LanguageButton.png"/>
         </Button>
-        <Button Name="CityMapButton" Margin="740,755,547,10" Grid.Row="1">
-            <Image Source="images/city_map.png"></Image>
+
+        <!-- Help Button -->
+        <Button Name="HelpButton" Height="30" Width="30" Canvas.Left="1160" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/HelpButton.png"/>
         </Button>
-        <Button Name="GettingThereButton" Margin="956,750,298,5" Grid.Row="1">
-            <Image Source="images/getting_there.png"></Image>
+
+        <!-- Preferences Button -->
+        <Button Name="PreferencesButton" Height="50" Width="165" Canvas.Left="1220" Canvas.Top="40" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/PreferencesButton.png"/>
         </Button>
-        <Button Name="ItineraryButton" Margin="1160,755,100,10" Grid.Row="1">
-            <Image Source="images/itinerary.png"></Image>
+
+        <!-- Navigation Bar -->
+        <Rectangle Height="120" Width ="1390" Canvas.Left="25" Canvas.Bottom="25" Canvas.Right="25" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
+
+        <!-- Places to see button -->
+        <Button Name="PlacesToSeeButton" Height="80" Width="118" Canvas.Left="111" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/PlacesToSeeButton.png"/>
         </Button>
-    </Grid>
+
+        <!-- Local Events button -->
+        <Button Name="LocalEventsButton" Height="80" Width="118" Canvas.Left="335" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LocalEventsButton.png"/>
+        </Button>
+
+        <!-- Local Eats button -->
+        <Button Name="LocalEatsButton" Height="83" Width="91" Canvas.Left="565" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LocalEatsButton.png"/>
+        </Button>
+
+        <!-- City Map button -->
+        <Button Name="CityMapButton" Height="83" Width="83" Canvas.Left="789" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/CityMapButton.png"/>
+        </Button>
+
+        <!-- Getting There button -->
+        <Button Name="GettingThereButton" Height="83" Width="125" Canvas.Left="988" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/GettingThereButton.png"/>
+        </Button>
+
+        <!-- Itinerary button -->
+        <Button Name="ItineraryButton" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/ItineraryButton.png"/>
+        </Button>
+    </Canvas>
 </Window>

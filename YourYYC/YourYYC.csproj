@@ -5,43 +5,54 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <StartupObject>YourYYC.App</StartupObject>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="back_button.png" />
-    <None Remove="calgary.png" />
-    <None Remove="city_map.png" />
-    <None Remove="event_sample.png" />
-    <None Remove="find_what_you_love.png" />
-    <None Remove="getting_there.png" />
-    <None Remove="help_button.png" />
-    <None Remove="home_button.png" />
-    <None Remove="images\preferences_popup.png" />
-    <None Remove="itinerary.png" />
-    <None Remove="language_preferences.png" />
-    <None Remove="local_eats.png" />
-    <None Remove="local_events.png" />
-    <None Remove="main_background.png" />
-    <None Remove="placesToSee.png" />
-    <None Remove="small_home_button.png" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="images\BackButton.png" />
+		<None Remove="images\calgary.png" />
+		<None Remove="images\CityMapButton.png" />
+		<None Remove="images\event_sample.png" />
+		<None Remove="images\find_what_you_love.png" />
+		<None Remove="images\GettingThereButton.png" />
+		<None Remove="images\HelpButton.png" />
+		<None Remove="images\HomeButton.png" />
+		<None Remove="images\PreferencesDialogBG.png" />
+		<None Remove="images\ItineraryButton.png" />
+		<None Remove="images\LanguageButton.png" />
+		<None Remove="images\LocalEatsButton.png" />
+		<None Remove="images\LocalEventsButton.png" />
+		<None Remove="images\MainBackground.png" />
+		<None Remove="images\PlacesToSeeButton.png" />
+		<None Remove="images\Branding.png" />
+		<None Remove="images\AttractionsPageTitle.png"/>
+		<None Remove="images\PageBackground.png"/>
+		<None Remove="images\PreferencesPageBG.png"/>
+		<None Remove="images\ScrollPageBackground.png"/>
+	</ItemGroup>
 
-  <ItemGroup>
-    <Resource Include="images\back_button.png" />
-    <Resource Include="images\calgary.png" />
-    <Resource Include="images\city_map.png" />
-    <Resource Include="images\event_sample.png" />
-    <Resource Include="images\getting_there.png" />
-    <Resource Include="images\help_button.png" />
-    <Resource Include="images\home_button.png" />
-    <Resource Include="images\itinerary.png" />
-    <Resource Include="images\language_preferences.png" />
-    <Resource Include="images\local_eats.png" />
-    <Resource Include="images\local_events.png" />
-    <Resource Include="images\main_background.png" />
-    <Resource Include="images\placesToSee.png" />
-    <Resource Include="images\preferences_popup.png" />
-    <Resource Include="images\small_home_button.png" />
-  </ItemGroup>
+	<ItemGroup>
+		<Resource Include="images\BackButton.png" />
+		<Resource Include="images\calgary.png" />
+		<Resource Include="images\CityMapButton.png" />
+		<Resource Include="images\event_sample.png" />
+		<Resource Include="images\find_what_you_love.png" />
+		<Resource Include="images\GettingThereButton.png" />
+		<Resource Include="images\HelpButton.png" />
+		<Resource Include="images\HomeButton.png" />
+		<Resource Include="images\PreferencesDialogBG.png" />
+		<Resource Include="images\ItineraryButton.png" />
+		<Resource Include="images\LanguageButton.png" />
+		<Resource Include="images\LocalEatsButton.png" />
+		<Resource Include="images\LocalEventsButton.png" />
+		<Resource Include="images\MainBackground.png" />
+		<Resource Include="images\PlacesToSeeButton.png" />
+		<Resource Include="images\Branding.png" />
+		<Resource Include="images\AttractionsPageTitle.png"/>
+		<Resource Include="images\PageBackground.png"/>
+		<Resource Include="images\PreferencesPageBG.png"/>
+		<Resource Include="images\ScrollPageBackground.png"/>
+		<Resource Include="images\PreferencesButton.png"/>
+	</ItemGroup>
 
 </Project>

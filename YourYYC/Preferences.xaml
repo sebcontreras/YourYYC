@@ -5,177 +5,218 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YourYYC"
         mc:Ignorable="d"
-        Title="Preferences" Height="1024" Width="1440"
+        Title="Preferences" SizeToContent="WidthAndHeight"
+        WindowStyle="SingleBorderWindow"
         >
-    <Window.Background>
-        <ImageBrush ImageSource="images/calgary.png"/>
-    </Window.Background>
-    <Grid Margin="30">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="217*"/>
-        </Grid.RowDefinitions>
 
-        <Rectangle HorizontalAlignment="Center" Height="70" Stroke="Black" VerticalAlignment="Top" Width="1380" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        <Button Name="HomeButton" Margin="34,3,1136,881">
-            <Image Source="images/home_button.png"/>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ScaleTransform x:Key="windowScaleTransform" ScaleX="0.5" ScaleY="0.5" />
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Canvas Height="1024" Width="1440" Cursor="Hand" LayoutTransform="{StaticResource windowScaleTransform}">
+        <Canvas.Background>
+            <ImageBrush ImageSource="images/PreferencesPageBG.png"/>
+        </Canvas.Background>
+        
+        <!-- Top Navigation Bar -->
+        <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
+
+        <!-- Home Button / Logo -->
+        <Button Name="HomeButton" Height="50" Width="222" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="40" Background="Transparent" Click="HomeButton_Click">
+            <Image Source="images/HomeButton.png"/>
         </Button>
-        <Button Name="LanguageButton" Margin="1049,10,282,884">
-            <Image Source="images/language_preferences.png"/>
+
+        <!-- Language Button -->
+        <Button Name="LanguageButton" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LanguageButton.png"/>
         </Button>
-        <Button Name="HelpButton" Margin="1119,8,213,887">
-            <Image Source="images/help_button.png"/>
+
+        <!-- Help Button -->
+        <Button Name="HelpButton" Height="30" Width="30" Canvas.Left="1160" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/HelpButton.png"/>
         </Button>
-        <Button Content="Preferences" HorizontalAlignment="Left" Height="46" Margin="1203,12,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+
+        <!-- Preferences Button -->
+        <Button Name="PreferencesButton" Height="50" Width="165" Canvas.Left="1220" Canvas.Top="40" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/PreferencesButton.png"/>
+        </Button>
+
+        <!-- Navigation Bar -->
+        <Rectangle Height="120" Width ="1390" Canvas.Left="25" Canvas.Bottom="25" Canvas.Right="25" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
+
+        <!-- Places to see button -->
+        <Button Name="PlacesToSeeButton" Height="80" Width="118" Canvas.Left="111" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/PlacesToSeeButton.png"/>
+        </Button>
+
+        <!-- Local Events button -->
+        <Button Name="LocalEventsButton" Height="80" Width="118" Canvas.Left="335" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LocalEventsButton.png"/>
+        </Button>
+
+        <!-- Local Eats button -->
+        <Button Name="LocalEatsButton" Height="83" Width="91" Canvas.Left="565" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/LocalEatsButton.png"/>
+        </Button>
+
+        <!-- City Map button -->
+        <Button Name="CityMapButton" Height="83" Width="83" Canvas.Left="789" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/CityMapButton.png"/>
+        </Button>
+
+        <!-- Getting There button -->
+        <Button Name="GettingThereButton" Height="83" Width="125" Canvas.Left="988" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/GettingThereButton.png"/>
+        </Button>
+
+        <!-- Itinerary button -->
+        <Button Name="ItineraryButton" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="images/ItineraryButton.png"/>
+        </Button>
+        
+        <!-- Preferences Dialog Box Options -->
+        
+        <!--I'm here options-->
+        
+        <!-- 2-3 Days Button -->
+        <Button Content="2 -3 Days" Height="46" Width="190" Canvas.Left="55" Canvas.Top="391" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+         </Button>
+
+        <!-- 1 Week Button -->
+        <Button Content="1 Week" Height="46" Width="190" Canvas.Left="270" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- 1 Week Button -->
+        <Button Content="2 Weeks" Height="46" Width="190" Canvas.Left="485" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- I live here Button -->
+        <Button Content="I live here!" Height="46" Width="190" Canvas.Left="700" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!--I'm interested in options-->
+
+        <!-- Sightseeing Button -->
+        <Button Content="Sightseeing" Height="46" Width="190" Canvas.Left="55" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- Art Button -->
+        <Button Content="Art" Height="46" Width="190" Canvas.Left="270" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- Nature Button -->
+        <Button Content="Nature" Height="46" Width="190" Canvas.Left="485" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- Science Button -->
+        <Button Content="Science" Height="46" Width="190" Canvas.Left="700" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- History Button -->
+        <Button Content="History" Height="46" Width="190" Canvas.Left="915" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- Shopping Button -->
+        <Button Content="Shopping" Height="46" Width="190" Canvas.Left="1130" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- Party & Music Button -->
+        <Button Content="Party &amp; Music" Height="46" Width="190" Canvas.Left="55" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- Road Trips Button -->
+        <Button Content="Road Trips" Height="46" Width="190" Canvas.Left="270" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- Family Friendly Button -->
+        <Button Content="Family Friendly" Height="46" Width="190" Canvas.Left="485" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+        <!--Selection options-->
+        <!-- Clear Button -->
+        <Button Content="Clear Selections" Height="50" Width="350" Canvas.Left="355" Canvas.Top="764" Background="#757575" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>
         </Button>
-
-        <Rectangle HorizontalAlignment="Center" Height="123" Stroke="Black" VerticalAlignment="Top" Width="1380" Margin="0,745,0,0" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25" Grid.Row="1"/>
-        <Button Name="PlacesToSeeButton" Margin="100,755,1160,10" Grid.Row="1">
-            <Image Source="images/placesToSee.png" Width="120"></Image>
+        
+        <!-- Done Button -->
+        <Button Content="Done" Height="50" Width="355" Canvas.Left="735" Canvas.Top="764" Background="#FFD94539" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
         </Button>
-        <Button Name="LocalEventsButton" Margin="316,755,944,10" Grid.Row="1">
-            <Image Source="images/local_events.png" Height="93" Width="110"></Image>
-        </Button>
-        <Button Name="LocalEatsButton" Margin="522,755,738,10" Grid.Row="1">
-            <Image Source="images/local_eats.png"></Image>
-        </Button>
-        <Button Name="CityMapButton" Margin="740,755,547,10" Grid.Row="1">
-            <Image Source="images/city_map.png"></Image>
-        </Button>
-        <Button Name="GettingThereButton" Margin="956,750,298,5" Grid.Row="1">
-            <Image Source="images/getting_there.png"></Image>
-        </Button>
-        <Button Name="ItineraryButton" Margin="1160,755,100,10" Grid.Row="1">
-            <Image Source="images/itinerary.png"></Image>
-        </Button>
-        <Grid UseLayoutRounding="True" Margin="10,27,10,152" Grid.Row="1">
-            <Rectangle RadiusX="20" RadiusY="20">
-                <Rectangle.Fill>
-                    <ImageBrush ImageSource="/images/preferences_popup.png"/>
-                </Rectangle.Fill>
-            </Rectangle>
-            <!--I'm here options-->
-            <Button Content="2 -3 Days" HorizontalAlignment="Left" Height="43" Margin="40,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="1 Week" HorizontalAlignment="Left" Height="43" Margin="262,248,0,0" VerticalAlignment="Top" Width="204" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.362,0.492" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="2 Weeks" HorizontalAlignment="Left" Height="43" Margin="502,248,0,0" VerticalAlignment="Top" Width="204" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="I live here!" HorizontalAlignment="Left" Height="43" Margin="736,248,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <!--I'm interested in options-->
-            <Button Content="Sightseeing" HorizontalAlignment="Left" Height="43" Margin="40,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Food" HorizontalAlignment="Left" Height="43" Margin="272,382,0,0" VerticalAlignment="Top" Width="204" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Art" HorizontalAlignment="Left" Height="43" Margin="503,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Nature" HorizontalAlignment="Left" Height="43" Margin="736,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Science" HorizontalAlignment="Left" Height="43" Margin="972,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="History" HorizontalAlignment="Left" Height="43" Margin="40,382,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Shopping" HorizontalAlignment="Left" Height="43" Margin="40,451,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Party and Music" HorizontalAlignment="Left" Height="43" Margin="273,451,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Road Trips" HorizontalAlignment="Left" Height="43" Margin="503,451,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Family Friendly" HorizontalAlignment="Left" Height="43" Margin="736,451,0,0" VerticalAlignment="Top" Width="203" Background="#FFEDEDED" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" BorderThickness="0,0,0,0">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="20"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-
-
-            <!--Selection options-->
-            <Button Content="Clear Selections" HorizontalAlignment="Left" Height="46" Margin="289,614,0,0" VerticalAlignment="Top" Width="353" Background="#757575" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-            <Button Content="Done" HorizontalAlignment="Left" Height="46" Margin="736,614,0,0" VerticalAlignment="Top" Width="353" Background="#FFD94539" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
-                <Button.Resources>
-                    <Style TargetType="Border">
-                        <Setter Property="CornerRadius" Value="10"/>
-                    </Style>
-                </Button.Resources>
-            </Button>
-        </Grid>
-    </Grid>
+    </Canvas>
 </Window>

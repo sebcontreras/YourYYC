@@ -5,20 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YourYYC"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1024" Width="1440"
+        Title="MainWindow" SizeToContent="WidthAndHeight"
+        WindowStyle="SingleBorderWindow"
         >
-    <Window.Background>
-        <ImageBrush ImageSource="images/main_background.png"/>
-    </Window.Background>
-    
-    <Canvas>
-        
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ScaleTransform x:Key="windowScaleTransform" ScaleX="0.5" ScaleY="0.5" />
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Canvas Height="1024" Width="1440" Cursor="Hand" LayoutTransform="{StaticResource windowScaleTransform}">
+        <!-- Window Background -->
+        <Canvas.Background>
+            <ImageBrush ImageSource="images/MainBackground.png"/>
+        </Canvas.Background>
+       
         <!-- Top Navigation Bar -->
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
         
         <!-- Home Button / Logo -->
-        <Button Name="HomeButton" Height="50" Width="222" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="40" Background="Transparent">
-            <Image Source="images/HomeButton.png"/>
+        <Button Name="MainHomeButton" Height="50" Width="222" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="40" Background="Transparent">
+            <Image Source="images/Branding.png"/>
         </Button>
         
         <!-- Language Button -->
