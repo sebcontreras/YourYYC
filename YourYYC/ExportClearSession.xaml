@@ -1,0 +1,29 @@
+﻿<Window x:Class="YourYYC.ExportClearSession"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YourYYC"
+        mc:Ignorable="d"
+        Title="ExportClearSession" Height="1024" Width="1440">
+    <Window.Background>
+        <ImageBrush ImageSource="images/export_clear_session_timeout.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="592*"/>
+            <RowDefinition Height="417*"/>
+        </Grid.RowDefinitions>
+        <Button Name="CancelButton" Margin="1340,10,10,509">
+            <Image Source="images/cancel.png"/>
+        </Button>
+
+        <Button Name="StartNewSession" Margin="753,491,436,39">
+            <Image Source="images/start_new_session.png"/>
+        </Button>
+        <Button Name="ResumeCurrentSession" Margin="502,491,687,39">
+            <Image Source="images/resume_current_session.png"/>
+        </Button>
+
+    </Grid>
+</Window>
