@@ -14,11 +14,14 @@
 		<None Remove="images\BackButton.png" />
 		<None Remove="images\calgary.png" />
 		<None Remove="images\CityMapButton.png" />
+		<None Remove="images\Events.png" />
+		<None Remove="images\EventsPageTitle.png" />
 		<None Remove="images\event_sample.png" />
 		<None Remove="images\find_what_you_love.png" />
 		<None Remove="images\GettingThereButton.png" />
 		<None Remove="images\HelpButton.png" />
 		<None Remove="images\HomeButton.png" />
+		<None Remove="images\MenuBottomBar.png" />
 		<None Remove="images\PreferencesDialogBG.png" />
 		<None Remove="images\ItineraryButton.png" />
 		<None Remove="images\LanguageButton.png" />
@@ -31,6 +34,7 @@
 		<None Remove="images\PageBackground.png" />
 		<None Remove="images\PreferencesPageBG.png" />
 		<None Remove="images\ScrollPageBackground.png" />
+		<None Remove="images\TitleBar.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -39,11 +43,14 @@
 		<Resource Include="images\BackButton.png" />
 		<Resource Include="images\calgary.png" />
 		<Resource Include="images\CityMapButton.png" />
+		<Resource Include="images\Events.png" />
 		<Resource Include="images\event_sample.png" />
 		<Resource Include="images\find_what_you_love.png" />
 		<Resource Include="images\GettingThereButton.png" />
 		<Resource Include="images\HelpButton.png" />
 		<Resource Include="images\HomeButton.png" />
+		<Resource Include="images\EventsPageTitle.png" />
+		<Resource Include="images\MenuBottomBar.png" />
 		<Resource Include="images\PreferencesDialogBG.png" />
 		<Resource Include="images\ItineraryButton.png" />
 		<Resource Include="images\LanguageButton.png" />
@@ -57,6 +64,7 @@
 		<Resource Include="images\PreferencesPageBG.png" />
 		<Resource Include="images\ScrollPageBackground.png" />
 		<Resource Include="images\PreferencesButton.png" />
+		<Resource Include="images\TitleBar.png" />
 	</ItemGroup>
 
 </Project>
