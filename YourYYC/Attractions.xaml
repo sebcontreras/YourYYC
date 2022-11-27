@@ -22,55 +22,28 @@
 
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
-            <!-- Scrollable Page BG as image -->
-            <StackPanel>
+            <!--<StackPanel>
                 <StackPanel>
-                    <TextBlock Text="Recommended for you" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Image Height="3788" Source="/images/Attractions.png" Stretch="Fill" Width="1340" Margin="0,0,35,0"/>
                     <Button x:Name="attraction1" Width="305" Height="314" Margin="15">
                         <Image Source="images/event_sample.png"></Image>
                     </Button>
-                    <Button x:Name="attraction2" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction3" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction4" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction5" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction6" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction7" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction8" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
+                    
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction9" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
+            </StackPanel>-->
+            <Grid>
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Image Height="3788" Source="/images/Attractions.png" Stretch="Fill" Width="1340" Margin="0,0,35,0"/>
+                </Grid>
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Button x:Name="attraction1" Margin="27,302,1045,3388" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" />
+                    <Button Margin="280,276,1064,3487" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}">
+                        <Image Source="/images/AddToItineraryIcon.png" Stretch="Fill"/>
                     </Button>
-                    <Button x:Name="attraction10" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction11" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction12" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                </StackPanel>
-            </StackPanel>
-
+                </Grid>
+            </Grid>
         </ScrollViewer>
 
         <!-- Top Navigation Bar -->
@@ -140,5 +113,8 @@
         <Button Name="ItineraryButton" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
             <Image Source="images/ItineraryButton.png"/>
         </Button>
+
+        <!-- Bottom Bar -->
+        <Image Height="20" Canvas.Left="78" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Left" VerticalAlignment="Center"/>
     </Canvas>
 </Window>
