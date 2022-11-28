@@ -11,7 +11,7 @@
 
     <Window.Resources>
         <ResourceDictionary>
-            <ScaleTransform x:Key="windowScaleTransform" ScaleX="0.5" ScaleY="0.5" />
+            <ScaleTransform x:Key="windowScaleTransform" ScaleX="0.9" ScaleY="0.9" />
         </ResourceDictionary>
     </Window.Resources>
 

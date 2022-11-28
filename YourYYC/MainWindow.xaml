@@ -6,6 +6,8 @@
         xmlns:local="clr-namespace:YourYYC"
         mc:Ignorable="d"
         Title="MainWindow" SizeToContent="WidthAndHeight"
+        Height="1024"
+        Width="1440"
         WindowStyle="SingleBorderWindow"
         >
 
@@ -14,68 +16,5 @@
             <ScaleTransform x:Key="windowScaleTransform" ScaleX="0.5" ScaleY="0.5" />
         </ResourceDictionary>
     </Window.Resources>
-
-    <Canvas Height="1024" Width="1440" Cursor="Hand" LayoutTransform="{StaticResource windowScaleTransform}">
-        <!-- Window Background -->
-        <Canvas.Background>
-            <ImageBrush ImageSource="images/MainBackground.png"/>
-        </Canvas.Background>
-       
-        <!-- Top Navigation Bar -->
-        <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        
-        <!-- Home Button / Logo -->
-        <Button Name="MainHomeButton" Height="50" Width="222" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="40" Background="Transparent">
-            <Image Source="images/Branding.png"/>
-        </Button>
-        
-        <!-- Language Button -->
-        <Button Name="LanguageButton" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/LanguageButton.png"/>
-        </Button>
-
-        <!-- Help Button -->
-        <Button Name="HelpButton" Height="30" Width="30" Canvas.Left="1160" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/HelpButton.png"/>
-        </Button>
-
-        <!-- Preferences Button -->
-        <Button Name="PreferencesButton" Height="50" Width="165" Canvas.Left="1220" Canvas.Top="40" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/PreferencesButton.png"/>
-        </Button>
-
-        <!-- Navigation Bar -->
-        <Rectangle Height="120" Width ="1390" Canvas.Left="25" Canvas.Bottom="25" Canvas.Right="25" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        
-        <!-- Places to see button -->
-        <Button Name="PlacesToSeeButton" Height="80" Width="118" Canvas.Left="111" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/PlacesToSeeButton.png"/>
-        </Button>
-
-        <!-- Local Events button -->
-        <Button Name="LocalEventsButton" Height="80" Width="118" Canvas.Left="335" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/LocalEventsButton.png"/>
-        </Button>
-
-        <!-- Local Eats button -->
-        <Button Name="LocalEatsButton" Height="83" Width="91" Canvas.Left="565" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/LocalEatsButton.png"/>
-        </Button>
-
-        <!-- City Map button -->
-        <Button Name="CityMapButton" Height="83" Width="83" Canvas.Left="789" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/CityMapButton.png"/>
-        </Button>
-
-        <!-- Getting There button -->
-        <Button Name="GettingThereButton" Height="83" Width="125" Canvas.Left="988" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/GettingThereButton.png"/>
-        </Button>
-
-        <!-- Itinerary button -->
-        <Button Name="ItineraryButton" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
-            <Image Source="images/ItineraryButton.png"/>
-        </Button>
-
-    </Canvas>
+    
 </Window>

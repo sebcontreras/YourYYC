@@ -25,10 +25,10 @@
 		<None Remove="images\MainBackground.png" />
 		<None Remove="images\PlacesToSeeButton.png" />
 		<None Remove="images\Branding.png" />
-		<None Remove="images\AttractionsPageTitle.png"/>
-		<None Remove="images\PageBackground.png"/>
-		<None Remove="images\PreferencesPageBG.png"/>
-		<None Remove="images\ScrollPageBackground.png"/>
+		<None Remove="images\AttractionsPageTitle.png" />
+		<None Remove="images\PageBackground.png" />
+		<None Remove="images\PreferencesPageBG.png" />
+		<None Remove="images\ScrollPageBackground.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -48,11 +48,11 @@
 		<Resource Include="images\MainBackground.png" />
 		<Resource Include="images\PlacesToSeeButton.png" />
 		<Resource Include="images\Branding.png" />
-		<Resource Include="images\AttractionsPageTitle.png"/>
-		<Resource Include="images\PageBackground.png"/>
-		<Resource Include="images\PreferencesPageBG.png"/>
-		<Resource Include="images\ScrollPageBackground.png"/>
-		<Resource Include="images\PreferencesButton.png"/>
+		<Resource Include="images\AttractionsPageTitle.png" />
+		<Resource Include="images\PageBackground.png" />
+		<Resource Include="images\PreferencesPageBG.png" />
+		<Resource Include="images\ScrollPageBackground.png" />
+		<Resource Include="images\PreferencesButton.png" />
 	</ItemGroup>
 
 </Project>
