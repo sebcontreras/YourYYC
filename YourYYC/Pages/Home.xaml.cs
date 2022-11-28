@@ -39,11 +39,11 @@ namespace YourYYC.Pages
         }
         public void PreferencesButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new Preferences());
         }
         public void AttractionsButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new Attractions());
         }
         public void EventsButtonClick(object sender, RoutedEventArgs e)
         {

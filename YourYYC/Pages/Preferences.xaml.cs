@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace YourYYC.Pages
 {
     /// <summary>
-    /// Interaction logic for Food.xaml
+    /// Interaction logic for Preferences.xaml
     /// </summary>
-    public partial class Food : UserControl
+    public partial class Preferences : UserControl
     {
-        public Food()
+        public Preferences()
         {
             InitializeComponent();
         }

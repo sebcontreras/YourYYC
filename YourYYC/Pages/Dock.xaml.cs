@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace YourYYC.Pages
 {
     /// <summary>
-    /// Interaction logic for Food.xaml
+    /// Interaction logic for Dock.xaml
     /// </summary>
-    public partial class Food : UserControl
+    public partial class Dock : UserControl
     {
-        public Food()
+        public Dock()
         {
             InitializeComponent();
         }
