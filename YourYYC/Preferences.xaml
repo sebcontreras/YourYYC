@@ -176,6 +176,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
+            <Image Margin="-60,274,10,275" Source="/images/Navbar.png" Stretch="Fill"/>
         </Grid>
     </Grid>
 </Window>
