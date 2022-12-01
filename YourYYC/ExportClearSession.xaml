@@ -18,7 +18,7 @@
             <Image Source="images/cancel.png"/>
         </Button>
 
-        <Button Name="StartNewSession" Margin="753,491,436,39">
+        <Button Name="StartNewSession" Margin="753,491,436,39" Click="newSession">
             <Image Source="images/start_new_session.png"/>
         </Button>
         <Button Name="ResumeCurrentSession" Margin="502,491,687,39">

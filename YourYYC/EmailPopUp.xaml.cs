@@ -10,25 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace YourYYC
 {
     /// <summary>
-    /// Interaction logic for ExportClearSession.xaml
+    /// Interaction logic for EmailPopUp.xaml
     /// </summary>
-    public partial class ExportClearSession : Window
+    public partial class EmailPopUp : UserControl
     {
-        public ExportClearSession()
+        public EmailPopUp()
         {
             InitializeComponent();
-        }
-
-        // starts new session by openning preferences in new window
-        private void newSession(object sender, RoutedEventArgs e)
-        {
-            Preferences newSess = new Preferences();
-            newSess.Show();
         }
     }
 }

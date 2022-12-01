@@ -40,10 +40,16 @@
         </Button>
 
         <ScrollViewer HorizontalAlignment="Left" Height="694" Margin="0,15,0,0" VerticalAlignment="Top" Width="1370" Background="#D8D9D9D9" Grid.Row="1">
-            <StackPanel>
+            <StackPanel Name="mainPanel">
 
-                <StackPanel>
-                    <TextBlock Text="You have # items saved" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="1347">
+                    <TextBlock Text="You have # items saved" FontSize="36" FontWeight="Bold" Width="1058" Margin="15,15,15,5"/>
+                    <Button x:Name="clear_all" Width="131" Height="41">
+                        <Image Source="images/clear_all.png" Width="128" Height="41"></Image>
+                    </Button>
+                    <Button x:Name="export" Width="124" Height="41" Click="exportButton_Click">
+                        <Image Source="images/export.png" Width="113" Height="41"/>
+                    </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Button x:Name="attraction1" Width="305" Height="314" Margin="15">

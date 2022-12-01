@@ -17,11 +17,19 @@ namespace YourYYC
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Itinerary1 : Window
     {
-        public Window1()
+        ExportPopUp _export = new ExportPopUp();
+        EmailPopUp _email= new EmailPopUp();
+        public Itinerary1()
         {
             InitializeComponent();
+        }
+
+        private void exportButton_Click(object sender, RoutedEventArgs e)
+        {
+            mainPanel.Children.Clear();
+            mainPanel.Children.Add(_export);
         }
     }
 }

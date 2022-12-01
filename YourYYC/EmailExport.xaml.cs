@@ -22,6 +22,20 @@ namespace YourYYC
         public EmailExport()
         {
             InitializeComponent();
+
+            //EmailEntered send = new EmailEntered();
+        }
+
+        private void sendButton_Click(object sender, RoutedEventArgs e)
+        {
+            ExportClearSession clearSession = new ExportClearSession();
+            Visibility = Visibility.Hidden;
+            clearSession.Show();
+        }
+
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
