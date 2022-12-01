@@ -9,17 +9,17 @@
     <UserControl.Background>
         <ImageBrush ImageSource="images/Export_Popup.png"/>
     </UserControl.Background>
-    <Grid>
-        <Button x:Name="cancel" Width="60" Height="41" Margin="730,10,10,399">
+    <Grid Name="exportGrid">
+        <Button x:Name="cancel" Width="60" Height="41" Margin="730,10,10,399" Click="cancelButton_click">
             <Image Source="images/cancel.png"></Image>
         </Button>
-        <Button x:Name="ExportEmail" Margin="404,132,61,245">
+        <Button x:Name="ExportEmail" Margin="404,132,61,245" Click="emailButton_Click">
             <Image Source="images/email_export.png" Height="64" Width="322"></Image>
         </Button>
-        <Button x:Name="ExportText" Margin="404,205,61,172">
+        <Button x:Name="ExportText" Margin="404,205,61,172" Click="textButton_Click">
             <Image Source="images/text_export.png" Height="64" Width="322"></Image>
         </Button>
-        <Button x:Name="ClearSession" Margin="176,352,176,25">
+        <Button x:Name="ClearSession" Margin="176,352,176,25" Click="clearSessionButton_Click">
             <Image Source="images/clear_session.png" Height="63" Width="382"></Image>
         </Button>
     </Grid>

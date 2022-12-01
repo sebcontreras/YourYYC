@@ -24,12 +24,20 @@ namespace YourYYC
         public Itinerary1()
         {
             InitializeComponent();
+            ItinerarySwitcher.pageSwitcher = this;
+            ItinerarySwitcher.Switch(new ExportPopUp());
+        }
+
+        public void Navigate(UserControl nextPage)
+        {
+            this.Content= nextPage;
         }
 
         private void exportButton_Click(object sender, RoutedEventArgs e)
         {
-            mainPanel.Children.Clear();
-            mainPanel.Children.Add(_export);
+            //mainPanel.Children.Clear();
+            //mainPanel.Children.Add(_export);
+            ItinerarySwitcher.Switch(new ExportPopUp());
         }
     }
 }

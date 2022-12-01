@@ -20,9 +20,36 @@ namespace YourYYC
     /// </summary>
     public partial class ExportPopUp : UserControl
     {
+        EmailPopUp _email = new EmailPopUp();
+        TextPopUp _text = new TextPopUp();
+
         public ExportPopUp()
         {
             InitializeComponent();
+        }
+
+        private void emailButton_Click(object sender, RoutedEventArgs e)
+        {
+            exportGrid.Children.Clear();
+            exportGrid.Children.Add(_email);
+        }
+
+        private void textButton_Click(object sender, RoutedEventArgs e)
+        {
+            exportGrid.Children.Clear();
+            exportGrid.Children.Add(_text);
+        }
+
+        private void cancelButton_click(object sender, RoutedEventArgs e)
+        {
+            exportGrid.Children.Clear();
+        }
+
+        private void clearSessionButton_Click(object sender, RoutedEventArgs e)
+        {
+            Preferences newSession = new Preferences();
+            Visibility = Visibility.Hidden;
+            newSession.Show();
         }
     }
 }

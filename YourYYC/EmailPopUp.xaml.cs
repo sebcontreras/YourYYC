@@ -20,9 +20,21 @@ namespace YourYYC
     /// </summary>
     public partial class EmailPopUp : UserControl
     {
+        ExportClearSession _clearSession = new ExportClearSession();
         public EmailPopUp()
         {
             InitializeComponent();
+        }
+
+        private void sendButton_Click(object sender, RoutedEventArgs e)
+        {
+            emailGrid.Children.Clear();
+            emailGrid.Children.Add(_clearSession);
+        }
+
+        private void cancelButton_click(object sender, RoutedEventArgs e)
+        {
+            emailGrid.Children.Clear();
         }
     }
 }

@@ -27,8 +27,9 @@ namespace YourYYC
         // starts new session by openning preferences in new window
         private void newSession(object sender, RoutedEventArgs e)
         {
-            Preferences newSess = new Preferences();
-            newSess.Show();
+            Preferences newSession = new Preferences();
+            Visibility = Visibility.Hidden;
+            newSession.Show();
         }
     }
 }
