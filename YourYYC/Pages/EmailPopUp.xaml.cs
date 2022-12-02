@@ -13,29 +13,29 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace YourYYC
+namespace YourYYC.Pages
 {
     /// <summary>
-    /// Interaction logic for TextPopUp.xaml
+    /// Interaction logic for EmailPopUp.xaml
     /// </summary>
-    public partial class TextPopUp : UserControl
+    public partial class EmailPopUp : UserControl
     {
         ExportClearSession _clearSession = new ExportClearSession();
-
-        public TextPopUp()
+        public EmailPopUp()
         {
             InitializeComponent();
         }
 
         private void sendButton_Click(object sender, RoutedEventArgs e)
         {
-            textGrid.Children.Clear();
-            textGrid.Children.Add(_clearSession);
+            emailGrid.Children.Clear();
+            emailGrid.Children.Add(_clearSession);
+
         }
 
-        private void cancelButton_click(object sender, RoutedEventArgs e)
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-            textGrid.Children.Clear();
+            emailGrid.Children.Clear();
         }
     }
 }

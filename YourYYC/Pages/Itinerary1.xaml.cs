@@ -12,32 +12,25 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace YourYYC
+namespace YourYYC.Pages
 {
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Itinerary1 : Window
+    public partial class Itinerary1 : UserControl
     {
         ExportPopUp _export = new ExportPopUp();
         EmailPopUp _email= new EmailPopUp();
         public Itinerary1()
         {
             InitializeComponent();
-            ItinerarySwitcher.pageSwitcher = this;
-            ItinerarySwitcher.Switch(new ExportPopUp());
-        }
-
-        public void Navigate(UserControl nextPage)
-        {
-            this.Content= nextPage;
         }
 
         private void exportButton_Click(object sender, RoutedEventArgs e)
         {
             //mainPanel.Children.Clear();
             //mainPanel.Children.Add(_export);
-            ItinerarySwitcher.Switch(new ExportPopUp());
+            Switcher.Switch(new ExportPopUp());
         }
     }
 }

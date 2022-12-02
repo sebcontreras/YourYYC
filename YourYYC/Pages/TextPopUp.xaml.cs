@@ -10,32 +10,32 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace YourYYC
+namespace YourYYC.Pages
 {
     /// <summary>
-    /// Interaction logic for EmailExport.xaml
+    /// Interaction logic for TextPopUp.xaml
     /// </summary>
-    public partial class EmailExport : Window
+    public partial class TextPopUp : UserControl
     {
-        public EmailExport()
+        ExportClearSession _clearSession = new ExportClearSession();
+
+        public TextPopUp()
         {
             InitializeComponent();
-
-            //EmailEntered send = new EmailEntered();
         }
 
         private void sendButton_Click(object sender, RoutedEventArgs e)
         {
-            //ExportClearSession clearSession = new ExportClearSession();
-            //Visibility = Visibility.Hidden;
-            //clearSession.Show();            
+            textGrid.Children.Clear();
+            textGrid.Children.Add(_clearSession);
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-
+            textGrid.Children.Clear();
         }
     }
 }

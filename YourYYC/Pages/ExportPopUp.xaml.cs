@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace YourYYC
+namespace YourYYC.Pages
 {
     /// <summary>
     /// Interaction logic for ExportPopUp.xaml
@@ -40,16 +40,17 @@ namespace YourYYC
             exportGrid.Children.Add(_text);
         }
 
-        private void cancelButton_click(object sender, RoutedEventArgs e)
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
             exportGrid.Children.Clear();
         }
 
         private void clearSessionButton_Click(object sender, RoutedEventArgs e)
         {
-            Preferences newSession = new Preferences();
-            Visibility = Visibility.Hidden;
-            newSession.Show();
+            // Preferences newSession = new Preferences();
+            // Visibility = Visibility.Hidden;
+            // newSession.Show();
+            Switcher.Switch(new Preferences());
         }
     }
 }

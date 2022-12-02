@@ -1,15 +1,15 @@
-﻿<Window x:Class="YourYYC.ExportClearSession"
+﻿<UserControl x:Class="YourYYC.Pages.ExportClearSession"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:YourYYC"
+        xmlns:local="clr-namespace:YourYYC.Pages"
         mc:Ignorable="d"
-        Title="ExportClearSession" Height="1024" Width="1440">
-    <Window.Background>
-        <ImageBrush ImageSource="images/export_clear_session_timeout.png"/>
-    </Window.Background>
+        Height="1024" Width="1440">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/export_clear_session_timeout.png"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="592*"/>
             <RowDefinition Height="417*"/>
@@ -26,4 +26,4 @@
         </Button>
 
     </Grid>
-</Window>
+</UserControl>

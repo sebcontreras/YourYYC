@@ -12,12 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace YourYYC
+namespace YourYYC.Pages
 {
     /// <summary>
     /// Interaction logic for ExportClearSession.xaml
     /// </summary>
-    public partial class ExportClearSession : Window
+    public partial class ExportClearSession : UserControl
     {
         public ExportClearSession()
         {
@@ -27,9 +27,10 @@ namespace YourYYC
         // starts new session by openning preferences in new window
         private void newSession(object sender, RoutedEventArgs e)
         {
-            Preferences newSession = new Preferences();
-            Visibility = Visibility.Hidden;
-            newSession.Show();
+            // Preferences newSession = new Preferences();
+            Switcher.Switch(new Preferences());
+            // Visibility = Visibility.Hidden;
+            // newSession.Show();
         }
     }
 }
