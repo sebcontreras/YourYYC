@@ -10,8 +10,67 @@
     <Canvas Height="1024" Width="1440" Cursor="Hand">
         <!-- Window Background -->
         <Canvas.Background>
-            <ImageBrush ImageSource="../images/MainBackground.png"/>
+            <ImageBrush ImageSource="../images/PageBackground.png"/>
         </Canvas.Background>
+
+        <!-- Attractions List as a Scrollable Page -->
+        <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
+            <!-- Scrollable Page BG as image -->
+            <StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Must-Try Restaurants" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Button x:Name="attraction1" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction2" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction3" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction4" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Best BBQ in the City" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Button x:Name="attraction5" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction6" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction7" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction8" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Fun for the family" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Button x:Name="attraction9" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction10" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction11" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction12" Width="305" Height="314" Margin="15">
+                        <Image Source="../images/food_sample.png"></Image>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+
+        </ScrollViewer>
 
         <!-- Top Navigation Bar -->
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
@@ -68,7 +127,5 @@
         <Button Name="ItineraryButton" Click="ItineraryButtonClick" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/ItineraryButton.png"/>
         </Button>
-        <Button Content="Button" Height="146" Canvas.Left="229" Canvas.Top="596" Width="224"/>
-
     </Canvas>
 </UserControl>
