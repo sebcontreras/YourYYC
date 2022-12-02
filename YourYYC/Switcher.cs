@@ -15,5 +15,10 @@ namespace YourYYC
         {
             pageSwitcher.Navigate(newPage);
         }
+
+        public static void GoBack()
+        {
+            pageSwitcher.Back();
+        }
     }
 }

@@ -66,6 +66,10 @@ namespace YourYYC.Pages
         {
             //Switcher.Switch(new Food());
         }
+        public void BackButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.GoBack();
+        }
     }
 }
 

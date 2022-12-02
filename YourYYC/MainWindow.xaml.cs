@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,42 +20,29 @@ namespace YourYYC
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : NavigationWindow
     {
-        // private Page foodPage;
         private Food food  = new Food();
-        public int number = 24;
-
-        // public static RoutedEventHandler
 
         public MainWindow()
         {
             InitializeComponent();
             Switcher.pageSwitcher = this;
             Switcher.Switch(new Home());
-            // foodPage= new Food();
-            // navigationService = new NavigationService();
         }
 
         public void Navigate(UserControl nextPage)
         {
-            Trace.WriteLine("MainWindow: The number is ", number.ToString());
             this.Content = nextPage;
         }
 
-        public void FoodButtonClick(object sender, RoutedEventArgs e)
+        public void Back() 
         {
-            Switcher.Switch(food);
+            if (this.CanGoBack)
+            {
+                this.GoBack();
+            }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void OnClickFood(object sender, RoutedEventArgs e)
-        {
-            //this.NavigationService.Navigate(foodPage);
-        }
     }
 }

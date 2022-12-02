@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,11 +57,6 @@ namespace YourYYC.Pages
         public void MapButtonClick(object sender, RoutedEventArgs e)
         {
             //Switcher.Switch(new Food());
-            var window = (MainWindow)Application.Current.MainWindow;
-            int num = window.number;
-            Trace.WriteLine("Home: The number is ", num.ToString());
-            window.number++;
-            Console.WriteLine("Home: The number is ", num.ToString());
         }
         public void GettingThereButtonClick(object sender, RoutedEventArgs e)
         {
@@ -69,6 +65,10 @@ namespace YourYYC.Pages
         public void ItineraryButtonClick(object sender, RoutedEventArgs e)
         {
             //Switcher.Switch(new Food());
+        }
+        public void BackButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.GoBack();
         }
     }
 }
