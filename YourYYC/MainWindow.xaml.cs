@@ -22,7 +22,6 @@ namespace YourYYC
     /// </summary>
     public partial class MainWindow : NavigationWindow
     {
-        private Food food  = new Food();
 
         public MainWindow()
         {
