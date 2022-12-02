@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="YourYYC.EmailPopUp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YourYYC"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Background>
+        <ImageBrush ImageSource="images/itinerary_email_export.png"/>
+    </UserControl.Background>
+    <Grid Name="emailGrid">
+        <Button Name="CancelButton" Margin="755,10,10,410" Click="cancelButton_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image Source="images/cancel.png" Height="30" Width="40"/>
+        </Button>
+        <Button Name="SendButton" Margin="554,122,0,282" Click="sendButton_Click" HorizontalAlignment="Left" Width="82" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="179.75"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Image Source="images/send.png" Height="37"/>
+        </Button>
+        <TextBox x:Name="EmailTextBox" Text="Enter your email" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="284,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" Height="24" Background="LightGray"/>
+    </Grid>
+</UserControl>
