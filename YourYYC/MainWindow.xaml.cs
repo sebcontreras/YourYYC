@@ -23,8 +23,7 @@ namespace YourYYC
     {
         // private Page foodPage;
         private Food food  = new Food();
-        // private Home home = new Home();
-        // private NavigationService navigationService;
+        public int number = 24;
 
         // public static RoutedEventHandler
 
@@ -39,7 +38,8 @@ namespace YourYYC
 
         public void Navigate(UserControl nextPage)
         {
-            this.Content= nextPage;
+            Trace.WriteLine("MainWindow: The number is ", number.ToString());
+            this.Content = nextPage;
         }
 
         public void FoodButtonClick(object sender, RoutedEventArgs e)

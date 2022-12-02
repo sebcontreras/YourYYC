@@ -56,6 +56,11 @@ namespace YourYYC.Pages
         public void MapButtonClick(object sender, RoutedEventArgs e)
         {
             //Switcher.Switch(new Food());
+            var window = (MainWindow)Application.Current.MainWindow;
+            int num = window.number;
+            Trace.WriteLine("Home: The number is ", num.ToString());
+            window.number++;
+            Console.WriteLine("Home: The number is ", num.ToString());
         }
         public void GettingThereButtonClick(object sender, RoutedEventArgs e)
         {
