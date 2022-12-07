@@ -22,6 +22,20 @@ namespace YourYYC
     /// </summary>
     public partial class MainWindow : NavigationWindow
     {
+        // All of the possible preferences
+        public List<string> preferences = new List<string> {"Sightseeing", "Art", "Nature", "Science", "History", "Shopping",
+            "Party & Music", "Road Trips", "Family Friendly" };
+
+        // When a user selects a preference, it will be added to this list
+        public List<string> selectedPreferences = new List<string>();
+
+        /**
+         * Possible logic for using preferences to populate
+         * 
+         * Loop through preferences:
+         *  if selectedPreferences has the current preference:
+         *      add this section to events page
+         */
 
         public MainWindow()
         {
