@@ -17,7 +17,7 @@ namespace YourYYC
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Events : Window
+    public partial class Events : UserControl
     {
         public Events()
         {

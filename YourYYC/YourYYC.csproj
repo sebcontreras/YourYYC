@@ -10,19 +10,34 @@
 
 	<ItemGroup>
 		<None Remove="images\AddToItineraryIcon.png" />
+		<None Remove="images\add_to_itinerary_icon.png" />
 		<None Remove="images\Attractions.png" />
 		<None Remove="images\BackButton.png" />
 		<None Remove="images\calgary.png" />
+		<None Remove="images\Calgary_Tower_Tile_Itinerary.png" />
+		<None Remove="images\calgary_zoo_tile.png" />
+		<None Remove="images\cancel.png" />
+		<None Remove="images\charcut_tile.png" />
 		<None Remove="images\CityMapButton.png" />
+		<None Remove="images\clear_all.png" />
+		<None Remove="images\clear_session.png" />
+		<None Remove="images\email_export.png" />
 		<None Remove="images\Events.png" />
 		<None Remove="images\EventsPageTitle.png" />
 		<None Remove="images\event_sample.png" />
+		<None Remove="images\export.png" />
+		<None Remove="images\export_clear_session_timeout.png" />
+		<None Remove="images\Export_Popup.png" />
 		<None Remove="images\find_what_you_love.png" />
 		<None Remove="images\food_sample.png" />
 		<None Remove="images\GettingThereButton.png" />
 		<None Remove="images\HelpButton.png" />
+		<None Remove="images\heritage_park_tile.png" />
 		<None Remove="images\HomeButton.png" />
+		<None Remove="images\itinerary_email_export.png" />
+		<None Remove="images\itinerary_text_export.png" />
 		<None Remove="images\LocalEatsPageTitle.png" />
+		<None Remove="images\Peace_Bridge_Tile_Itinerary.png" />
 		<None Remove="images\PreferencesDialogBG.png" />
 		<None Remove="images\ItineraryButton.png" />
 		<None Remove="images\LanguageButton.png" />
@@ -34,25 +49,44 @@
 		<None Remove="images\AttractionsPageTitle.png" />
 		<None Remove="images\PageBackground.png" />
 		<None Remove="images\PreferencesPageBG.png" />
+		<None Remove="images\resume_current_session.png" />
 		<None Remove="images\ScrollPageBackground.png" />
+		<None Remove="images\send.png" />
+		<None Remove="images\start_new_session.png" />
+		<None Remove="images\text_export.png" />
 		<None Remove="images\TitleBar.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Resource Include="images\AddToItineraryIcon.png" />
+		<Resource Include="images\add_to_itinerary_icon.png" />
 		<Resource Include="images\Attractions.png" />
 		<Resource Include="images\BackButton.png" />
 		<Resource Include="images\calgary.png" />
+		<Resource Include="images\Calgary_Tower_Tile_Itinerary.png" />
+		<Resource Include="images\calgary_zoo_tile.png" />
+		<Resource Include="images\cancel.png" />
+		<Resource Include="images\charcut_tile.png" />
 		<Resource Include="images\CityMapButton.png" />
+		<Resource Include="images\clear_all.png" />
+		<Resource Include="images\clear_session.png" />
+		<Resource Include="images\email_export.png" />
 		<Resource Include="images\Events.png" />
 		<Resource Include="images\event_sample.png" />
+		<Resource Include="images\export.png" />
+		<Resource Include="images\export_clear_session_timeout.png" />
+		<Resource Include="images\Export_Popup.png" />
 		<Resource Include="images\find_what_you_love.png" />
 		<Resource Include="images\food_sample.png" />
 		<Resource Include="images\GettingThereButton.png" />
 		<Resource Include="images\HelpButton.png" />
+		<Resource Include="images\heritage_park_tile.png" />
 		<Resource Include="images\HomeButton.png" />
 		<Resource Include="images\EventsPageTitle.png" />
+		<Resource Include="images\itinerary_email_export.png" />
+		<Resource Include="images\itinerary_text_export.png" />
 		<Resource Include="images\MenuBottomBar.png" />
+		<Resource Include="images\Peace_Bridge_Tile_Itinerary.png" />
 		<Resource Include="images\PreferencesDialogBG.png" />
 		<Resource Include="images\ItineraryButton.png" />
 		<Resource Include="images\LanguageButton.png" />
@@ -64,8 +98,12 @@
 		<Resource Include="images\AttractionsPageTitle.png" />
 		<Resource Include="images\PageBackground.png" />
 		<Resource Include="images\PreferencesPageBG.png" />
+		<Resource Include="images\resume_current_session.png" />
 		<Resource Include="images\ScrollPageBackground.png" />
 		<Resource Include="images\PreferencesButton.png" />
+		<Resource Include="images\send.png" />
+		<Resource Include="images\start_new_session.png" />
+		<Resource Include="images\text_export.png" />
 		<Resource Include="images\TitleBar.png" />
 	</ItemGroup>
 

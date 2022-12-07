@@ -9,23 +9,23 @@
         >
     <Canvas Margin="30">
         <Canvas.Background>
-            <ImageBrush ImageSource="images/calgary.png"/>
+            <ImageBrush ImageSource="../images/calgary.png"/>
         </Canvas.Background>
 
         <Rectangle HorizontalAlignment="Center" Height="70" Stroke="Black" VerticalAlignment="Top" Width="1380" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
         <Button Name="BackButton" Margin="30,6,1300,16" BorderBrush="{x:Null}" Foreground="{x:Null}">
-            <Image Source="images/back_button.png"/>
+            <Image Source="../images/back_button.png"/>
         </Button>
         <Button Name="HomeButton" Margin="100,6,1215,16" BorderBrush="{x:Null}">
-            <Image Source="images/small_home_button.png"/>
+            <Image Source="../images/small_home_button.png"/>
         </Button>
         <Rectangle HorizontalAlignment="Left" Height="51" Margin="201,10,0,0" VerticalAlignment="Top" Width="4" Fill="#FFBDBDBD" RadiusX="1" RadiusY="1"/>
         <TextBlock Text="Itinerary1" FontWeight="Bold" Margin="236,13,975,23" FontFamily="Calibri" FontSize="36" Foreground="#FFD94539"/>
         <Button Name="LanguageButton" Margin="1049,10,282,16">
-            <Image Source="images/language_preferences.png"/>
+            <Image Source="../images/language_preferences.png"/>
         </Button>
         <Button Name="HelpButton" Margin="1119,8,213,19">
-            <Image Source="images/help_button.png"/>
+            <Image Source="../images/help_button.png"/>
         </Button>
         <Button Content="Preferences" HorizontalAlignment="Left" Height="46" Margin="1203,12,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
             <Button.Resources>
@@ -41,18 +41,18 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="1347">
                     <TextBlock Text="You have # items saved" FontSize="36" FontWeight="Bold" Width="1058" Margin="15,15,15,5"/>
                     <Button x:Name="clear_all" Width="131" Height="41">
-                        <Image Source="images/clear_all.png" Width="128" Height="41"></Image>
+                        <Image Source="../images/clear_all.png" Width="128" Height="41"></Image>
                     </Button>
                     <Button x:Name="export" Width="124" Height="41" Click="exportButton_Click">
-                        <Image Source="images/export.png" Width="113" Height="41"/>
+                        <Image Source="../images/export.png" Width="113" Height="41"/>
                     </Button>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Button x:Name="attraction1" Width="305" Height="314" Margin="15">
-                        <Image Source="images/Calgary_Tower_Tile_Itinerary.png"></Image>
+                        <Image Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
                     </Button>
                     <Button x:Name="attraction2" Width="305" Height="314" Margin="15">
-                        <Image Source="images/Peace_Bridge_Tile_Itinerary.png"></Image>
+                        <Image Source="../images/Peace_Bridge_Tile_Itinerary.png"></Image>
                     </Button>                    
                 </StackPanel>
                 <StackPanel>
@@ -60,27 +60,27 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Button x:Name="attraction5" Width="305" Height="314" Margin="15">
-                        <Image Source="images/charcut_tile.png"></Image>
+                        <Image Source="../images/charcut_tile.png"></Image>
                     </Button>
                     <Button x:Name="attraction6" Width="305" Height="314" Margin="15">
-                        <Image Source="images/calgary_zoo_tile.png"></Image>
+                        <Image Source="../images/calgary_zoo_tile.png"></Image>
                     </Button>
                     <Button x:Name="attraction7" Width="305" Height="314" Margin="15">
-                        <Image Source="images/heritage_park_tile.png"></Image>
+                        <Image Source="../images/heritage_park_tile.png"></Image>
                     </Button>                    
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Button x:Name="attraction9" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
+                        <Image Source="../images/event_sample.png"></Image>
                     </Button>
                     <Button x:Name="attraction10" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
+                        <Image Source="../images/event_sample.png"></Image>
                     </Button>
                     <Button x:Name="attraction11" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
+                        <Image Source="../images/event_sample.png"></Image>
                     </Button>
                     <Button x:Name="attraction12" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
+                        <Image Source="../images/event_sample.png"></Image>
                     </Button>
                 </StackPanel>
             </StackPanel>
