@@ -27,6 +27,7 @@ namespace YourYYC
             "Party & Music", "Road Trips", "Family Friendly" };
 
         // When a user selects a preference, it will be added to this list
+        // eg. selectedPreferences might have {"Art", "Road Trips"}
         public List<string> selectedPreferences = new List<string>();
 
         /**
