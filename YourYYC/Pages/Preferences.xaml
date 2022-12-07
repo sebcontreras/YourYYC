@@ -109,7 +109,7 @@
         <!--I'm interested in options-->
 
         <!-- Sightseeing Button -->
-        <Button Content="Sightseeing" Height="46" Width="190" Canvas.Left="55" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="SightseeingButton" Click="SightseeingButtonClick" Content="Sightseeing" Height="46" Width="190" Canvas.Left="55" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>

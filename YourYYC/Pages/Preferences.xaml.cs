@@ -25,6 +25,29 @@ namespace YourYYC.Pages
             InitializeComponent();
         }
 
+        // Preferences Buttons
+
+        public void SightseeingButtonClick(object sender, RoutedEventArgs e)
+        {
+            var window = (MainWindow)Application.Current.MainWindow;
+            List<string> preferences = window.selectedPreferences;
+            
+            if (window.selectedPreferences.Contains("Sightseeing"))
+            {
+                SightseeingButton.Background = (Brush)new BrushConverter().ConvertFromString("#FFEDEDED");
+                SightseeingButton.Foreground = new SolidColorBrush(Colors.Black);
+
+                preferences.Remove("Sightseeing");
+            } else {
+                SightseeingButton.Background = (Brush)new BrushConverter().ConvertFromString("#D94539");
+                SightseeingButton.Foreground = new SolidColorBrush(Colors.White);
+
+                preferences.Add("Sightseeing");
+            }
+        }
+
+        // Dock Buttons
+
         public void HomeButtonClick(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new Home());
