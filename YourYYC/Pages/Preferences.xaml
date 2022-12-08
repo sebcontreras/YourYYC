@@ -109,7 +109,7 @@
         <!--I'm interested in options-->
 
         <!-- Sightseeing Button -->
-        <Button x:Name="SightseeingButton" Click="SightseeingButtonClick" Content="Sightseeing" Height="46" Width="190" Canvas.Left="55" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="Sightseeing" Click="SelectPreferenceClick" Content="Sightseeing" Height="46" Width="190" Canvas.Left="55" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -118,7 +118,7 @@
         </Button>
 
         <!-- Art Button -->
-        <Button Content="Art" Height="46" Width="190" Canvas.Left="270" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="Art" Click="SelectPreferenceClick" Content="Art" Height="46" Width="190" Canvas.Left="270" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>

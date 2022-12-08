@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Automation;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -20,29 +21,49 @@ namespace YourYYC.Pages
     /// </summary>
     public partial class Preferences : UserControl
     {
+        MainWindow window;
+        List<string> preferences;
         public Preferences()
         {
             InitializeComponent();
+            window = (MainWindow)Application.Current.MainWindow;
+            preferences = window.selectedPreferences;
+            SetPreferences();
         }
 
-        // Preferences Buttons
-
-        public void SightseeingButtonClick(object sender, RoutedEventArgs e)
+        public void SetPreferences()
         {
-            var window = (MainWindow)Application.Current.MainWindow;
-            List<string> preferences = window.selectedPreferences;
-            
-            if (window.selectedPreferences.Contains("Sightseeing"))
+            foreach(string s in preferences)
             {
-                SightseeingButton.Background = (Brush)new BrushConverter().ConvertFromString("#FFEDEDED");
-                SightseeingButton.Foreground = new SolidColorBrush(Colors.Black);
+                Button btn = this.FindName(s) as Button;
+                PreferenceOnStyle(btn);
+            }
 
-                preferences.Remove("Sightseeing");
+        }
+
+        public void PreferenceOnStyle(Button btn)
+        {
+            btn.Background = (Brush)new BrushConverter().ConvertFromString("#D94539");
+            btn.Foreground = new SolidColorBrush(Colors.White);
+        }
+
+        public void PreferenceOffStyle(Button btn)
+        {
+            btn.Background = (Brush)new BrushConverter().ConvertFromString("#FFEDEDED");
+            btn.Foreground = new SolidColorBrush(Colors.Black);
+        }
+
+        public void SelectPreferenceClick(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            
+            if (window.selectedPreferences.Contains(btn.Content))
+            {
+                PreferenceOffStyle(btn);
+                preferences.Remove(btn.Content.ToString());
             } else {
-                SightseeingButton.Background = (Brush)new BrushConverter().ConvertFromString("#D94539");
-                SightseeingButton.Foreground = new SolidColorBrush(Colors.White);
-
-                preferences.Add("Sightseeing");
+                PreferenceOnStyle(btn);
+                preferences.Add(btn.Content.ToString());
             }
         }
 
