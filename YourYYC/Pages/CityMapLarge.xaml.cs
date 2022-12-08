@@ -10,27 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace YourYYC.Pages
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for CityMapLarge.xaml
     /// </summary>
-    public partial class Itinerary1 : UserControl
+    public partial class CityMapLarge : UserControl
     {
-        //ExportPopUp _export = new ExportPopUp();
-        //EmailPopUp _email= new EmailPopUp();
-        public Itinerary1()
+        public CityMapLarge()
         {
             InitializeComponent();
-        }
-
-        private void exportButton_Click(object sender, RoutedEventArgs e)
-        {
-            //mainPanel.Children.Clear();
-            //mainPanel.Children.Add(_export);
-            Switcher.Switch(new ExportPopUp());
         }
 
         public void HomeButtonClick(object sender, RoutedEventArgs e)
@@ -64,7 +56,7 @@ namespace YourYYC.Pages
         }
         public void MapButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new CityMapLarge());
         }
         public void GettingThereButtonClick(object sender, RoutedEventArgs e)
         {
@@ -72,11 +64,28 @@ namespace YourYYC.Pages
         }
         public void ItineraryButtonClick(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new Itinerary1());
+            //Switcher.Switch(new Food());
         }
         public void BackButtonClick(object sender, RoutedEventArgs e)
         {
             Switcher.GoBack();
+        }
+
+        private void DowntownPinClick(object sender, RoutedEventArgs e)
+        {
+            PopUp.Visibility = Visibility.Visible;
+            DowntownSelected.Visibility = Visibility.Visible;
+        }
+
+        private void InglewoodPinClick(object sender, RoutedEventArgs e)
+        {
+            PopUp.Visibility = Visibility.Visible;
+            InglewoodSelected.Visibility = Visibility.Visible;
+        }
+
+        private void ZoomInClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new CityMapMedium());
         }
     }
 }
