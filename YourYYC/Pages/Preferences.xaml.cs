@@ -57,7 +57,7 @@ namespace YourYYC.Pages
         {
             Button btn = (Button)sender;
             
-            if (window.selectedPreferences.Contains(btn.Content))
+            if (window.selectedPreferences.Contains(btn.Name.ToString()))
             {
                 PreferenceOffStyle(btn);
                 preferences.Remove(btn.Name.ToString());
@@ -65,11 +65,6 @@ namespace YourYYC.Pages
                 PreferenceOnStyle(btn);
                 preferences.Add(btn.Name.ToString());
             }
-        }
-
-        public void DoneClick(object sender, RoutedEventArgs e)
-        {
-            Switcher.GoBack();
         }
 
         // Dock Buttons
