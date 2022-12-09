@@ -24,5 +24,50 @@ namespace YourYYC.Pages
         {
             InitializeComponent();
         }
+        public void HomeButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Home());
+        }
+        public void LanguageButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new LanguageOption());
+        }
+
+        public void HelpButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Help());
+        }
+        public void PreferencesButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Preferences());
+        }
+        public void AttractionsButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Attractions());
+        }
+        public void EventsButtonClick(object sender, RoutedEventArgs e)
+        {
+            //Switcher.Switch(new Food());    // PLEASE ADD THIS 
+        }
+        public void FoodButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Food());
+        }
+        public void MapButtonClick(object sender, RoutedEventArgs e)
+        {
+            //Switcher.Switch(new Food()); // PLEASE ADD THIS
+        }
+        public void GettingThereButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new GettingThere());
+        }
+        public void ItineraryButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Itinerary1());
+        }
+        public void BackButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.GoBack();
+        }
     }
 }
