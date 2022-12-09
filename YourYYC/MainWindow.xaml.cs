@@ -24,7 +24,7 @@ namespace YourYYC
     {
         // All of the possible preferences
         public List<string> preferences = new List<string> {"Sightseeing", "Art", "Nature", "Science", "History", "Shopping",
-            "Party & Music", "Road Trips", "Family Friendly" };
+            "PartyMusic", "RoadTrips", "FamilyFriendly" };
 
         // When a user selects a preference, it will be added to this list
         // eg. selectedPreferences might have {"Art", "Road Trips"}
