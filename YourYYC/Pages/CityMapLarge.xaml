@@ -93,7 +93,17 @@
             <ScrollViewer.Background>
                 <ImageBrush ImageSource="../images/SideBar.png"/>
             </ScrollViewer.Background>
+            <Grid>
+                <Button Name="SideBarAttractions" Margin="18,20,258,541" BorderBrush="Transparent" Background="Transparent" Click="SideBarAttractionsClick"/>
+                <Button Name="SideBarEvents" Margin="147,20,129,541" BorderBrush="Transparent" Background="Transparent" Click="SideBarEventsClick"/>
+                <Button Name="SideBarFood" Margin="276,20,0,541" BorderBrush="Transparent" Background="Transparent" Click="SideBarFoodClick"/>
 
+                <StackPanel Margin="0,81,0,0">
+                    <Image Name="SideBarAttractionsTile" Source="../images/TelusSparkTile.png" Height="412" Width="344" Visibility="Visible"/>
+                    <Image Name="SideBarEventsTile" Source="../images/TelusSparkTile.png" Height="412" Width="344" Visibility="Visible"/>
+                    <Image Name="SideBarFoodTile" Source="../images/TelusSparkTile.png" Height="412" Width="344" Visibility="Visible"/>
+                </StackPanel>
+            </Grid>
         </ScrollViewer>
 
         <!-- Zoom In Button -->
