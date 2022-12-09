@@ -49,9 +49,9 @@ namespace YourYYC.Pages
 
         public void SetAttractionList()
         {
-            for(int i = 0; i < attractions.Count; i++)
+            attractionList.Clear();
+            for (int i = 0; i < attractions.Count; i++)
             {
-                attractionList.Clear();
                 if (preferences.Contains(attractions[i][0]))
                 {
                     attractionList.Add(attractions[i]);
