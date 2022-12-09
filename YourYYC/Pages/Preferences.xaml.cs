@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace YourYYC.Pages
 {
@@ -23,12 +24,17 @@ namespace YourYYC.Pages
     {
         MainWindow window;
         List<string> preferences;
+        List<List<string>> attractions;
+        List<List<string>> attractionList;
         public Preferences()
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
             preferences = window.selectedPreferences;
+            attractions = window.attractions;
+            attractionList = window.attractionList;
             SetPreferences();
+            SetAttractionList();
         }
 
         public void SetPreferences()
@@ -39,6 +45,23 @@ namespace YourYYC.Pages
                 PreferenceOnStyle(btn);
             }
 
+        }
+
+        public void SetAttractionList()
+        {
+            for(int i = 0; i < attractions.Count; i++)
+            {
+                attractionList.Clear();
+                if (preferences.Contains(attractions[i][0]))
+                {
+                    attractionList.Add(attractions[i]);
+                }
+            }
+
+            for (int i = 0; i < attractionList.Count; i++)
+            {
+                Trace.WriteLine(attractionList[i][0]);
+            }
         }
 
         public void PreferenceOnStyle(Button btn)

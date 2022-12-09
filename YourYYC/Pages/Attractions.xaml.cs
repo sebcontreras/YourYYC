@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,10 +21,21 @@ namespace YourYYC.Pages
     /// </summary>
     public partial class Attractions : UserControl
     {
+        MainWindow window;
+        List<List<string>> attractionList;
         public Attractions()
         {
             InitializeComponent();
+            window = (MainWindow)Application.Current.MainWindow;
+            attractionList = window.attractionList;
+            SetTiles();
         }
+
+        public void SetTiles()
+        {
+
+        }
+
 
         public void HomeButtonClick(object sender, RoutedEventArgs e)
         {

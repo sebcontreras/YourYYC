@@ -20,6 +20,7 @@
                     <TextBlock Text="Recommended for you" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <!-- for loop that updates x and y -->
                     <Button x:Name="attraction1" Width="305" Height="314" Margin="15">
                         <Image Source="../images/event_sample.png"></Image>
                     </Button>
