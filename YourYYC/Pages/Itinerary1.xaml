@@ -77,31 +77,46 @@
                     <Button Name="ClearAll" HorizontalAlignment="Left" Margin="1081,10,0,0" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Height="39" Width="113"/>
                     <Button Name="Export" HorizontalAlignment="Left" Margin="1215,10,0,0" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Height="39" Width="114" Click="exportButton_Click"/>
                 </Grid>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction1" Width="265" Height="314" Margin="15">
-                        <Image Source="../images/TelusSparkTile.png"></Image>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Button x:Name="attraction1" Width="265" Height="314" Margin="15" Visibility="Visible">
+                        <Image x:Name="attraction1Image" Source="../images/TelusSparkTile.png"></Image>
                     </Button>
-                    <Button x:Name="attraction2" Width="261" Height="314" Margin="15">
-                        <Image Source="../images/TelusSparkTile.png"></Image>
+                    <Button x:Name="attraction2" Width="261" Height="314" Margin="15"  Visibility="Visible">
+                        <Image x:Name="attraction2Image" Source="../images/TelusSparkTile.png"></Image>
                     </Button>
-                    <Button x:Name="attraction3" Width="261" Height="314" Margin="15">
-                        <Image Source="../images/TelusSparkTile.png"></Image>
+                    <Button x:Name="attraction3" Width="261" Height="314" Margin="15"  Visibility="Visible">
+                        <Image x:Name="attraction3Image" Source="../images/TelusSparkTile.png"></Image>
                     </Button>
-                    <Button x:Name="attraction4" Width="263" Height="314" Margin="15">
-                        <Image Source="../images/TelusSparkTile.png"></Image>
+                    <Button x:Name="test" Width="261" Height="314" Margin="15" Visibility="Visible">
+                        <Image x:Name="attraction4Image" Source="../images/TelusSparkTile.png"></Image>
+                    </Button>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Button x:Name="attraction5" Width="265" Height="314" Margin="15" Visibility="Collapsed">
+                        <Image x:Name="attraction5Image" Source="../images/TelusSparkTile.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction6" Width="261" Height="314" Margin="15"  Visibility="Collapsed">
+                        <Image x:Name="attraction6Image" Source="../images/TelusSparkTile.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction7" Width="261" Height="314" Margin="15"  Visibility="Collapsed">
+                        <Image x:Name="attraction7Image" Source="../images/TelusSparkTile.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction8" Width="263" Height="314" Margin="15" Visibility="Collapsed">
+                        <Image x:Name="attraction8Image" Source="../images/TelusSparkTile.png"></Image>
                     </Button>
                 </StackPanel>
                 <StackPanel>
                     <TextBlock Text="You may also like" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction5" Width="266" Height="314" Margin="15">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Button x:Name="attraction9" Width="266" Height="314" Margin="15">
                         <Image Source="../images/TelusSparkTile.png"></Image>
                     </Button>
-                    <Button x:Name="attraction6" Width="263" Height="314" Margin="15">
+                    <Button x:Name="attraction10" Width="263" Height="314" Margin="15">
                         <Image Source="../images/TelusSparkTile.png"></Image>
                     </Button>
-                    <Button x:Name="attraction7" Width="263" Height="314" Margin="15">
+                    <Button x:Name="attraction11" Width="263" Height="314" Margin="15">
                         <Image Source="../images/TelusSparkTile.png"></Image>
                     </Button>
                 </StackPanel>

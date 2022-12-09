@@ -19,11 +19,21 @@ namespace YourYYC.Pages
     /// </summary>
     public partial class Itinerary1 : UserControl
     {
-        //ExportPopUp _export = new ExportPopUp();
-        //EmailPopUp _email= new EmailPopUp();
         public Itinerary1()
         {
             InitializeComponent();
+
+            // may need to change conditiion depending how saved items are stored
+            for(int i = 0; i < 8; i++)
+            {                
+                String itemName = "attraction" + i.ToString();
+                var newItem = (Button)this.FindName(itemName);
+                newItem.Visibility = Visibility.Visible;
+
+                // add later with images
+                //var newItemImage = (Button)this.FindName(itemName + "Image");
+                //newItemImage.SourceUpdated
+            }
         }
 
         private void exportButton_Click(object sender, RoutedEventArgs e)
