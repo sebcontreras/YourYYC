@@ -31,12 +31,12 @@ namespace YourYYC.Pages
         }
         public void LanguageButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new LanguageOption());
         }
 
         public void HelpButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new Help());
         }
         public void PreferencesButtonClick(object sender, RoutedEventArgs e)
         {
@@ -60,7 +60,7 @@ namespace YourYYC.Pages
         }
         public void GettingThereButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new GettingThere());
         }
         public void ItineraryButtonClick(object sender, RoutedEventArgs e)
         {
