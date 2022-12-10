@@ -1,110 +1,128 @@
 ﻿<UserControl x:Class="YourYYC.Pages.Itinerary1"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:YourYYC.Pages"
-        mc:Ignorable="d"
-        Height="1024" Width="1440"
-        >
-    <Canvas Margin="30">
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YourYYC.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Canvas Height="1024" Width="1440" Cursor="Hand">
+        <!-- Window Background -->
         <Canvas.Background>
-            <ImageBrush ImageSource="images/calgary.png"/>
+            <ImageBrush ImageSource="../images/PageBackground.png"/>
         </Canvas.Background>
 
-        <Rectangle HorizontalAlignment="Center" Height="70" Stroke="Black" VerticalAlignment="Top" Width="1380" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
-        <Button Name="BackButton" Margin="30,6,1300,16" BorderBrush="{x:Null}" Foreground="{x:Null}">
-            <Image Source="images/back_button.png"/>
-        </Button>
-        <Button Name="HomeButton" Margin="100,6,1215,16" BorderBrush="{x:Null}">
-            <Image Source="images/small_home_button.png"/>
-        </Button>
-        <Rectangle HorizontalAlignment="Left" Height="51" Margin="201,10,0,0" VerticalAlignment="Top" Width="4" Fill="#FFBDBDBD" RadiusX="1" RadiusY="1"/>
-        <TextBlock Text="Itinerary1" FontWeight="Bold" Margin="236,13,975,23" FontFamily="Calibri" FontSize="36" Foreground="#FFD94539"/>
-        <Button Name="LanguageButton" Margin="1049,10,282,16">
-            <Image Source="images/language_preferences.png"/>
-        </Button>
-        <Button Name="HelpButton" Margin="1119,8,213,19">
-            <Image Source="images/help_button.png"/>
-        </Button>
-        <Button Content="Preferences" HorizontalAlignment="Left" Height="46" Margin="1203,12,0,0" VerticalAlignment="Top" Width="151" Background="#FFD94539" FontFamily="Calibri" FontSize="26" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
-            <Button.Resources>
-                <Style TargetType="Border">
-                    <Setter Property="CornerRadius" Value="10"/>
-                </Style>
-            </Button.Resources>
+        <!-- Top Navigation Bar -->
+        <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
+
+        <!-- Home Button / Logo -->
+        <Button Name="MainHomeButton" Click="HomeButtonClick" Height="50" Width="222" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="40" Background="Transparent">
+            <Image Source="../images/Branding.png"/>
         </Button>
 
-        <ScrollViewer HorizontalAlignment="Left" Height="694" Margin="0,15,0,0" VerticalAlignment="Top" Width="1370" Background="#D8D9D9D9" Grid.Row="1">
-            <StackPanel Name="mainPanel">
+        <!-- Language Button -->
+        <Button Name="LanguageButton" Click="LanguageButtonClick" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/LanguageButton.png"/>
+        </Button>
 
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Width="1347">
-                    <TextBlock Text="You have # items saved" FontSize="36" FontWeight="Bold" Width="1058" Margin="15,15,15,5"/>
-                    <Button x:Name="clear_all" Width="131" Height="41">
-                        <Image Source="images/clear_all.png" Width="128" Height="41"></Image>
+        <!-- Help Button -->
+        <Button Name="HelpButton" Click="HelpButtonClick" Height="30" Width="30" Canvas.Left="1160" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/HelpButton.png"/>
+        </Button>
+
+        <!-- Preferences Button -->
+        <Button Name="PreferencesButton" Click="PreferencesButtonClick" Height="50" Width="165" Canvas.Left="1220" Canvas.Top="40" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/PreferencesButton.png"/>
+        </Button>
+
+        <!-- Navigation Bar -->
+        <Rectangle Height="120" Width ="1390" Canvas.Left="25" Canvas.Bottom="25" Canvas.Right="25" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
+
+        <!-- Places to see button -->
+        <Button Name="PlacesToSeeButton" Click="AttractionsButtonClick" Height="80" Width="118" Canvas.Left="111" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/PlacesToSeeButton.png"/>
+        </Button>
+
+        <!-- Local Events button -->
+        <Button Name="LocalEventsButton" Click="EventsButtonClick" Height="80" Width="118" Canvas.Left="335" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/LocalEventsButton.png"/>
+        </Button>
+
+        <!-- Local Eats button -->
+        <Button Name="LocalEatsButton" Click="FoodButtonClick" Height="83" Width="91" Canvas.Left="565" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/LocalEatsButton.png"/>
+        </Button>
+
+        <!-- City Map button -->
+        <Button Name="CityMapButton" Click="MapButtonClick" Height="83" Width="83" Canvas.Left="789" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/CityMapButton.png"/>
+        </Button>
+
+        <!-- Getting There button -->
+        <Button Name="GettingThereButton" Click="GettingThereButtonClick" Height="83" Width="125" Canvas.Left="988" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/GettingThereButton.png"/>
+        </Button>
+
+        <!-- Itinerary button -->
+        <Button Name="ItineraryButton" Click="ItineraryButtonClick" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+            <Image Source="../images/ItineraryButton.png"/>
+        </Button>
+
+        <!-- Scroll Section -->
+        <ScrollViewer Height="706" Width="1360" Canvas.Top="139" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="25">
+            <StackPanel>
+                <Grid>
+                    <TextBlock Text="You have # items saved" FontSize="36" FontWeight="Bold" Margin="10,10,923,10"/>
+                    <Image Source="../images/ClearAllExport.png" Height="45" Margin="1017,10,71,13"/>
+                    <Button Name="ClearAll" HorizontalAlignment="Left" Margin="1022,10,0,0" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Height="39" Width="113" Click="ClearAllClick"/>
+                    <Button Name="Export" HorizontalAlignment="Left" Margin="1155,10,0,0" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Height="39" Width="114" Click="exportButton_Click"/>
+                </Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Button x:Name="attraction1" Width="265" Height="314" Margin="15" Visibility="Visible">
+                        <Image x:Name="attraction1Image" Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
                     </Button>
-                    <Button x:Name="export" Width="124" Height="41" Click="exportButton_Click">
-                        <Image Source="images/export.png" Width="113" Height="41"/>
+                    <Button x:Name="attraction2" Width="261" Height="314" Margin="15"  Visibility="Visible">
+                        <Image x:Name="attraction2Image" Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
                     </Button>
+                    <Button x:Name="attraction3" Width="261" Height="314" Margin="15"  Visibility="Visible">
+                        <Image x:Name="attraction3Image" Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
+                    </Button>
+                    <Button x:Name="test" Width="261" Height="314" Margin="15" Visibility="Visible">
+                        <Image x:Name="attraction4Image" Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
+                    </Button>
+
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction1" Width="305" Height="314" Margin="15">
-                        <Image Source="images/Calgary_Tower_Tile_Itinerary.png"></Image>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                    <Button x:Name="attraction5" Width="265" Height="314" Margin="15" Visibility="Collapsed">
+                        <Image x:Name="attraction5Image" Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
                     </Button>
-                    <Button x:Name="attraction2" Width="305" Height="314" Margin="15">
-                        <Image Source="images/Peace_Bridge_Tile_Itinerary.png"></Image>
-                    </Button>                    
+                    <Button x:Name="attraction6" Width="261" Height="314" Margin="15"  Visibility="Collapsed">
+                        <Image x:Name="attraction6Image" Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction7" Width="261" Height="314" Margin="15"  Visibility="Collapsed">
+                        <Image x:Name="attraction7Image" Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
+                    </Button>
+                    <Button x:Name="attraction8" Width="263" Height="314" Margin="15" Visibility="Collapsed">
+                        <Image x:Name="attraction8Image" Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
+                    </Button>
                 </StackPanel>
                 <StackPanel>
                     <TextBlock Text="You may also like" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction5" Width="305" Height="314" Margin="15">
-                        <Image Source="images/charcut_tile.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction6" Width="305" Height="314" Margin="15">
-                        <Image Source="images/calgary_zoo_tile.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction7" Width="305" Height="314" Margin="15">
-                        <Image Source="images/heritage_park_tile.png"></Image>
-                    </Button>                    
-                </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction9" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
+                    <Button x:Name="attraction9" Width="266" Height="314" Margin="15">
+                        <Image Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
                     </Button>
-                    <Button x:Name="attraction10" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
+                    <Button x:Name="attraction10" Width="263" Height="314" Margin="15">
+                        <Image Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
                     </Button>
-                    <Button x:Name="attraction11" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction12" Width="305" Height="314" Margin="15">
-                        <Image Source="images/event_sample.png"></Image>
+                    <Button x:Name="attraction11" Width="263" Height="314" Margin="15">
+                        <Image Source="../images/Calgary_Tower_Tile_Itinerary.png"></Image>
                     </Button>
                 </StackPanel>
-            </StackPanel>
 
+            </StackPanel>
         </ScrollViewer>
 
-        <Rectangle HorizontalAlignment="Center" Height="123" Stroke="Black" VerticalAlignment="Top" Width="1380" Margin="0,745,0,0" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25" Grid.Row="1"/>
-        <Button Name="PlacesToSeeButton" Margin="100,755,1160,10" Grid.Row="1">
-            <Image Source="images/placesToSee.png" Width="120"></Image>
-        </Button>
-        <Button Name="LocalEventsButton" Margin="316,755,944,10" Grid.Row="1">
-            <Image Source="images/local_events.png" Height="93" Width="110"></Image>
-        </Button>
-        <Button Name="LocalEatsButton" Margin="522,755,738,10" Grid.Row="1">
-            <Image Source="images/local_eats.png"></Image>
-        </Button>
-        <Button Name="CityMapButton" Margin="740,755,547,10" Grid.Row="1">
-            <Image Source="images/city_map.png"></Image>
-        </Button>
-        <Button Name="GettingThereButton" Margin="956,750,298,5" Grid.Row="1">
-            <Image Source="images/getting_there.png"></Image>
-        </Button>
-        <Button Name="ItineraryButton" Margin="1160,755,100,10" Grid.Row="1">
-            <Image Source="images/itinerary.png"></Image>
-        </Button>
     </Canvas>
 </UserControl>

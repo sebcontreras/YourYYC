@@ -19,11 +19,21 @@ namespace YourYYC.Pages
     /// </summary>
     public partial class Itinerary1 : UserControl
     {
-        ExportPopUp _export = new ExportPopUp();
-        EmailPopUp _email= new EmailPopUp();
         public Itinerary1()
         {
             InitializeComponent();
+
+            // may need to change conditiion depending how saved items are stored
+            for (int i = 0; i < 8; i++)
+            {
+                String itemName = "attraction" + i.ToString();
+                var newItem = (Button)this.FindName(itemName);
+                newItem.Visibility = Visibility.Visible;
+
+                // add later with images
+                //var newItemImage = (Button)this.FindName(itemName + "Image");
+                //newItemImage.SourceUpdated
+            }
         }
 
         private void exportButton_Click(object sender, RoutedEventArgs e)
@@ -31,6 +41,66 @@ namespace YourYYC.Pages
             //mainPanel.Children.Clear();
             //mainPanel.Children.Add(_export);
             Switcher.Switch(new ExportPopUp());
+        }
+
+        public void HomeButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Home());
+        }
+        public void LanguageButtonClick(object sender, RoutedEventArgs e)
+        {
+            //Switcher.Switch(new Food());
+        }
+
+        public void HelpButtonClick(object sender, RoutedEventArgs e)
+        {
+            //Switcher.Switch(new Food());
+        }
+        public void PreferencesButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Preferences());
+        }
+        public void AttractionsButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Attractions());
+        }
+        public void EventsButtonClick(object sender, RoutedEventArgs e)
+        {
+            //Switcher.Switch(new Food());
+        }
+        public void FoodButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Food());
+        }
+        public void MapButtonClick(object sender, RoutedEventArgs e)
+        {
+            //Switcher.Switch(new Food());
+        }
+        public void GettingThereButtonClick(object sender, RoutedEventArgs e)
+        {
+            //Switcher.Switch(new Food());
+        }
+        public void ItineraryButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new Itinerary1());
+        }
+        public void BackButtonClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.GoBack();
+        }
+
+        private void ClearAllClick(object sender, RoutedEventArgs e)
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                String itemName = "attraction" + i.ToString();
+                var newItem = (Button)this.FindName(itemName);
+                newItem.Visibility = Visibility.Collapsed;
+
+                // add later with images
+                //var newItemImage = (Button)this.FindName(itemName + "Image");
+                //newItemImage.SourceUpdated
+            }
         }
     }
 }
