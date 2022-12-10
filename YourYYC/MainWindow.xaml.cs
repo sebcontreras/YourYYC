@@ -33,7 +33,7 @@ namespace YourYYC
         // eg. selectedPreferences might have {"Art", "Road Trips"}
         public List<string> selectedPreferences = new List<string>();
 
-        public string selectedTripDuration = "";
+        public string selectedTripDuration;
 
         public List<string[]> itineraryList = new List<string[]>();
 

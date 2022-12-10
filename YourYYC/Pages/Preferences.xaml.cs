@@ -36,6 +36,7 @@ namespace YourYYC.Pages
             attractionList = window.attractionList;
             selectedTripDuration = window.selectedTripDuration;
             SetPreferences();
+            SetSelectedTripDuration();
             SetAttractionList();
         }
 
@@ -59,13 +60,23 @@ namespace YourYYC.Pages
             selectedPreferences.Clear();
         }
 
+        public void SetSelectedTripDuration()
+        {
+            if (!string.IsNullOrEmpty(selectedTripDuration))
+            {
+                Button btn = this.FindName(selectedTripDuration) as Button;
+                PreferenceOnStyle(btn);
+            }
+        }
+
         public void ClearSelectedTripDuration(string current)
         {
-            if (current.Length > 0)
+            if (!string.IsNullOrEmpty(selectedTripDuration))
             {
                 Button btn = this.FindName(current) as Button;
                 PreferenceOffStyle(btn);
-                selectedTripDuration = "";
+                selectedTripDuration = null;
+                window.selectedTripDuration = null;
             }
         }
 
@@ -119,7 +130,7 @@ namespace YourYYC.Pages
             // get existing trip duration
             // if match, turn off
             // else, clear other one, set new
-            if(selectedTripDuration.Length == 0 || selectedTripDuration == "")
+            if(string.IsNullOrEmpty(selectedTripDuration))
             {
                 PreferenceOnStyle(btn);
                 selectedTripDuration = btn.Name.ToString();
@@ -128,7 +139,7 @@ namespace YourYYC.Pages
             else if (selectedTripDuration == btn.Name.ToString())
             {
                 PreferenceOffStyle(btn);
-                selectedTripDuration = "";
+                selectedTripDuration = null;
             }
             else
             {
@@ -136,6 +147,7 @@ namespace YourYYC.Pages
                 PreferenceOnStyle(btn);
                 selectedTripDuration = btn.Name.ToString();
             }
+            window.selectedTripDuration = selectedTripDuration;
         }
 
         public void DoneButtonClick(object sender, RoutedEventArgs e)
