@@ -101,30 +101,17 @@ namespace YourYYC.Pages
             int i = 1;
             foreach (var tile in window.itineraryList)
             {
-                String itemName = "attraction" + i.ToString();
-                var newItem = (Button)this.FindName(itemName);
-                var newItemImage = (Image)this.FindName(itemName + "Image");
-
-                newItem.Visibility = Visibility.Visible;
-                newItem.Name = tile[0];
-                newItemImage.Source = new BitmapImage(new Uri(tile[2]));
+                String rename = "attraction" + i.ToString();
+                var removeItem = (Button)this.FindName(tile[0]);
+                removeItem.Name = rename;
+                removeItem.Visibility= Visibility.Collapsed;
 
                 i++;
 
                 if (i > 8) break;
             }
-            /*
-            for (int i = 0; i < 8; i++)
-            {
-                String itemName = "attraction" + i.ToString();
-                var newItem = (Button)this.FindName(itemName);
-                newItem.Visibility = Visibility.Collapsed;
 
-                // add later with images
-                //var newItemImage = (Button)this.FindName(itemName + "Image");
-                //newItemImage.SourceUpdated
-            }
-            */
+            window.itineraryList.Clear();
         }
     }
 }
