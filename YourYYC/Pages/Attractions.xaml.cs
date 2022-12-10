@@ -27,6 +27,7 @@ namespace YourYYC.Pages
         List<string> preferences;
         AttractionsNature nature = new AttractionsNature();
         AttractionsArt art = new AttractionsArt();
+        AttractionsFamilyFriendly familyFriendly = new AttractionsFamilyFriendly();
         public Attractions()
         {
             InitializeComponent();
@@ -43,6 +44,7 @@ namespace YourYYC.Pages
             {
                 ContainerPanel.Children.Add(art);
                 ContainerPanel.Children.Add(nature);
+                ContainerPanel.Children.Add(familyFriendly);
                 return;
             }
             if(selectedPreferences.Contains("Nature"))
