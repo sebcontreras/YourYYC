@@ -31,6 +31,8 @@ namespace YourYYC
 
         // When a user selects a preference, it will be added to this list
         // eg. selectedPreferences might have {"Art", "Road Trips"}
+        // public List<string> selectedPreferences = new List<string>();
+        // TEMPORARY MOCK FOR TESTING PURPOSES
         public List<string> selectedPreferences = new List<string>();
 
         public string selectedTripDuration;

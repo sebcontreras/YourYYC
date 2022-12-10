@@ -15,7 +15,7 @@
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
             <!-- Scrollable Page BG as image -->
-            <StackPanel>
+            <StackPanel x:Name="ContainerPanel">
                 <StackPanel>
                     <TextBlock Text="Recommended for you" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
@@ -31,34 +31,6 @@
                         <Image Source="../images/event_sample.png"></Image>
                     </Button>
                     <Button x:Name="attraction4" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction5" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction6" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction7" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction8" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction9" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction10" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction11" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction12" Width="305" Height="314" Margin="15">
                         <Image Source="../images/event_sample.png"></Image>
                     </Button>
                 </StackPanel>
