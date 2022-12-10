@@ -45,6 +45,7 @@ namespace YourYYC.Pages
                 ContainerPanel.Children.Add(art);
                 ContainerPanel.Children.Add(nature);
                 ContainerPanel.Children.Add(familyFriendly);
+                // add remaining attractions
                 return;
             }
             if(selectedPreferences.Contains("Nature"))
@@ -55,7 +56,11 @@ namespace YourYYC.Pages
             {
                 ContainerPanel.Children.Add(art);
             }
-
+            if (selectedPreferences.Contains("FamilyFriendly"))
+            {
+                ContainerPanel.Children.Add(familyFriendly);
+            }
+            // Add remaining attractions here
         }
 
         public void SetTiles3()
