@@ -27,9 +27,13 @@ namespace YourYYC
         public List<string> preferences = new List<string> {"Sightseeing", "Art", "Nature", "Science", "History", "Shopping",
             "PartyMusic", "RoadTrips", "FamilyFriendly" };
 
+        public List<string> tripDuration = new List<string> {"TwoToThreeDays", "OneWeek", "TwoWeeks", "ILiveHere"};
+
         // When a user selects a preference, it will be added to this list
         // eg. selectedPreferences might have {"Art", "Road Trips"}
         public List<string> selectedPreferences = new List<string>();
+        
+        public List<string> selectedTripDuration = new List<string>();
 
         public List<string[]> itineraryList = new List<string[]>();
 

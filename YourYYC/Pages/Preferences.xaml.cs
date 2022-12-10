@@ -23,23 +23,25 @@ namespace YourYYC.Pages
     public partial class Preferences : UserControl
     {
         MainWindow window;
-        List<string> preferences;
+        List<string> selectedPreferences;
+        List<string> selectedTripDuration;
         List<List<string>> attractions;
         List<List<string>> attractionList;
         public Preferences()
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
-            preferences = window.selectedPreferences;
+            selectedPreferences = window.selectedPreferences;
             attractions = window.attractions;
             attractionList = window.attractionList;
+            selectedTripDuration = window.selectedTripDuration;
             SetPreferences();
             SetAttractionList();
         }
 
         public void SetPreferences()
         {
-            foreach(string s in preferences)
+            foreach(string s in selectedPreferences)
             {
                 Button btn = this.FindName(s) as Button;
                 PreferenceOnStyle(btn);
@@ -47,12 +49,32 @@ namespace YourYYC.Pages
 
         }
 
+        public void ClearPreferences()
+        {
+            foreach(string s in selectedPreferences)
+            {
+                Button btn = this.FindName(s) as Button;
+                PreferenceOffStyle(btn);
+            }
+            selectedPreferences.Clear();
+        }
+
+        public void ClearSelectedTripDuration()
+        {
+            foreach (string s in selectedTripDuration)
+            {
+                Button btn = this.FindName(s) as Button;
+                PreferenceOffStyle(btn);
+            }
+            selectedTripDuration.Clear();
+        }
+
         public void SetAttractionList()
         {
             attractionList.Clear();
             for (int i = 0; i < attractions.Count; i++)
             {
-                if (preferences.Contains(attractions[i][0]))
+                if (selectedPreferences.Contains(attractions[i][0]))
                 {
                     attractionList.Add(attractions[i]);
                 }
@@ -83,11 +105,41 @@ namespace YourYYC.Pages
             if (window.selectedPreferences.Contains(btn.Name.ToString()))
             {
                 PreferenceOffStyle(btn);
-                preferences.Remove(btn.Name.ToString());
+                selectedPreferences.Remove(btn.Name.ToString());
             } else {
                 PreferenceOnStyle(btn);
-                preferences.Add(btn.Name.ToString());
+                selectedPreferences.Add(btn.Name.ToString());
             }
+            SetAttractionList();
+        }
+
+        public void SelectTripDurationClick(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            if (window.selectedTripDuration.Contains(btn.Name.ToString()))
+            {
+                PreferenceOffStyle(btn);
+                selectedTripDuration.Remove(btn.Name.ToString());
+            }
+            else
+            {
+                PreferenceOnStyle(btn);
+                selectedTripDuration.Add(btn.Name.ToString());
+            }
+        }
+
+        public void DoneButtonClick(object sender, RoutedEventArgs e)
+        {
+            SetAttractionList();
+            Switcher.GoBack();
+        }
+
+        public void ClearAllButtonClick(object sender, RoutedEventArgs e)
+        {
+            ClearPreferences();
+            ClearSelectedTripDuration();
+            SetPreferences();
         }
 
         // Dock Buttons
