@@ -24,7 +24,7 @@ namespace YourYYC.Pages
     {
         MainWindow window;
         List<string> selectedPreferences;
-        List<string> selectedTripDuration;
+        string selectedTripDuration;
         List<List<string>> attractions;
         List<List<string>> attractionList;
         public Preferences()
@@ -59,14 +59,14 @@ namespace YourYYC.Pages
             selectedPreferences.Clear();
         }
 
-        public void ClearSelectedTripDuration()
+        public void ClearSelectedTripDuration(string current)
         {
-            foreach (string s in selectedTripDuration)
+            if (current.Length > 0)
             {
-                Button btn = this.FindName(s) as Button;
+                Button btn = this.FindName(current) as Button;
                 PreferenceOffStyle(btn);
+                selectedTripDuration = "";
             }
-            selectedTripDuration.Clear();
         }
 
         public void SetAttractionList()
@@ -102,7 +102,7 @@ namespace YourYYC.Pages
         {
             Button btn = (Button)sender;
             
-            if (window.selectedPreferences.Contains(btn.Name.ToString()))
+            if (selectedPreferences.Contains(btn.Name.ToString()))
             {
                 PreferenceOffStyle(btn);
                 selectedPreferences.Remove(btn.Name.ToString());
@@ -116,16 +116,25 @@ namespace YourYYC.Pages
         public void SelectTripDurationClick(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
+            // get existing trip duration
+            // if match, turn off
+            // else, clear other one, set new
+            if(selectedTripDuration.Length == 0 || selectedTripDuration == "")
+            {
+                PreferenceOnStyle(btn);
+                selectedTripDuration = btn.Name.ToString();
+            }
 
-            if (window.selectedTripDuration.Contains(btn.Name.ToString()))
+            else if (selectedTripDuration == btn.Name.ToString())
             {
                 PreferenceOffStyle(btn);
-                selectedTripDuration.Remove(btn.Name.ToString());
+                selectedTripDuration = "";
             }
             else
             {
+                ClearSelectedTripDuration(selectedTripDuration);
                 PreferenceOnStyle(btn);
-                selectedTripDuration.Add(btn.Name.ToString());
+                selectedTripDuration = btn.Name.ToString();
             }
         }
 
@@ -138,7 +147,7 @@ namespace YourYYC.Pages
         public void ClearAllButtonClick(object sender, RoutedEventArgs e)
         {
             ClearPreferences();
-            ClearSelectedTripDuration();
+            ClearSelectedTripDuration(selectedTripDuration);
             SetPreferences();
         }
 

@@ -32,8 +32,8 @@ namespace YourYYC
         // When a user selects a preference, it will be added to this list
         // eg. selectedPreferences might have {"Art", "Road Trips"}
         public List<string> selectedPreferences = new List<string>();
-        
-        public List<string> selectedTripDuration = new List<string>();
+
+        public string selectedTripDuration = "";
 
         public List<string[]> itineraryList = new List<string[]>();
 
