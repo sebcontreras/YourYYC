@@ -34,8 +34,8 @@ namespace YourYYC.Pages
                 var newItemImage = (Image)this.FindName(itemName + "Image");
 
                 newItem.Visibility = Visibility.Visible;
-                newItem.Name = tile[0];                
-                newItemImage.Source = new BitmapImage(new Uri(tile[2]));
+                newItem.Name = tile[0];
+                newItemImage.Source = new BitmapImage(new Uri(tile[2], UriKind.Relative));
 
                 i++;
 

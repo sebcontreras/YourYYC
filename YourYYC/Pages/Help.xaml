@@ -9,11 +9,11 @@
     <Canvas Height="1024" Width="1440" Cursor="Hand">
         <!-- Window Background -->
         <Canvas.Background>
-            <ImageBrush ImageSource="../images/HelpBackground.png"/>
+            <ImageBrush ImageSource="../images/Help.png"/>
         </Canvas.Background>
         <!-- Attractions List as a Scrollable Page -->
 
-        <Button Name="DoneBtn" Canvas.Left="526" Canvas.Top="728" Width="394" Height="76" HorizontalAlignment="Center" VerticalAlignment="Top" Click="DoneBtnClick">
+        <Button Name="DoneBtn" Opacity="0" Canvas.Left="523" Canvas.Top="747" Width="394" Height="76" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DoneBtnClick">
             <Image Source="../images/DoneButton.png" Stretch="Fill"  Height="78" Width="384"/>
         </Button>
         <!-- Top Navigation Bar -->
