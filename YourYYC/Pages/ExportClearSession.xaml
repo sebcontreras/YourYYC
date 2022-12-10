@@ -8,21 +8,21 @@
         Height="1024" Width="1440">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="images/export_clear_session_timeout.png"/>
+            <ImageBrush ImageSource="../images/export_clear_session_timeout.png"/>
         </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="592*"/>
             <RowDefinition Height="417*"/>
         </Grid.RowDefinitions>
         <Button Name="CancelButton" Margin="1340,10,10,509">
-            <Image Source="images/cancel.png"/>
+            <Image Source="../images/cancel.png"/>
         </Button>
 
         <Button Name="StartNewSession" Margin="753,491,436,39" Click="newSession">
-            <Image Source="images/start_new_session.png"/>
+            <Image Source="../images/start_new_session.png"/>
         </Button>
         <Button Name="ResumeCurrentSession" Margin="502,491,687,39">
-            <Image Source="images/resume_current_session.png"/>
+            <Image Source="../images/resume_current_session.png"/>
         </Button>
 
     </Grid>

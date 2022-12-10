@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,64 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using YourYYC.Pages;
 
-namespace YourYYC.Pages
+namespace YourYYC
 {
     /// <summary>
-    /// Interaction logic for Attractions.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Attractions : UserControl
+    public partial class Events : UserControl
     {
-        MainWindow window;
-        List<List<string>> attractionList;
-        List<string> selectedPreferences;
-        List<string> preferences;
-        AttractionsNature nature = new AttractionsNature();
-        AttractionsArt art = new AttractionsArt();
-        AttractionsFamilyFriendly familyFriendly = new AttractionsFamilyFriendly();
-        public Attractions()
+        public Events()
         {
             InitializeComponent();
-            window = (MainWindow)Application.Current.MainWindow;
-            attractionList = window.attractionList;
-            selectedPreferences = window.selectedPreferences;
-            preferences = window.preferences;
-            SetTiles();
         }
 
-        public void SetTiles()
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (selectedPreferences.Count == 0)
-            {
-                ContainerPanel.Children.Add(art);
-                ContainerPanel.Children.Add(nature);
-                ContainerPanel.Children.Add(familyFriendly);
-                // add remaining attractions
-                return;
-            }
-            if(selectedPreferences.Contains("Nature"))
-            {
-                ContainerPanel.Children.Add(nature);
-            }
-            if (selectedPreferences.Contains("Art"))
-            {
-                ContainerPanel.Children.Add(art);
-            }
-            if (selectedPreferences.Contains("FamilyFriendly"))
-            {
-                ContainerPanel.Children.Add(familyFriendly);
-            }
-            // Add remaining attractions here
-        }
 
-        public void AddToItineraryButton(object sender, RoutedEventArgs e)
-        {
-            Button btn = (Button)sender;
-            window.AddAttractionToItinerary(btn.Name);
         }
-
 
         public void HomeButtonClick(object sender, RoutedEventArgs e)
         {
@@ -117,4 +77,3 @@ namespace YourYYC.Pages
         }
     }
 }
-

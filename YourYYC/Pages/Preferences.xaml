@@ -71,7 +71,7 @@
         <!--I'm here options-->
 
         <!-- 2-3 Days Button -->
-        <Button Content="2 -3 Days" Height="46" Width="190" Canvas.Left="55" Canvas.Top="391" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="TwoToThreeDays" Click="SelectTripDurationClick" Content="2 -3 Days" Height="46" Width="190" Canvas.Left="55" Canvas.Top="391" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -80,7 +80,7 @@
         </Button>
 
         <!-- 1 Week Button -->
-        <Button Content="1 Week" Height="46" Width="190" Canvas.Left="270" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="OneWeek" Click="SelectTripDurationClick" Content="1 Week" Height="46" Width="190" Canvas.Left="270" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -88,8 +88,8 @@
             </Button.Resources>
         </Button>
 
-        <!-- 1 Week Button -->
-        <Button Content="2 Weeks" Height="46" Width="190" Canvas.Left="485" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <!-- 2 Weeks Button -->
+        <Button x:Name="TwoWeeks" Click="SelectTripDurationClick" Content="2 Weeks" Height="46" Width="190" Canvas.Left="485" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -98,7 +98,7 @@
         </Button>
 
         <!-- I live here Button -->
-        <Button Content="I live here!" Height="46" Width="190" Canvas.Left="700" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="ILiveHere" Click="SelectTripDurationClick" Content="I live here!" Height="46" Width="190" Canvas.Left="700" Canvas.Top="390" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -109,7 +109,7 @@
         <!--I'm interested in options-->
 
         <!-- Sightseeing Button -->
-        <Button Content="Sightseeing" Height="46" Width="190" Canvas.Left="55" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="Sightseeing" Click="SelectPreferenceClick" Content="Sightseeing" Height="46" Width="190" Canvas.Left="55" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -118,7 +118,7 @@
         </Button>
 
         <!-- Art Button -->
-        <Button Content="Art" Height="46" Width="190" Canvas.Left="270" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="Art" Click="SelectPreferenceClick" Content="Art" Height="46" Width="190" Canvas.Left="270" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -127,7 +127,7 @@
         </Button>
 
         <!-- Nature Button -->
-        <Button Content="Nature" Height="46" Width="190" Canvas.Left="485" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="Nature" Click="SelectPreferenceClick" Content="Nature" Height="46" Width="190" Canvas.Left="485" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -136,7 +136,7 @@
         </Button>
 
         <!-- Science Button -->
-        <Button Content="Science" Height="46" Width="190" Canvas.Left="700" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="Science" Click="SelectPreferenceClick" Content="Science" Height="46" Width="190" Canvas.Left="700" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -145,7 +145,7 @@
         </Button>
 
         <!-- History Button -->
-        <Button Content="History" Height="46" Width="190" Canvas.Left="915" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="History" Click="SelectPreferenceClick" Content="History" Height="46" Width="190" Canvas.Left="915" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -154,7 +154,7 @@
         </Button>
 
         <!-- Shopping Button -->
-        <Button Content="Shopping" Height="46" Width="190" Canvas.Left="1130" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="Shopping" Click="SelectPreferenceClick" Content="Shopping" Height="46" Width="190" Canvas.Left="1130" Canvas.Top="536" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -163,7 +163,7 @@
         </Button>
 
         <!-- Party & Music Button -->
-        <Button Content="Party &amp; Music" Height="46" Width="190" Canvas.Left="55" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="PartyMusic" Click="SelectPreferenceClick" Content="Party &amp; Music" Height="46" Width="190" Canvas.Left="55" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -172,7 +172,7 @@
         </Button>
 
         <!-- Road Trips Button -->
-        <Button Content="Road Trips" Height="46" Width="190" Canvas.Left="270" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="RoadTrips" Click="SelectPreferenceClick" Content="Road Trips" Height="46" Width="190" Canvas.Left="270" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -181,7 +181,7 @@
         </Button>
 
         <!-- Family Friendly Button -->
-        <Button Content="Family Friendly" Height="46" Width="190" Canvas.Left="485" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
+        <Button x:Name="FamilyFriendly" Click="SelectPreferenceClick" Content="Family Friendly" Height="46" Width="190" Canvas.Left="485" Canvas.Top="607" Background="#FFEDEDED" BorderBrush="Transparent" FontFamily="Calibri" FontSize="26" FontWeight="Bold">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -192,7 +192,7 @@
 
         <!--Selection options-->
         <!-- Clear Button -->
-        <Button Content="Clear Selections" Height="50" Width="350" Canvas.Left="355" Canvas.Top="764" Background="#757575" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+        <Button Click="ClearAllButtonClick" Content="Clear Selections" Height="50" Width="350" Canvas.Left="355" Canvas.Top="764" Background="#757575" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
@@ -201,7 +201,7 @@
         </Button>
 
         <!-- Done Button -->
-        <Button Content="Done" Height="50" Width="355" Canvas.Left="735" Canvas.Top="764" Background="#FFD94539" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
+        <Button Click="DoneButtonClick" Content="Done" Height="50" Width="355" Canvas.Left="735" Canvas.Top="764" Background="#FFD94539" FontFamily="Calibri" FontSize="26" RenderTransformOrigin="0.5,0.5" Foreground="#FFF3EFEA">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>

@@ -10,23 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace YourYYC
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for EventsNature.xaml
     /// </summary>
-    public partial class Events : Window
+    public partial class AttractionsNature : UserControl
     {
-        public Events()
+        public AttractionsNature()
         {
             InitializeComponent();
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
-
+            MainWindow window = (MainWindow)Application.Current.MainWindow;
+            Button btn = (Button)sender;
+            window.AddAttractionToItinerary(btn.Name);
         }
     }
 }

@@ -1,5 +1,6 @@
-﻿<UserControl x:Class="YourYYC.Pages.Attractions"
+﻿<UserControl x:Class="YourYYC.Pages.GettingThere"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
@@ -15,44 +16,16 @@
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
             <!-- Scrollable Page BG as image -->
-            <StackPanel x:Name="ContainerPanel">
-                <StackPanel>
-                    <TextBlock Text="Recommended for you" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
-                </StackPanel>
+            <StackPanel>
+
+
+
+
+
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314" Margin="15">
-                        <Button Width="305" Height="314">
-                            <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
-                        </Button>
-                        <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <Image Source="../images/AddToItineraryButton.png"></Image>
-                        </Button>
-                    </Canvas>
-                    <Canvas Width="305" Height="314" Margin="15">
-                        <Button Width="305" Height="314">
-                            <Image Source="../images/tiles/fun_for_the_family/calgary_tower.png"></Image>
-                        </Button>
-                        <Button x:Name="CalgaryTower" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <Image Source="../images/AddToItineraryButton.png"></Image>
-                        </Button>
-                    </Canvas>
-                    <Canvas Width="305" Height="314" Margin="15">
-                        <Button Width="305" Height="314">
-                            <Image Source="../images/tiles/fun_for_the_family/heritage_park.png"></Image>
-                        </Button>
-                        <Button x:Name="HeritagePark" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <Image Source="../images/AddToItineraryButton.png"></Image>
-                        </Button>
-                    </Canvas>
-                    <Canvas Width="305" Height="314" Margin="15">
-                        <Button Width="305" Height="314">
-                            <Image Source="../images/tiles/downtown_calgary/studio_bell.png"></Image>
-                        </Button>
-                        <Button x:Name="StudioBell" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
-                            <Image Source="../images/AddToItineraryButton.png"></Image>
-                        </Button>
-                    </Canvas>
+                    <Image Source="../images/Commute Full page.png" Stretch="UniformToFill" Height="3476" Width="1320"/>
+
+
                 </StackPanel>
             </StackPanel>
 
@@ -63,7 +36,7 @@
         <!-- Attractions Page Title Button / Logo -->
         <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="189">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../images/AttractionsPageTitle.png"/>
+                <ImageBrush ImageSource="../images/GettingThereTitle.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
@@ -78,7 +51,7 @@
         </Button>
 
         <!-- Language Button -->
-        <Button Name="LanguageButton" Click="LanguageButtonClick" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+        <Button Name="LanguageButton" Click="LanguageButttonClick" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/LanguageButton.png"/>
         </Button>
 
