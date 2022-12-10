@@ -19,20 +19,27 @@ namespace YourYYC.Pages
     /// </summary>
     public partial class Itinerary1 : UserControl
     {
+        MainWindow window;
+
         public Itinerary1()
         {
             InitializeComponent();
+            window = (MainWindow)Application.Current.MainWindow;
 
-            // may need to change conditiion depending how saved items are stored
-            for (int i = 0; i < 8; i++)
+            int i = 1;
+            foreach (var tile in window.itineraryList)
             {
                 String itemName = "attraction" + i.ToString();
                 var newItem = (Button)this.FindName(itemName);
-                newItem.Visibility = Visibility.Visible;
+                var newItemImage = (Image)this.FindName(itemName + "Image");
 
-                // add later with images
-                //var newItemImage = (Button)this.FindName(itemName + "Image");
-                //newItemImage.SourceUpdated
+                newItem.Visibility = Visibility.Visible;
+                newItem.Name = tile[0];                
+                newItemImage.Source = new BitmapImage(new Uri(tile[2]));
+
+                i++;
+
+                if (i > 8) break;
             }
         }
 
@@ -91,6 +98,22 @@ namespace YourYYC.Pages
 
         private void ClearAllClick(object sender, RoutedEventArgs e)
         {
+            int i = 1;
+            foreach (var tile in window.itineraryList)
+            {
+                String itemName = "attraction" + i.ToString();
+                var newItem = (Button)this.FindName(itemName);
+                var newItemImage = (Image)this.FindName(itemName + "Image");
+
+                newItem.Visibility = Visibility.Visible;
+                newItem.Name = tile[0];
+                newItemImage.Source = new BitmapImage(new Uri(tile[2]));
+
+                i++;
+
+                if (i > 8) break;
+            }
+            /*
             for (int i = 0; i < 8; i++)
             {
                 String itemName = "attraction" + i.ToString();
@@ -101,6 +124,7 @@ namespace YourYYC.Pages
                 //var newItemImage = (Button)this.FindName(itemName + "Image");
                 //newItemImage.SourceUpdated
             }
+            */
         }
     }
 }

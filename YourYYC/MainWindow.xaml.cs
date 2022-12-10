@@ -112,5 +112,17 @@ namespace YourYYC
             }
         }
 
+        public void RemoveAttractionFromItinerary(string item)
+        {
+            foreach (var tile in attractions)
+            {
+                if (tile.Contains(item) && itineraryList.Contains(tile))
+                {
+                    itineraryList.Remove(tile);
+                    break;
+                }
+            }
+        }
+
     }
 }
