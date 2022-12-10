@@ -11,26 +11,56 @@
             <TextBlock Text="Nature" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
         </StackPanel>
         <StackPanel x:Name="Nature" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
-            <Button x:Name="BirdSanctuary" Width="305" Height="314" Margin="15">
-                <Image Source="../images/tiles/nature/bird_sanctuary.png"></Image>
-            </Button>
-            <Button x:Name="BownessPark" Width="305" Height="314" Margin="15">
-                <Image Source="../images/tiles/nature/bowness_park.png"></Image>
-            </Button>
-            <Button x:Name="CalgaryZoo" Width="305" Height="314" Margin="15">
-                <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
-            </Button>
-            <Button x:Name="EdworthyPark" Width="305" Height="314" Margin="15">
-                <Image Source="../images/tiles/nature/edworthy_park.png"></Image>
-            </Button>
+            <Canvas Width="305" Height="314" Margin="15">
+                <Button Width="305" Height="314">
+                    <Image Source="../images/tiles/nature/bird_sanctuary.png"></Image>
+                </Button>
+                <Button x:Name="BirdSanctuary" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../images/AddToItineraryButton.png"></Image>
+                </Button>
+            </Canvas>
+            <Canvas Width="305" Height="314" Margin="15">
+                <Button Width="305" Height="314">
+                    <Image Source="../images/tiles/nature/bowness_park.png"></Image>
+                </Button>
+                <Button x:Name="BownessPark" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../images/AddToItineraryButton.png"></Image>
+                </Button>
+            </Canvas>
+            <Canvas Width="305" Height="314" Margin="15">
+                <Button Width="305" Height="314" Margin="15">
+                    <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
+                </Button>
+                <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../images/AddToItineraryButton.png"></Image>
+                </Button>
+            </Canvas>
+            <Canvas Width="305" Height="314" Margin="15">
+                <Button Width="305" Height="314" Margin="15">
+                    <Image Source="../images/tiles/nature/edworthy_park.png"></Image>
+                </Button>
+                <Button x:Name="EdworthyPark" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../images/AddToItineraryButton.png"></Image>
+                </Button>
+            </Canvas>
         </StackPanel>
         <StackPanel x:Name="Nature2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
-            <Button x:Name="PrincessIslandPark" Width="305" Height="314" Margin="15">
-                <Image Source="../images/tiles/nature/princess_island_park.png"></Image>
-            </Button>
-            <Button x:Name="PeaceBridge" Width="305" Height="314" Margin="15">
-                <Image Source="../images/tiles/downtown_calgary/peace_bridge.png"></Image>
-            </Button>
+            <Canvas Width="305" Height="314" Margin="15">
+                <Button Width="305" Height="314" Margin="15">
+                    <Image Source="../images/tiles/nature/princess_island_park.png"></Image>
+                </Button>
+                <Button x:Name="PrincessIslandPark" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../images/AddToItineraryButton.png"></Image>
+                </Button>
+            </Canvas>
+            <Canvas Width="305" Height="314" Margin="15">
+                <Button Width="305" Height="314" Margin="15">
+                    <Image Source="../images/tiles/downtown_calgary/peace_bridge.png"></Image>
+                </Button>
+                <Button x:Name="PeaceBridge" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../images/AddToItineraryButton.png"></Image>
+                </Button>
+            </Canvas>
         </StackPanel>
     </StackPanel>
 </UserControl>
