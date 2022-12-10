@@ -113,5 +113,11 @@ namespace YourYYC.Pages
 
             window.itineraryList.Clear();
         }
+
+        public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            window.RemoveAttractionFromItinerary(btn.Name);
+        }
     }
 }
