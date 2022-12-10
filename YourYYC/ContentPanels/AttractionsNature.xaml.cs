@@ -24,5 +24,11 @@ namespace YourYYC
         {
             InitializeComponent();
         }
+        public void AddToItineraryButton(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = (MainWindow)Application.Current.MainWindow;
+            Button btn = (Button)sender;
+            window.AddAttractionToItinerary(btn.Name);
+        }
     }
 }

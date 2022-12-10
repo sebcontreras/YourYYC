@@ -37,12 +37,22 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Button x:Name="HeritagePark" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/tiles/fun_for_the_family/heritage_park.png"></Image>
-                    </Button>
-                    <Button x:Name="StudioBell" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/tiles/downtown_calgary/studio_bell.png"></Image>
-                    </Button>
+                    <Canvas Width="305" Height="314" Margin="15">
+                        <Button Width="305" Height="314">
+                            <Image Source="../images/tiles/fun_for_the_family/heritage_park.png"></Image>
+                        </Button>
+                        <Button x:Name="HeritagePark" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="15">
+                        <Button Width="305" Height="314">
+                            <Image Source="../images/tiles/downtown_calgary/studio_bell.png"></Image>
+                        </Button>
+                        <Button x:Name="StudioBell" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
                 </StackPanel>
             </StackPanel>
 

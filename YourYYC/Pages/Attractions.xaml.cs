@@ -67,7 +67,6 @@ namespace YourYYC.Pages
         {
             Button btn = (Button)sender;
             window.AddAttractionToItinerary(btn.Name);
-            TextBlock text = new TextBlock();
         }
 
 
