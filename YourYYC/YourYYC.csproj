@@ -9,6 +9,7 @@
   </PropertyGroup>
 
 	<ItemGroup>
+		<None Remove="images\AddToItineraryButton.png" />
 		<None Remove="images\AddToItineraryIcon.png" />
 		<None Remove="images\add_to_itinerary_icon.png" />
 		<None Remove="images\Attractions.png" />
@@ -95,6 +96,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<Resource Include="images\AddToItineraryButton.png" />
 		<Resource Include="images\AddToItineraryIcon.png" />
 		<Resource Include="images\add_to_itinerary_icon.png" />
 		<Resource Include="images\Attractions.png" />

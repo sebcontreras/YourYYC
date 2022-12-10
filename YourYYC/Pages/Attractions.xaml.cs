@@ -63,57 +63,11 @@ namespace YourYYC.Pages
             // Add remaining attractions here
         }
 
-        public void SetTiles3()
+        public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
+            Button btn = (Button)sender;
+            window.AddAttractionToItinerary(btn.Name);
             TextBlock text = new TextBlock();
-            text.Text = "REEEEEEEE";
-            text.FontSize = 36;
-            text.Width = 1297;
-            ContainerPanel.Children.Add(text);
-
-            //StackPanel = new StackPanel();
-            AttractionsNature nature = new AttractionsNature();
-            AttractionsArt art = new AttractionsArt();
-            ContainerPanel.Children.Add(nature);
-            ContainerPanel.Children.Add(art);
-        }
-
-        public void SetTiles2()
-        {
-            // NatureSection
-            // loop through preferences
-            // if preferences does not exist in selected
-            // make invisible
-            // StackPanel testPanel = this.FindName("testPanel") as StackPanel;
-            // testPanel.Cont
-            TextBlock text = new TextBlock();
-            text.Text = "REEEEEEEE";
-            text.FontSize = 36;
-            text.Width = 1297;
-            // testPanel.Children.Add(text);
-            //if (selectedPreferences.Count == 0) { return; }
-            //foreach (string p in preferences)
-            //{
-            //    if (selectedPreferences.Contains(p))
-            //    {
-            //        StackPanel sp = this.FindName(p) as StackPanel;
-            //        Button btn = new Button();
-            //        TextBlock text = new TextBlock();
-            //        text.Text = "Nature";
-            //        text.FontSize = 36;
-            //        text.Width = 1297;
-            //        btn.Content = "Hello button";
-            //        if (sp != null)
-            //        {
-            //            testPanel.Children.Add(text);
-            //            testPanel.Children.Add(btn);
-            //            sp.Children.Add(btn);
-            //            sp.Children.Add(text);
-            //            // sp.Visibility = Visibility.Collapsed;
-            //        }
-            //    }
-            //}
-
         }
 
 
