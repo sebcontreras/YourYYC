@@ -69,7 +69,6 @@ namespace YourYYC.Pages
             window.AddAttractionToItinerary(btn.Name);
         }
 
-
         public void HomeButtonClick(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new Home());

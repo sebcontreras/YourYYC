@@ -30,7 +30,7 @@ namespace YourYYC.Pages
             foreach (var tile in window.itineraryList)
             {
                 String itemName = "attraction" + i.ToString();
-                var newItem = (Button)this.FindName(itemName);
+                var newItem = (Canvas)this.FindName(itemName);
                 var newItemImage = (Image)this.FindName(itemName + "Image");
 
                 newItem.Visibility = Visibility.Visible;
@@ -102,7 +102,7 @@ namespace YourYYC.Pages
             foreach (var tile in window.itineraryList)
             {
                 String rename = "attraction" + i.ToString();
-                var removeItem = (Button)this.FindName(tile[0]);
+                var removeItem = (Canvas)this.FindName(tile[0]);
                 removeItem.Name = rename;
                 removeItem.Visibility= Visibility.Collapsed;
 
@@ -116,8 +116,14 @@ namespace YourYYC.Pages
 
         public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
         {
-            Button btn = (Button)sender;
+            Canvas btn = (Canvas)sender;
             window.RemoveAttractionFromItinerary(btn.Name);
+        }
+
+        public void AddToItineraryButton(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            window.AddAttractionToItinerary(btn.Name);
         }
     }
 }
