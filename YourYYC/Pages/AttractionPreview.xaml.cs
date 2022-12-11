@@ -48,7 +48,7 @@ namespace YourYYC.images
 
         public void HelpButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new Help());
         }
         public void PreferencesButtonClick(object sender, RoutedEventArgs e)
         {
@@ -72,7 +72,7 @@ namespace YourYYC.images
         }
         public void GettingThereButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new GettingThere());
         }
         public void ItineraryButtonClick(object sender, RoutedEventArgs e)
         {
