@@ -16,12 +16,34 @@
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
             <!-- Scrollable Page BG as image -->
             <StackPanel HorizontalAlignment="Left">
-                <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Image Source="../images/AttractionPreviewFull.png" Stretch="UniformToFill" Width="1340"/>
-                    <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="1001" Canvas.Top="428" Height="56" Width="312" HorizontalAlignment="Left" VerticalAlignment="Top">
-                        <Image Source="../images/AddToItineraryButton.png"></Image>
+                </StackPanel>
+                    <Image Height="343"   Stretch="UniformToFill" Width="1237" Source="../images/calgary.png" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Button x:Name ="AddButton" Click="AddButton_Click"  Height="66" Width="276"  BorderBrush="Transparent" Background="Transparent" Margin="10,0,0,0" HorizontalAlignment="Right">
+                        <Image Source="../images/AddToItineraryButton.png" Width="235" Height="36" Stretch="UniformToFill" />
                     </Button>
-                </Canvas>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" UseLayoutRounding="False" Width="1306">
+
+                    <TextBlock Height="425"  TextWrapping="Wrap" Text="Disney On Ice is returning to Calgary for another year of magic from November 17-20. Families have the opportunity to make unforgettable memories joining Mickey and all his Disney friends with the Disney On Ice Road Trip Adventures." FontSize="18" Width="1014"/>
+                    <Image Height="444"   Stretch="UniformToFill" Width="278" Source="../images/Info Widget.png"/>
+
+
+
+
+                </StackPanel>
+
             </StackPanel>
         </ScrollViewer>
 
