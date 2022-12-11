@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using YourYYC.Pages;
 
-namespace YourYYC.images
+namespace YourYYC
 {
     /// <summary>
     /// Interaction logic for AttractionPreview.xaml

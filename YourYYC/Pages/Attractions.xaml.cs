@@ -65,6 +65,11 @@ namespace YourYYC.Pages
             // Add remaining attractions here
         }
 
+        public void AttractionPreviewClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new AttractionPreview());
+        }
+
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;

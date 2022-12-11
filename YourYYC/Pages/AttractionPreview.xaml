@@ -1,9 +1,9 @@
-﻿<UserControl x:Class="YourYYC.images.AttractionPreview"
+﻿<UserControl x:Class="YourYYC.AttractionPreview"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:YourYYC.images"
+             xmlns:local="clr-namespace:YourYYC"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Canvas Height="1024" Width="1440" Cursor="Hand">
@@ -15,14 +15,12 @@
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
             <!-- Scrollable Page BG as image -->
-            <StackPanel HorizontalAlignment="Left">
-                <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                <Canvas Height="1400" Width="1390" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Image Source="../images/AttractionPreviewFull.png" Stretch="UniformToFill" Width="1340"/>
                     <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="1001" Canvas.Top="428" Height="56" Width="312" HorizontalAlignment="Left" VerticalAlignment="Top">
                         <Image Source="../images/AddToItineraryButton.png"></Image>
                     </Button>
                 </Canvas>
-            </StackPanel>
         </ScrollViewer>
 
         <!-- Top Navigation Bar -->

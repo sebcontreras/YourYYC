@@ -16,14 +16,12 @@
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
             <!-- Scrollable Page BG as image -->
-            <StackPanel HorizontalAlignment="Left">
-                <Canvas HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+            <Canvas Height="1400" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Image Source="../images/EventPreviewFull.png" Stretch="UniformToFill" Width="1340"/>
                     <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="1001" Canvas.Top="428" Height="56" Width="312" HorizontalAlignment="Left" VerticalAlignment="Top">
                         <Image Source="../images/AddToItineraryButton.png"></Image>
                     </Button>
                 </Canvas>
-            </StackPanel>
         </ScrollViewer>
 
         <!-- Top Navigation Bar -->
