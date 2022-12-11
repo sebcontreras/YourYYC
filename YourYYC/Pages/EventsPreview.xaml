@@ -4,14 +4,18 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC.Pages"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d">
+    
     <Canvas Height="1024" Width="1440" Cursor="Hand">
+
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+        
         <!-- Window Background -->
         <Canvas.Background>
             <ImageBrush ImageSource="../images/PageBackground.png"/>
         </Canvas.Background>
-
 
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">

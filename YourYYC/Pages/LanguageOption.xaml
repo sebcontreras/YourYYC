@@ -4,25 +4,29 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC.Pages"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d">
 
     <Canvas Height="1024" Width="1440" Cursor="Hand">
+
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+
         <!-- Window Background -->
         <Canvas.Background>
             <ImageBrush ImageSource="../images/ChangeLanguageBgrd.png"/>
         </Canvas.Background>
 
-            <Button Name="englishBtn" Canvas.Left="517" Canvas.Top="314" Width="406" Height="101" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button Name="englishBtn" Canvas.Left="517" Canvas.Top="314" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" BorderBrush="Transparent">
                 <Image Source="../images/English.png" Height="100" Width="400"/>
             </Button>
-            <Button Name="FranceBtn" Canvas.Left="517" Canvas.Top="430" Width="400" Height="101" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button Name="FranceBtn" Canvas.Left="517" Canvas.Top="430" Width="400" Height="101" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
                 <Image Source="../images/France.png" Stretch="Fill"  Height="100" Width="406"/>
             </Button>
-            <Button Name="SpanishBtn" Canvas.Left="517" Canvas.Top="545" Width="400" Height="101" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button Name="SpanishBtn" Canvas.Left="517" Canvas.Top="545" Width="400" Height="101" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
                 <Image Source="../images/Spanish.png" Stretch="Fill"  Height="100" Width="406"/>
             </Button>
-            <Button Name="ChineseBtn" Canvas.Left="517" Canvas.Top="655" Width="400" Height="101" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Button Name="ChineseBtn" Canvas.Left="517" Canvas.Top="655" Width="400" Height="101" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
                 <Image Source="../images/Chinese.png" Stretch="Fill"  Height="100" Width="406"/>
             </Button>
             <!-- Top Navigation Bar -->
