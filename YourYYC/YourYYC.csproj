@@ -30,6 +30,7 @@
 		<None Remove="images\DoneButton.png" />
 		<None Remove="images\email_export.png" />
 		<None Remove="images\English.png" />
+		<None Remove="images\EventPreviewFull.png" />
 		<None Remove="images\Events.png" />
 		<None Remove="images\EventsPageTitle.png" />
 		<None Remove="images\event_sample.png" />
@@ -117,6 +118,7 @@
 		<Resource Include="images\AddToItineraryButton.png" />
 		<Resource Include="images\AddToItineraryIcon.png" />
 		<Resource Include="images\add_to_itinerary_icon.png" />
+		<Resource Include="images\EventPreviewFull.png" />
 		<Resource Include="images\Attractions.png" />
 		<Resource Include="images\BackButton.png" />
 		<Resource Include="images\calgary.png" />
