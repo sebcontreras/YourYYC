@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -28,6 +29,11 @@ namespace YourYYC.Pages
         AttractionsNature nature = new AttractionsNature();
         AttractionsArt art = new AttractionsArt();
         AttractionsFamilyFriendly familyFriendly = new AttractionsFamilyFriendly();
+        AttractionsRoadTrips roadTrips= new AttractionsRoadTrips();
+        AttractionsPartyMusic partyMusic= new AttractionsPartyMusic();
+        AttractionsShopping shopping = new AttractionsShopping();
+        AttractionsHistory history= new AttractionsHistory();
+        AttractionsScience science= new AttractionsScience();
 
         public Attractions()
         {
@@ -40,16 +46,44 @@ namespace YourYYC.Pages
             SetTiles();
         }
 
-        public void SetTiles()
+        public void AddRemainingTiles()
         {
-            if (selectedPreferences.Count == 0)
+            if (!selectedPreferences.Contains("Nature"))
+            {
+                ContainerPanel.Children.Add(nature);
+            }
+            if (!selectedPreferences.Contains("Art"))
             {
                 ContainerPanel.Children.Add(art);
-                ContainerPanel.Children.Add(nature);
-                ContainerPanel.Children.Add(familyFriendly);
-                // add remaining attractions
-                return;
             }
+            if (!selectedPreferences.Contains("FamilyFriendly"))
+            {
+                ContainerPanel.Children.Add(familyFriendly);
+            }
+            if (!selectedPreferences.Contains("RoadTrips"))
+            {
+                ContainerPanel.Children.Add(roadTrips);
+            }
+            if (!selectedPreferences.Contains("PartyMusic"))
+            {
+                ContainerPanel.Children.Add(partyMusic);
+            }
+            if (!selectedPreferences.Contains("Shopping"))
+            {
+                ContainerPanel.Children.Add(shopping);
+            }
+            if (!selectedPreferences.Contains("History"))
+            {
+                ContainerPanel.Children.Add(history);
+            }
+            if (!selectedPreferences.Contains("Science"))
+            {
+                ContainerPanel.Children.Add(science);
+            }
+        }
+
+        public void SetTiles()
+        {
             if(selectedPreferences.Contains("Nature"))
             {
                 ContainerPanel.Children.Add(nature);
@@ -62,7 +96,28 @@ namespace YourYYC.Pages
             {
                 ContainerPanel.Children.Add(familyFriendly);
             }
+            if (selectedPreferences.Contains("RoadTrips"))
+            {
+                ContainerPanel.Children.Add(roadTrips);
+            }
+            if (selectedPreferences.Contains("PartyMusic"))
+            {
+                ContainerPanel.Children.Add(partyMusic);
+            }
+            if (selectedPreferences.Contains("Shopping"))
+            {
+                ContainerPanel.Children.Add(shopping);
+            }
+            if (selectedPreferences.Contains("History"))
+            {
+                ContainerPanel.Children.Add(history);
+            }
+            if (selectedPreferences.Contains("Science"))
+            {
+                ContainerPanel.Children.Add(science);
+            }
             // Add remaining attractions here
+            AddRemainingTiles();
         }
 
         public void AttractionPreviewClick(object sender, RoutedEventArgs e)
