@@ -4,16 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-             xmlns:local="clr-namespace:YourYYC.Pages"
-             xmlns:window="clr-namespace:YourYYC"
              mc:Ignorable="d">
 
     <Canvas Height="1024" Width="1440" Cursor="Hand">
 
         <Canvas.LayoutTransform>
-            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7"/>
         </Canvas.LayoutTransform>
 
         <!-- Window Background -->
@@ -100,5 +96,6 @@
         </Button>
         <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
+        
     </Canvas>
 </UserControl>

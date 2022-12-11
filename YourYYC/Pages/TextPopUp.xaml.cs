@@ -29,13 +29,15 @@ namespace YourYYC.Pages
 
         private void sendButton_Click(object sender, RoutedEventArgs e)
         {
-            textGrid.Children.Clear();
-            textGrid.Children.Add(_clearSession);
+            Switcher.Switch(new Itinerary1());
+            //textGrid.Children.Clear();
+            //textGrid.Children.Add(_clearSession);
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-            textGrid.Children.Clear();
+            Switcher.Switch(new Itinerary1());
+            //textGrid.Children.Clear();
         }
     }
 }
