@@ -137,7 +137,7 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Canvas Width="305" Height="314" Margin="15">
-                        <Button Width="305" Height="314">
+                        <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         </Button>
                         <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -145,10 +145,10 @@
                         </Button>
                     </Canvas>
                     <Canvas Width="305" Height="314" Margin="15">
-                        <Button Width="305" Height="314">
+                        <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/fun_for_the_family/calgary_tower.png"></Image>
                         </Button>
-                        <Button x:Name="CalgaryTower" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="CalgaryTower" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
