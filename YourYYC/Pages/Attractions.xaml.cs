@@ -75,6 +75,8 @@ namespace YourYYC.Pages
             Button btn = (Button)sender;
             int newCount = window.AddAttractionToItinerary(btn.Name);
             ItineraryCount.Content = newCount.ToString();
+
+            
         }
 
         public void HomeButtonClick(object sender, RoutedEventArgs e)
