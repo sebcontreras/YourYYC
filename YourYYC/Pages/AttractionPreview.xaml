@@ -1,19 +1,24 @@
-﻿<UserControl x:Class="YourYYC.AttractionPreview"
+<UserControl x:Class="YourYYC.AttractionPreview"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d">
+
     <Canvas Height="1024" Width="1440" Cursor="Hand">
+
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7"/>
+        </Canvas.LayoutTransform>
+
         <!-- Window Background -->
         <Canvas.Background>
             <ImageBrush ImageSource="../images/PageBackground.png"/>
         </Canvas.Background>
 
         <!-- Attractions List as a Scrollable Page -->
-        <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
+        <ScrollViewer Height="700" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Center">
             <!-- Scrollable Page BG as image -->
                 <Canvas Height="1400" Width="1390" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Image Source="../images/AttractionPreviewFull.png" Stretch="UniformToFill" Width="1340"/>
@@ -28,7 +33,7 @@
         <!-- Attractions Page Title Button / Logo -->
         <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="154">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../images/PreviewTitle.png"/>
+                <ImageBrush ImageSource="../images/Preview.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
@@ -91,5 +96,6 @@
         </Button>
         <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
+        
     </Canvas>
 </UserControl>

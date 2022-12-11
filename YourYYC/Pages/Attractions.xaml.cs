@@ -177,6 +177,11 @@ namespace YourYYC.Pages
         {
             Switcher.GoBack();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
 

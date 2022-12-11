@@ -6,8 +6,6 @@
         xmlns:local="clr-namespace:YourYYC"
         mc:Ignorable="d"
         Title="MainWindow" SizeToContent="WidthAndHeight"
-        Height="1024"
-        Width="1440"
         WindowStyle="SingleBorderWindow"
         >
 
@@ -16,5 +14,5 @@
             <ScaleTransform x:Key="windowScaleTransform" ScaleX="0.5" ScaleY="0.5" />
         </ResourceDictionary>
     </Window.Resources>
-    
+
 </NavigationWindow>

@@ -4,10 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YourYYC"
-        mc:Ignorable="d"
-        >
+        mc:Ignorable="d">
 
     <Canvas Height="1024" Width="1440" Cursor="Hand">
+
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+
         <Canvas.Background>
             <ImageBrush ImageSource="../images/PageBackground.png"/>
         </Canvas.Background>
@@ -34,7 +38,6 @@
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
 
         <!-- Events Page Title Button / Logo -->
-
         <Image Height="50" Canvas.Left="170" Source="/images/TitleBar.png" Stretch="Fill" Canvas.Top="40" Width="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Image Height="42" Canvas.Left="203" Source="/images/EventsPageTitle.png" Stretch="Fill" Canvas.Top="44" Width="172"/>
 
@@ -99,7 +102,7 @@
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
 
         <!-- Bottom Bar -->
-        <Image Height="20" Canvas.Left="300" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Image Height="20" Canvas.Left="300" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="1043" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
     </Canvas>
 </UserControl>
