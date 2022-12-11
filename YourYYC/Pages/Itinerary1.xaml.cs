@@ -112,18 +112,23 @@ namespace YourYYC.Pages
             }
 
             window.itineraryList.Clear();
+            Switcher.Switch(new Itinerary1());
         }
 
         public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
         {
             Canvas btn = (Canvas)sender;
             window.RemoveAttractionFromItinerary(btn.Name);
+
+            btn.Name = btn.Tag.ToString();
+            Switcher.Switch(new Itinerary1());
         }
 
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
             window.AddAttractionToItinerary(btn.Name);
+            Switcher.Switch(new Itinerary1());
         }
     }
 }

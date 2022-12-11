@@ -78,25 +78,25 @@
                     <Button Name="Export" HorizontalAlignment="Left" Margin="1215,10,0,0" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Height="39" Width="114" Click="exportButton_Click"/>
                 </Grid>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Canvas x:Name="attraction1" Width="305" Height="314" Margin="15" Visibility="Visible">
+                    <Canvas x:Name="attraction1" Width="305" Height="314" Margin="15" Tag="attraction1" Visibility="Visible">
                         <Image x:Name="attraction1Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas x:Name="attraction2" Width="305" Height="314" Margin="15" Visibility="Visible">
+                    <Canvas x:Name="attraction2" Width="305" Height="314" Margin="15" Tag="attraction2" Visibility="Visible">
                         <Image x:Name="attraction2Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas x:Name="attraction3" Width="305" Height="314" Margin="15" Visibility="Visible">
+                    <Canvas x:Name="attraction3" Width="305" Height="314" Margin="15" Tag="attraction3" Visibility="Visible">
                         <Image x:Name="attraction3Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas x:Name="attraction4" Width="305" Height="314" Margin="15" Visibility="Visible">
+                    <Canvas x:Name="attraction4" Width="305" Height="314" Margin="15" Tag="attraction4" Visibility="Visible">
                         <Image x:Name="attraction4Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
@@ -104,25 +104,25 @@
                     </Canvas>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Canvas x:Name="attraction5" Width="305" Height="314" Margin="15" Visibility="Collapsed">
+                    <Canvas x:Name="attraction5" Width="305" Height="314" Margin="15" Tag="attraction5" Visibility="Collapsed">
                         <Image x:Name="attraction5Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas x:Name="attraction6" Width="305" Height="314" Margin="15" Visibility="Collapsed">
+                    <Canvas x:Name="attraction6" Width="305" Height="314" Margin="15" Tag="attraction6" Visibility="Collapsed">
                         <Image x:Name="attraction6Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas x:Name="attraction7" Width="305" Height="314" Margin="15" Visibility="Collapsed">
+                    <Canvas x:Name="attraction7" Width="305" Height="314" Margin="15" Tag="attraction7" Visibility="Collapsed">
                         <Image x:Name="attraction7Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas x:Name="attraction8" Width="305" Height="314" Margin="15" Visibility="Collapsed">
+                    <Canvas x:Name="attraction8" Width="305" Height="314" Margin="15" Tag="attraction8" Visibility="Collapsed">
                         <Image x:Name="attraction8Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
