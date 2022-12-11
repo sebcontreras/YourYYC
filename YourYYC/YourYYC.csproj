@@ -1,5 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+  <PropertyGroup>
+    <SSDTUnitTestPath Condition="'$(SSDTUnitTestPath)' == ''">$(VsInstallRoot)\Common7\IDE\Extensions\Microsoft\SQLDB</SSDTUnitTestPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SSDTPath Condition="'$(SSDTPath)' == ''">$(VsInstallRoot)\Common7\IDE\Extensions\Microsoft\SQLDB\DAC</SSDTPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
@@ -7,243 +15,266 @@
     <UseWPF>true</UseWPF>
     <StartupObject>YourYYC.App</StartupObject>
   </PropertyGroup>
-
-	<ItemGroup>
-		<None Remove="images\AddToItineraryButton.png" />
-		<None Remove="images\AddToItineraryIcon.png" />
-		<None Remove="images\add_to_itinerary_icon.png" />
-		<None Remove="images\AttractionPreviewFull.png" />
-		<None Remove="images\Attractions.png" />
-		<None Remove="images\BackButton.png" />
-		<None Remove="images\calgary.png" />
-		<None Remove="images\Calgary_Tower_Tile_Itinerary.png" />
-		<None Remove="images\calgary_zoo_tile.png" />
-		<None Remove="images\cancel.png" />
-		<None Remove="images\ChangeLanguageBgrd.png" />
-		<None Remove="images\ChangeLanguageTitle.png" />
-		<None Remove="images\charcut_tile.png" />
-		<None Remove="images\Chinese.png" />
-		<None Remove="images\CityMapButton.png" />
-		<None Remove="images\CityMapPageTitle.png" />
-		<None Remove="images\ClearAllExport.png" />
-		<None Remove="images\clear_all.png" />
-		<None Remove="images\clear_session.png" />
-		<None Remove="images\Commute Full Page.png" />
-		<None Remove="images\DoneButton.png" />
-		<None Remove="images\email_export.png" />
-		<None Remove="images\English.png" />
-		<None Remove="images\EventPreviewFull.png" />
-		<None Remove="images\Events.png" />
-		<None Remove="images\EventsPageTitle.png" />
-		<None Remove="images\event_sample.png" />
-		<None Remove="images\export.png" />
-		<None Remove="images\export_clear_session_timeout.png" />
-		<None Remove="images\Export_Popup.png" />
-		<None Remove="images\find_what_you_love.png" />
-		<None Remove="images\FoodTitleButton.png" />
-		<None Remove="images\food_sample.png" />
-		<None Remove="images\France.png" />
-		<None Remove="images\GettingThereButton.png" />
-		<None Remove="images\GettingThereTitle.png" />
-		<None Remove="images\Help.png" />
-		<None Remove="images\HelpBackground.png" />
-		<None Remove="images\HelpButton.png" />
-		<None Remove="images\HelpFullPage.png" />
-		<None Remove="images\HelpText.png" />
-		<None Remove="images\heritage_park_tile.png" />
-		<None Remove="images\HomeButton.png" />
-		<None Remove="images\Info Widget.png" />
-		<None Remove="images\itineraryCircle.png" />
-		<None Remove="images\itinerary_email_export.png" />
-		<None Remove="images\itinerary_text_export.png" />
-		<None Remove="images\language text.png" />
-		<None Remove="images\LocalEatsPageTitle.png" />
-		<None Remove="images\MapLarge.png" />
-		<None Remove="images\MapMedium.png" />
-		<None Remove="images\MapTip.png" />
-		<None Remove="images\Peace_Bridge_Tile_Itinerary.png" />
-		<None Remove="images\PreferencesDialogBG.png" />
-		<None Remove="images\ItineraryButton.png" />
-		<None Remove="images\LanguageButton.png" />
-		<None Remove="images\LocalEatsButton.png" />
-		<None Remove="images\LocalEventsButton.png" />
-		<None Remove="images\MainBackground.png" />
-		<None Remove="images\PlacesToSeeButton.png" />
-		<None Remove="images\Branding.png" />
-		<None Remove="images\AttractionsPageTitle.png" />
-		<None Remove="images\PageBackground.png" />
-		<None Remove="images\PreferencesPageBG.png" />
-		<None Remove="images\Preview.png" />
-		<None Remove="images\PreviewTitle.png" />
-		<None Remove="images\resume_current_session.png" />
-		<None Remove="images\ScrollPageBackground.png" />
-		<None Remove="images\SelectedLocation.png" />
-		<None Remove="images\send.png" />
-		<None Remove="images\SideBar.png" />
-		<None Remove="images\Spanish.png" />
-		<None Remove="images\start_new_session.png" />
-		<None Remove="images\text_export.png" />
-		<None Remove="images\tiles\around_calgary\banff.png" />
-		<None Remove="images\tiles\around_calgary\drumheller.png" />
-		<None Remove="images\tiles\around_calgary\jasper.png" />
-		<None Remove="images\tiles\around_calgary\kananaskis.png" />
-		<None Remove="images\tiles\around_calgary\waterton.png" />
-		<None Remove="images\tiles\downtown_calgary\arts_commons.png" />
-		<None Remove="images\tiles\downtown_calgary\calgary_tower.png" />
-		<None Remove="images\tiles\downtown_calgary\calgary_zoo.png" />
-		<None Remove="images\tiles\downtown_calgary\central_library.png" />
-		<None Remove="images\tiles\downtown_calgary\core_shopping_center.png" />
-		<None Remove="images\tiles\downtown_calgary\glenbow_museum.png" />
-		<None Remove="images\tiles\downtown_calgary\peace_bridge.png" />
-		<None Remove="images\tiles\downtown_calgary\stephen_ave.png" />
-		<None Remove="images\tiles\downtown_calgary\studio_bell.png" />
-		<None Remove="images\tiles\downtown_calgary\telus_spark.png" />
-		<None Remove="images\tiles\fun_for_the_family\calaway_park.png" />
-		<None Remove="images\tiles\fun_for_the_family\calgary_tower.png" />
-		<None Remove="images\tiles\fun_for_the_family\calgary_zoo.png" />
-		<None Remove="images\tiles\fun_for_the_family\heritage_park.png" />
-		<None Remove="images\tiles\fun_for_the_family\princess_island_park.png" />
-		<None Remove="images\tiles\fun_for_the_family\telus_spark.png" />
-		<None Remove="images\tiles\fun_for_the_family\winsport_park.png" />
-		<None Remove="images\tiles\happening_this_week\art_exhibition.png" />
-		<None Remove="images\tiles\happening_this_week\class_albums_live.png" />
-		<None Remove="images\tiles\happening_this_week\disney.png" />
-		<None Remove="images\tiles\happening_this_week\live_country_music.png" />
-		<None Remove="images\tiles\happening_this_week\opera.png" />
-		<None Remove="images\tiles\nature\bird_sanctuary.png" />
-		<None Remove="images\tiles\nature\bowness_park.png" />
-		<None Remove="images\tiles\nature\calgary_zoo.png" />
-		<None Remove="images\tiles\nature\edworthy_park.png" />
-		<None Remove="images\tiles\nature\heritage_park.png" />
-		<None Remove="images\tiles\nature\princess_island_park.png" />
-		<None Remove="images\tiles\restaurants\charcut.png" />
-		<None Remove="images\tiles\restaurants\deane_house.png" />
-		<None Remove="images\tiles\restaurants\river_cafe.png" />
-		<None Remove="images\tiles\restaurants\rouge.png" />
-		<None Remove="images\TitleBar.png" />
-		<None Remove="images\TransitOptions.png" />
-		<None Remove="images\ZoomIcon.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Resource Include="images\AddToItineraryButton.png" />
-		<Resource Include="images\AddToItineraryIcon.png" />
-		<Resource Include="images\add_to_itinerary_icon.png" />
-		<Resource Include="images\AttractionPreviewFull.png" />
-		<Resource Include="images\CityMapPageTitle.png" />
-		<Resource Include="images\EventPreviewFull.png" />
-		<Resource Include="images\Attractions.png" />
-		<Resource Include="images\BackButton.png" />
-		<Resource Include="images\calgary.png" />
-		<Resource Include="images\Calgary_Tower_Tile_Itinerary.png" />
-		<Resource Include="images\calgary_zoo_tile.png" />
-		<Resource Include="images\cancel.png" />
-		<Resource Include="images\ChangeLanguageBgrd.png" />
-		<Resource Include="images\ChangeLanguageTitle.png" />
-		<Resource Include="images\charcut_tile.png" />
-		<Resource Include="images\Chinese.png" />
-		<Resource Include="images\CityMapButton.png" />
-		<Resource Include="images\ClearAllExport.png" />
-		<Resource Include="images\clear_all.png" />
-		<Resource Include="images\clear_session.png" />
-		<Resource Include="images\Commute Full Page.png" />
-		<Resource Include="images\DoneButton.png" />
-		<Resource Include="images\email_export.png" />
-		<Resource Include="images\English.png" />
-		<Resource Include="images\Events.png" />
-		<Resource Include="images\event_sample.png" />
-		<Resource Include="images\export.png" />
-		<Resource Include="images\export_clear_session_timeout.png" />
-		<Resource Include="images\Export_Popup.png" />
-		<Resource Include="images\find_what_you_love.png" />
-		<Resource Include="images\FoodTitleButton.png" />
-		<Resource Include="images\food_sample.png" />
-		<Resource Include="images\France.png" />
-		<Resource Include="images\GettingThereButton.png" />
-		<Resource Include="images\GettingThereTitle.png" />
-		<Resource Include="images\Help.png" />
-		<Resource Include="images\HelpBackground.png" />
-		<Resource Include="images\HelpButton.png" />
-		<Resource Include="images\HelpFullPage.png" />
-		<Resource Include="images\HelpText.png" />
-		<Resource Include="images\heritage_park_tile.png" />
-		<Resource Include="images\HomeButton.png" />
-		<Resource Include="images\EventsPageTitle.png" />
-		<Resource Include="images\Info Widget.png" />
-		<Resource Include="images\itineraryCircle.png" />
-		<Resource Include="images\itinerary_email_export.png" />
-		<Resource Include="images\itinerary_text_export.png" />
-		<Resource Include="images\language text.png" />
-		<Resource Include="images\MapLarge.png" />
-		<Resource Include="images\MapMedium.png" />
-		<Resource Include="images\MapTip.png" />
-		<Resource Include="images\MenuBottomBar.png" />
-		<Resource Include="images\Peace_Bridge_Tile_Itinerary.png" />
-		<Resource Include="images\PreferencesDialogBG.png" />
-		<Resource Include="images\ItineraryButton.png" />
-		<Resource Include="images\LanguageButton.png" />
-		<Resource Include="images\LocalEatsButton.png" />
-		<Resource Include="images\LocalEventsButton.png" />
-		<Resource Include="images\MainBackground.png" />
-		<Resource Include="images\PlacesToSeeButton.png" />
-		<Resource Include="images\Branding.png" />
-		<Resource Include="images\AttractionsPageTitle.png" />
-		<Resource Include="images\PageBackground.png" />
-		<Resource Include="images\PreferencesPageBG.png" />
-		<Resource Include="images\Preview.png" />
-		<Resource Include="images\PreviewTitle.png" />
-		<Resource Include="images\resume_current_session.png" />
-		<Resource Include="images\ScrollPageBackground.png" />
-		<Resource Include="images\PreferencesButton.png" />
-		<Resource Include="images\SelectedLocation.png" />
-		<Resource Include="images\send.png" />
-		<Resource Include="images\SideBar.png" />
-		<Resource Include="images\Spanish.png" />
-		<Resource Include="images\start_new_session.png" />
-		<Resource Include="images\text_export.png" />
-		<Resource Include="images\tiles\around_calgary\banff.png" />
-		<Resource Include="images\tiles\around_calgary\drumheller.png" />
-		<Resource Include="images\tiles\around_calgary\jasper.png" />
-		<Resource Include="images\tiles\around_calgary\kananaskis.png" />
-		<Resource Include="images\tiles\around_calgary\waterton.png" />
-		<Resource Include="images\TitleBar.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Resource Include="images\tiles\downtown_calgary\arts_commons.png" />
-	  <Resource Include="images\tiles\downtown_calgary\calgary_tower.png" />
-	  <Resource Include="images\tiles\downtown_calgary\calgary_zoo.png" />
-	  <Resource Include="images\tiles\downtown_calgary\central_library.png" />
-	  <Resource Include="images\tiles\downtown_calgary\core_shopping_center.png" />
-	  <Resource Include="images\tiles\downtown_calgary\glenbow_museum.png" />
-	  <Resource Include="images\tiles\downtown_calgary\peace_bridge.png" />
-	  <Resource Include="images\tiles\downtown_calgary\stephen_ave.png" />
-	  <Resource Include="images\tiles\downtown_calgary\studio_bell.png" />
-	  <Resource Include="images\tiles\downtown_calgary\telus_spark.png" />
-	  <Resource Include="images\tiles\fun_for_the_family\calaway_park.png" />
-	  <Resource Include="images\tiles\fun_for_the_family\calgary_tower.png" />
-	  <Resource Include="images\tiles\fun_for_the_family\calgary_zoo.png" />
-	  <Resource Include="images\tiles\fun_for_the_family\heritage_park.png" />
-	  <Resource Include="images\tiles\fun_for_the_family\princess_island_park.png" />
-	  <Resource Include="images\tiles\fun_for_the_family\telus_spark.png" />
-	  <Resource Include="images\tiles\fun_for_the_family\winsport_park.png" />
-	  <Resource Include="images\tiles\happening_this_week\art_exhibition.png" />
-	  <Resource Include="images\tiles\happening_this_week\class_albums_live.png" />
-	  <Resource Include="images\tiles\happening_this_week\disney.png" />
-	  <Resource Include="images\tiles\happening_this_week\live_country_music.png" />
-	  <Resource Include="images\tiles\happening_this_week\opera.png" />
-	  <Resource Include="images\tiles\nature\bird_sanctuary.png" />
-	  <Resource Include="images\tiles\nature\bowness_park.png" />
-	  <Resource Include="images\tiles\nature\calgary_zoo.png" />
-	  <Resource Include="images\tiles\nature\edworthy_park.png" />
-	  <Resource Include="images\tiles\nature\heritage_park.png" />
-	  <Resource Include="images\tiles\nature\princess_island_park.png" />
-	  <Resource Include="images\tiles\restaurants\charcut.png" />
-	  <Resource Include="images\tiles\restaurants\deane_house.png" />
-	  <Resource Include="images\tiles\restaurants\river_cafe.png" />
-	  <Resource Include="images\tiles\restaurants\rouge.png" />
-	  <Resource Include="images\TransitOptions.png" />
-	  <Resource Include="images\ZoomIcon.png" />
-	</ItemGroup>
-
+  <ItemGroup>
+    <None Remove="images\AddToItineraryButton.png" />
+    <None Remove="images\AddToItineraryIcon.png" />
+    <None Remove="images\add_to_itinerary_icon.png" />
+    <None Remove="images\AttractionPreviewFull.png" />
+    <None Remove="images\Attractions.png" />
+    <None Remove="images\BackButton.png" />
+    <None Remove="images\calgary.png" />
+    <None Remove="images\CalgaryTowerTitle.png" />
+    <None Remove="images\Calgary_Tower_Tile_Itinerary.png" />
+    <None Remove="images\calgary_zoo_tile.png" />
+    <None Remove="images\cancel.png" />
+    <None Remove="images\ChangeLanguageBgrd.png" />
+    <None Remove="images\ChangeLanguageTitle.png" />
+    <None Remove="images\charcut_tile.png" />
+    <None Remove="images\Chinese.png" />
+    <None Remove="images\CityMapButton.png" />
+    <None Remove="images\CityMapPageTitle.png" />
+    <None Remove="images\ClearAllExport.png" />
+    <None Remove="images\clear_all.png" />
+    <None Remove="images\clear_session.png" />
+    <None Remove="images\CommuteFullPage.png" />
+    <None Remove="images\DeaneHouseTitle.png" />
+    <None Remove="images\DoneButton.png" />
+    <None Remove="images\email_export.png" />
+    <None Remove="images\English.png" />
+    <None Remove="images\EventPreviewFull.png" />
+    <None Remove="images\Events.png" />
+    <None Remove="images\EventsPageTitle.png" />
+    <None Remove="images\event_sample.png" />
+    <None Remove="images\export.png" />
+    <None Remove="images\export_clear_session_timeout.png" />
+    <None Remove="images\Export_Popup.png" />
+    <None Remove="images\find_what_you_love.png" />
+    <None Remove="images\FoodTitleButton.png" />
+    <None Remove="images\food_sample.png" />
+    <None Remove="images\France.png" />
+    <None Remove="images\GettingThereButton.png" />
+    <None Remove="images\GettingThereTitle.png" />
+    <None Remove="images\Help.png" />
+    <None Remove="images\HelpBackground.png" />
+    <None Remove="images\HelpButton.png" />
+    <None Remove="images\HelpFullPage.png" />
+    <None Remove="images\HelpText.png" />
+    <None Remove="images\heritage_park_tile.png" />
+    <None Remove="images\HomeButton.png" />
+    <None Remove="images\Info Widget.png" />
+    <None Remove="images\itineraryCircle.png" />
+    <None Remove="images\itinerary_email_export.png" />
+    <None Remove="images\itinerary_text_export.png" />
+    <None Remove="images\language text.png" />
+    <None Remove="images\LocalEatsPageTitle.png" />
+    <None Remove="images\MapLarge.png" />
+    <None Remove="images\MapMedium.png" />
+    <None Remove="images\MapTip.png" />
+    <None Remove="images\Peace_Bridge_Tile_Itinerary.png" />
+    <None Remove="images\PreferencesDialogBG.png" />
+    <None Remove="images\ItineraryButton.png" />
+    <None Remove="images\LanguageButton.png" />
+    <None Remove="images\LocalEatsButton.png" />
+    <None Remove="images\LocalEventsButton.png" />
+    <None Remove="images\MainBackground.png" />
+    <None Remove="images\PlacesToSeeButton.png" />
+    <None Remove="images\Branding.png" />
+    <None Remove="images\AttractionsPageTitle.png" />
+    <None Remove="images\PageBackground.png" />
+    <None Remove="images\PreferencesPageBG.png" />
+    <None Remove="images\Preview.png" />
+    <None Remove="images\PreviewTitle.png" />
+    <None Remove="images\RestaurantPreviewFull.png" />
+    <None Remove="images\resume_current_session.png" />
+    <None Remove="images\ScrollPageBackground.png" />
+    <None Remove="images\SelectedLocation.png" />
+    <None Remove="images\send.png" />
+    <None Remove="images\SideBar.png" />
+    <None Remove="images\Spanish.png" />
+    <None Remove="images\start_new_session.png" />
+    <None Remove="images\text_export.png" />
+    <None Remove="images\tiles\around_calgary\banff.png" />
+    <None Remove="images\tiles\around_calgary\drumheller.png" />
+    <None Remove="images\tiles\around_calgary\jasper.png" />
+    <None Remove="images\tiles\around_calgary\kananaskis.png" />
+    <None Remove="images\tiles\around_calgary\waterton.png" />
+    <None Remove="images\tiles\downtown_calgary\arts_commons.png" />
+    <None Remove="images\tiles\downtown_calgary\calgary_tower.png" />
+    <None Remove="images\tiles\downtown_calgary\calgary_zoo.png" />
+    <None Remove="images\tiles\downtown_calgary\central_library.png" />
+    <None Remove="images\tiles\downtown_calgary\core_shopping_center.png" />
+    <None Remove="images\tiles\downtown_calgary\glenbow_museum.png" />
+    <None Remove="images\tiles\downtown_calgary\peace_bridge.png" />
+    <None Remove="images\tiles\downtown_calgary\stephen_ave.png" />
+    <None Remove="images\tiles\downtown_calgary\studio_bell.png" />
+    <None Remove="images\tiles\downtown_calgary\telus_spark.png" />
+    <None Remove="images\tiles\fun_for_the_family\calaway_park.png" />
+    <None Remove="images\tiles\fun_for_the_family\calgary_tower.png" />
+    <None Remove="images\tiles\fun_for_the_family\calgary_zoo.png" />
+    <None Remove="images\tiles\fun_for_the_family\heritage_park.png" />
+    <None Remove="images\tiles\fun_for_the_family\princess_island_park.png" />
+    <None Remove="images\tiles\fun_for_the_family\telus_spark.png" />
+    <None Remove="images\tiles\fun_for_the_family\winsport_park.png" />
+    <None Remove="images\tiles\happening_this_week\art_exhibition.png" />
+    <None Remove="images\tiles\happening_this_week\class_albums_live.png" />
+    <None Remove="images\tiles\happening_this_week\disney.png" />
+    <None Remove="images\tiles\happening_this_week\live_country_music.png" />
+    <None Remove="images\tiles\happening_this_week\opera.png" />
+    <None Remove="images\tiles\nature\bird_sanctuary.png" />
+    <None Remove="images\tiles\nature\bowness_park.png" />
+    <None Remove="images\tiles\nature\calgary_zoo.png" />
+    <None Remove="images\tiles\nature\edworthy_park.png" />
+    <None Remove="images\tiles\nature\heritage_park.png" />
+    <None Remove="images\tiles\nature\princess_island_park.png" />
+    <None Remove="images\tiles\restaurants\charcut.png" />
+    <None Remove="images\tiles\restaurants\deane_house.png" />
+    <None Remove="images\tiles\restaurants\river_cafe.png" />
+    <None Remove="images\tiles\restaurants\rouge.png" />
+    <None Remove="images\TitleBar.png" />
+    <None Remove="images\TransitOptions.png" />
+    <None Remove="images\ZoomIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\CommuteFullPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\AddToItineraryButton.png" />
+    <Resource Include="images\AddToItineraryIcon.png" />
+    <Resource Include="images\add_to_itinerary_icon.png" />
+    <Resource Include="images\AttractionPreviewFull.png" />
+    <Resource Include="images\CalgaryTowerTitle.png" />
+    <Resource Include="images\CityMapPageTitle.png" />
+    <Resource Include="images\DeaneHouseTitle.png" />
+    <Resource Include="images\EventPreviewFull.png" />
+    <Resource Include="images\Attractions.png" />
+    <Resource Include="images\BackButton.png" />
+    <Resource Include="images\calgary.png" />
+    <Resource Include="images\Calgary_Tower_Tile_Itinerary.png" />
+    <Resource Include="images\calgary_zoo_tile.png" />
+    <Resource Include="images\cancel.png" />
+    <Resource Include="images\ChangeLanguageBgrd.png" />
+    <Resource Include="images\ChangeLanguageTitle.png" />
+    <Resource Include="images\charcut_tile.png" />
+    <Resource Include="images\Chinese.png" />
+    <Resource Include="images\CityMapButton.png" />
+    <Resource Include="images\ClearAllExport.png" />
+    <Resource Include="images\clear_all.png" />
+    <Resource Include="images\clear_session.png" />
+    <Resource Include="images\DoneButton.png" />
+    <Resource Include="images\email_export.png" />
+    <Resource Include="images\English.png" />
+    <Resource Include="images\Events.png" />
+    <Resource Include="images\event_sample.png" />
+    <Resource Include="images\export.png" />
+    <Resource Include="images\export_clear_session_timeout.png" />
+    <Resource Include="images\Export_Popup.png" />
+    <Resource Include="images\find_what_you_love.png" />
+    <Resource Include="images\FoodTitleButton.png" />
+    <Resource Include="images\food_sample.png" />
+    <Resource Include="images\France.png" />
+    <Resource Include="images\GettingThereButton.png" />
+    <Resource Include="images\GettingThereTitle.png" />
+    <Resource Include="images\Help.png" />
+    <Resource Include="images\HelpBackground.png" />
+    <Resource Include="images\HelpButton.png" />
+    <Resource Include="images\HelpFullPage.png" />
+    <Resource Include="images\HelpText.png" />
+    <Resource Include="images\heritage_park_tile.png" />
+    <Resource Include="images\HomeButton.png" />
+    <Resource Include="images\EventsPageTitle.png" />
+    <Resource Include="images\Info Widget.png" />
+    <Resource Include="images\itineraryCircle.png" />
+    <Resource Include="images\itinerary_email_export.png" />
+    <Resource Include="images\itinerary_text_export.png" />
+    <Resource Include="images\language text.png" />
+    <Resource Include="images\MapLarge.png" />
+    <Resource Include="images\MapMedium.png" />
+    <Resource Include="images\MapTip.png" />
+    <Resource Include="images\MenuBottomBar.png" />
+    <Resource Include="images\Peace_Bridge_Tile_Itinerary.png" />
+    <Resource Include="images\PreferencesDialogBG.png" />
+    <Resource Include="images\ItineraryButton.png" />
+    <Resource Include="images\LanguageButton.png" />
+    <Resource Include="images\LocalEatsButton.png" />
+    <Resource Include="images\LocalEventsButton.png" />
+    <Resource Include="images\MainBackground.png" />
+    <Resource Include="images\PlacesToSeeButton.png" />
+    <Resource Include="images\Branding.png" />
+    <Resource Include="images\AttractionsPageTitle.png" />
+    <Resource Include="images\PageBackground.png" />
+    <Resource Include="images\PreferencesPageBG.png" />
+    <Resource Include="images\Preview.png" />
+    <Resource Include="images\PreviewTitle.png" />
+    <Resource Include="images\RestaurantPreviewFull.png" />
+    <Resource Include="images\resume_current_session.png" />
+    <Resource Include="images\ScrollPageBackground.png" />
+    <Resource Include="images\PreferencesButton.png" />
+    <Resource Include="images\SelectedLocation.png" />
+    <Resource Include="images\send.png" />
+    <Resource Include="images\SideBar.png" />
+    <Resource Include="images\Spanish.png" />
+    <Resource Include="images\start_new_session.png" />
+    <Resource Include="images\text_export.png" />
+    <Resource Include="images\tiles\around_calgary\banff.png" />
+    <Resource Include="images\tiles\around_calgary\drumheller.png" />
+    <Resource Include="images\tiles\around_calgary\jasper.png" />
+    <Resource Include="images\tiles\around_calgary\kananaskis.png" />
+    <Resource Include="images\tiles\around_calgary\waterton.png" />
+    <Resource Include="images\TitleBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\tiles\downtown_calgary\arts_commons.png" />
+    <Resource Include="images\tiles\downtown_calgary\calgary_tower.png" />
+    <Resource Include="images\tiles\downtown_calgary\calgary_zoo.png" />
+    <Resource Include="images\tiles\downtown_calgary\central_library.png" />
+    <Resource Include="images\tiles\downtown_calgary\core_shopping_center.png" />
+    <Resource Include="images\tiles\downtown_calgary\glenbow_museum.png" />
+    <Resource Include="images\tiles\downtown_calgary\peace_bridge.png" />
+    <Resource Include="images\tiles\downtown_calgary\stephen_ave.png" />
+    <Resource Include="images\tiles\downtown_calgary\studio_bell.png" />
+    <Resource Include="images\tiles\downtown_calgary\telus_spark.png" />
+    <Resource Include="images\tiles\fun_for_the_family\calaway_park.png" />
+    <Resource Include="images\tiles\fun_for_the_family\calgary_tower.png" />
+    <Resource Include="images\tiles\fun_for_the_family\calgary_zoo.png" />
+    <Resource Include="images\tiles\fun_for_the_family\heritage_park.png" />
+    <Resource Include="images\tiles\fun_for_the_family\princess_island_park.png" />
+    <Resource Include="images\tiles\fun_for_the_family\telus_spark.png" />
+    <Resource Include="images\tiles\fun_for_the_family\winsport_park.png" />
+    <Resource Include="images\tiles\happening_this_week\art_exhibition.png" />
+    <Resource Include="images\tiles\happening_this_week\class_albums_live.png" />
+    <Resource Include="images\tiles\happening_this_week\disney.png" />
+    <Resource Include="images\tiles\happening_this_week\live_country_music.png" />
+    <Resource Include="images\tiles\happening_this_week\opera.png" />
+    <Resource Include="images\tiles\nature\bird_sanctuary.png" />
+    <Resource Include="images\tiles\nature\bowness_park.png" />
+    <Resource Include="images\tiles\nature\calgary_zoo.png" />
+    <Resource Include="images\tiles\nature\edworthy_park.png" />
+    <Resource Include="images\tiles\nature\heritage_park.png" />
+    <Resource Include="images\tiles\nature\princess_island_park.png" />
+    <Resource Include="images\tiles\restaurants\charcut.png" />
+    <Resource Include="images\tiles\restaurants\deane_house.png" />
+    <Resource Include="images\tiles\restaurants\river_cafe.png" />
+    <Resource Include="images\tiles\restaurants\rouge.png" />
+    <Resource Include="images\TransitOptions.png" />
+    <Resource Include="images\ZoomIcon.png" />
+  </ItemGroup>
+  <ItemGroup Condition="$(VisualStudioVersion) == '17.0'">
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTPath)\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTesting, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTUnitTestPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>$(SSDTUnitTestPath)\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup>
+    <SsdtUnitTestVersion>3.1</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="$(VisualStudioVersion) != '15.0' And '$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="$(VisualStudioVersion) != '15.0' And '$(SQLDBExtensionsRefPath)' == ''" />
 </Project>
