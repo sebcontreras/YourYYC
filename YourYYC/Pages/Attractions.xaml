@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC.Pages"
+             xmlns:window="clr-namespace:YourYYC"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Canvas Height="1024" Width="1440" Cursor="Hand">
@@ -15,51 +16,44 @@
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
             <!-- Scrollable Page BG as image -->
-            <StackPanel>
+            <StackPanel x:Name="ContainerPanel">
                 <StackPanel>
                     <TextBlock Text="Recommended for you" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction1" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction2" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction3" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction4" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction5" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction6" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction7" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction8" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction9" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction10" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction11" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction12" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/event_sample.png"></Image>
-                    </Button>
+                    <!-- for loop that updates x and y -->
+                    <Canvas Width="305" Height="314" Margin="15">
+                        <Button Width="305" Height="314">
+                            <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
+                        </Button>
+                        <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="15">
+                        <Button Width="305" Height="314">
+                            <Image Source="../images/tiles/fun_for_the_family/calgary_tower.png"></Image>
+                        </Button>
+                        <Button x:Name="CalgaryTower" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="15">
+                        <Button Width="305" Height="314">
+                            <Image Source="../images/tiles/fun_for_the_family/heritage_park.png"></Image>
+                        </Button>
+                        <Button x:Name="HeritagePark" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="15">
+                        <Button Width="305" Height="314">
+                            <Image Source="../images/tiles/downtown_calgary/studio_bell.png"></Image>
+                        </Button>
+                        <Button x:Name="StudioBell" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
                 </StackPanel>
             </StackPanel>
 
@@ -131,5 +125,8 @@
         <Button Name="ItineraryButton" Click="ItineraryButtonClick" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/ItineraryButton.png"/>
         </Button>
+        <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
+
     </Canvas>
 </UserControl>
