@@ -49,6 +49,7 @@
 		<None Remove="images\HelpText.png" />
 		<None Remove="images\heritage_park_tile.png" />
 		<None Remove="images\HomeButton.png" />
+		<None Remove="images\itineraryCircle.png" />
 		<None Remove="images\itinerary_email_export.png" />
 		<None Remove="images\itinerary_text_export.png" />
 		<None Remove="images\language text.png" />
@@ -153,6 +154,7 @@
 		<Resource Include="images\heritage_park_tile.png" />
 		<Resource Include="images\HomeButton.png" />
 		<Resource Include="images\EventsPageTitle.png" />
+		<Resource Include="images\itineraryCircle.png" />
 		<Resource Include="images\itinerary_email_export.png" />
 		<Resource Include="images\itinerary_text_export.png" />
 		<Resource Include="images\language text.png" />

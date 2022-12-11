@@ -95,6 +95,8 @@
         <Button Click="ItineraryButtonClick" Name="ItineraryButton" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/ItineraryButton.png"/>
         </Button>
+        <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
 
         <!-- Bottom Bar -->
         <Image Height="20" Canvas.Left="300" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>

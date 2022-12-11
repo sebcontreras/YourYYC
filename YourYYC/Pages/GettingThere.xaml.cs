@@ -27,7 +27,7 @@ namespace YourYYC.Pages
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
-
+            ItineraryCount.Content = window.itineraryCount.ToString();
         }
         public void HelpButtonClick(object sender, RoutedEventArgs e)
         {

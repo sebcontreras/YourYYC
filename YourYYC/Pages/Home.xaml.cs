@@ -21,9 +21,12 @@ namespace YourYYC.Pages
     /// </summary>
     public partial class Home : UserControl
     {
+        MainWindow window;
         public Home()
         {
             InitializeComponent();
+            window = (MainWindow)Application.Current.MainWindow;
+            ItineraryCount.Content = window.itineraryCount.ToString();
         }
         public void HomeButtonClick(object sender, RoutedEventArgs e)
         {

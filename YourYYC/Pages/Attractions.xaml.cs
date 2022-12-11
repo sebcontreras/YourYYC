@@ -28,6 +28,9 @@ namespace YourYYC.Pages
         AttractionsNature nature = new AttractionsNature();
         AttractionsArt art = new AttractionsArt();
         AttractionsFamilyFriendly familyFriendly = new AttractionsFamilyFriendly();
+
+        public int itineraryCount { get; set; }
+
         public Attractions()
         {
             InitializeComponent();
@@ -35,6 +38,7 @@ namespace YourYYC.Pages
             attractionList = window.attractionList;
             selectedPreferences = window.selectedPreferences;
             preferences = window.preferences;
+            ItineraryCount.Content = window.itineraryCount.ToString();
             SetTiles();
         }
 
@@ -66,7 +70,8 @@ namespace YourYYC.Pages
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            window.AddAttractionToItinerary(btn.Name);
+            int newCount = window.AddAttractionToItinerary(btn.Name);
+            ItineraryCount.Content = newCount.ToString();
         }
 
         public void HomeButtonClick(object sender, RoutedEventArgs e)

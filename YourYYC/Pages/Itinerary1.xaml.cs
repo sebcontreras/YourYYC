@@ -25,6 +25,7 @@ namespace YourYYC.Pages
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
+            ItineraryCount.Content = window.itineraryCount.ToString();
 
             int i = 1;
             foreach (var tile in window.itineraryList)
