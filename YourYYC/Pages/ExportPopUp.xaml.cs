@@ -30,19 +30,22 @@ namespace YourYYC.Pages
 
         private void emailButton_Click(object sender, RoutedEventArgs e)
         {
-            exportGrid.Children.Clear();
-            exportGrid.Children.Add(_email);
+            Switcher.Switch(new EmailPopUp());
+            //exportGrid.Children.Clear();
+            //exportGrid.Children.Add(_email);
         }
 
         private void textButton_Click(object sender, RoutedEventArgs e)
         {
-            exportGrid.Children.Clear();
-            exportGrid.Children.Add(_text);
+            Switcher.Switch(new TextPopUp());
+            //exportGrid.Children.Clear();
+            //exportGrid.Children.Add(_text);
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-            exportGrid.Children.Clear();
+            Switcher.Switch(new Itinerary1());
+            //exportGrid.Children.Clear();
         }
 
         private void clearSessionButton_Click(object sender, RoutedEventArgs e)

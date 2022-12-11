@@ -4,35 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC.Pages"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.Background>
-        <ImageBrush ImageSource="../images/itinerary_text_export.png"/>
-    </UserControl.Background>
-    <Grid Name="textGrid">
-        <Button Name="CancelButton" Margin="755,10,10,410" Click="cancelButton_Click" RenderTransformOrigin="0.5,0.5">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-            <Image Source="../images/cancel.png" Height="30" Width="40"/>
+             mc:Ignorable="d">
+
+    <Canvas Height="1024" Width="1440">
+
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+
+        <Canvas.Background>
+            <ImageBrush ImageSource="../images/itinerary_text_export.png"/>
+        </Canvas.Background>
+
+        <Button Name="CancelButton" Margin="1350,40" Click="cancelButton_Click" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="../images/cancel.png"/>
         </Button>
-        <Button Name="SendButton" Margin="564,150,0,269" Click="sendButton_Click" HorizontalAlignment="Left" Width="62" RenderTransformOrigin="0.5,0.5">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="179.75"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-            <Image Source="../images/send.png" Height="37"/>
+
+        <Button Name="SendButton" Margin="1000,345" Click="sendButton_Click" HorizontalAlignment="Center" Height="62" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="../images/send.png"/>
         </Button>
-        <TextBox x:Name="MainTextBox" Text="(_ _ _) - _ _ _ - _ _ _ _" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="336,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Height="24" Background="LightGray"/>
-        <TextBox x:Name="ExtensionTextBox" Text="+_" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="283,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="45" Height="24" Background="LightGray"/>
-    </Grid>
+        
+        <TextBox x:Name="MainTextBox" Text="( _ _ _ ) - _ _ _ - _ _ _ _" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="620,360" TextWrapping="Wrap" VerticalAlignment="Center" Width="350" Height="30" BorderBrush="Transparent" Background="LightGray"/>
+        <TextBox x:Name="ExtensionTextBox" Text="+_" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="530,360" TextWrapping="Wrap" VerticalAlignment="Center" Width="45" Height="30" Background="LightGray" BorderBrush="Transparent"/>
+    </Canvas>
 </UserControl>

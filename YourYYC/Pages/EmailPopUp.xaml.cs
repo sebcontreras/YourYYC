@@ -28,14 +28,15 @@ namespace YourYYC.Pages
 
         private void sendButton_Click(object sender, RoutedEventArgs e)
         {
-            emailGrid.Children.Clear();
-            emailGrid.Children.Add(_clearSession);
-
+            Switcher.Switch(new Itinerary1());
+            //emailGrid.Children.Clear();
+            //emailGrid.Children.Add(_clearSession);
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-            emailGrid.Children.Clear();
+            Switcher.Switch(new Itinerary1());
+            //emailGrid.Children.Clear();
         }
     }
 }

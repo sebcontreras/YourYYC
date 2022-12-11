@@ -1,12 +1,18 @@
-﻿<UserControl x:Class="YourYYC.images.AttractionPreview"
+﻿<UserControl x:Class="YourYYC.Pages.AttractionPreview"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:YourYYC.images"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             xmlns:local="clr-namespace:YourYYC.Pages"
+             xmlns:window="clr-namespace:YourYYC"
+             mc:Ignorable="d">
+
     <Canvas Height="1024" Width="1440" Cursor="Hand">
+
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+
         <!-- Window Background -->
         <Canvas.Background>
             <ImageBrush ImageSource="../images/PageBackground.png"/>
@@ -14,13 +20,9 @@
 
 
         <!-- Attractions List as a Scrollable Page -->
-        <ScrollViewer Height="704" Width="1415" Canvas.Left="25" Canvas.Top="140" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <ScrollViewer Height="700" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Center">
             <!-- Scrollable Page BG as image -->
             <StackPanel Width="1355">
-
-
-
-
 
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Image Height="343"   Stretch="UniformToFill" Width="1237" Source="../images/calgary.png" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
@@ -33,7 +35,7 @@
                             </TransformGroup>
                         </Image.RenderTransform>
                     </Image>
-                    <Button x:Name ="AddButton" Click="AddButton_Click"  Height="66" Width="276"  BorderBrush="Transparent" Background="Transparent" Margin="10,0,0,0" HorizontalAlignment="Right">
+                    <Button x:Name ="AddButton" Click="AddButtonClick"  Height="66" Width="276"  BorderBrush="Transparent" Background="Transparent" Margin="10,0,0,0" HorizontalAlignment="Right">
                         <Image Source="../images/AddToItineraryButton.png" Width="235" Height="36" Stretch="UniformToFill" />
                     </Button>
                 </StackPanel>
@@ -42,9 +44,6 @@
 
                     <TextBlock Height="425"  TextWrapping="Wrap" Text="Disney On Ice is returning to Calgary for another year of magic from November 17-20. Families have the opportunity to make unforgettable memories joining Mickey and all his Disney friends with the Disney On Ice Road Trip Adventures." FontSize="18" Width="1014"/>
                     <Image Height="444"   Stretch="UniformToFill" Width="278" Source="../images/Info Widget.png"/>
-
-
-
 
                 </StackPanel>
 
@@ -57,7 +56,7 @@
         <!-- Attractions Page Title Button / Logo -->
         <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="189">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../images/Preview.png"/>
+                <ImageBrush ImageSource="../images/AttractionsPageTitle.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
@@ -72,7 +71,7 @@
         </Button>
 
         <!-- Language Button -->
-        <Button Name="LanguageButton" Click="LanguageButttonClick" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+        <Button Name="LanguageButton" Click="LanguageButtonClick" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/LanguageButton.png"/>
         </Button>
 
@@ -118,5 +117,7 @@
         <Button Name="ItineraryButton" Click="ItineraryButtonClick" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/ItineraryButton.png"/>
         </Button>
+        <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
     </Canvas>
 </UserControl>

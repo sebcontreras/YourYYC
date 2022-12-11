@@ -4,26 +4,28 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YourYYC.Pages"
-        mc:Ignorable="d"
-        Height="1024" Width="1440">
-    <Grid>
-        <Grid.Background>
+        mc:Ignorable="d">
+    
+    <Canvas Height="1024" Width="1440">
+
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+        
+        <Canvas.Background>
             <ImageBrush ImageSource="../images/export_clear_session_timeout.png"/>
-        </Grid.Background>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="592*"/>
-            <RowDefinition Height="417*"/>
-        </Grid.RowDefinitions>
-        <Button Name="CancelButton" Margin="1340,10,10,509">
+        </Canvas.Background>
+
+        <Button Name="CancelButton" Margin="1350,40" Background="Transparent" BorderBrush="Transparent">
             <Image Source="../images/cancel.png"/>
         </Button>
 
-        <Button Name="StartNewSession" Margin="753,491,436,39" Click="newSession">
+        <Button Name="StartNewSession" Margin="745,510" Click="newSession" Height="70" Background="Transparent" BorderBrush="Transparent">
             <Image Source="../images/start_new_session.png"/>
         </Button>
-        <Button Name="ResumeCurrentSession" Margin="502,491,687,39">
+        <Button Name="ResumeCurrentSession" Margin="400,510" Height="70" Background="Transparent" BorderBrush="Transparent">
             <Image Source="../images/resume_current_session.png"/>
         </Button>
 
-    </Grid>
+    </Canvas>
 </UserControl>
