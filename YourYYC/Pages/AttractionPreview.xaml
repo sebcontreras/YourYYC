@@ -18,11 +18,14 @@
             <ImageBrush ImageSource="../images/PageBackground.png"/>
         </Canvas.Background>
 
-
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="700" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Center">
             <!-- Scrollable Page BG as image -->
             <StackPanel Width="1355">
+
+
+
+
 
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Image Height="343"   Stretch="UniformToFill" Width="1237" Source="../images/calgary.png" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5">
@@ -35,7 +38,7 @@
                             </TransformGroup>
                         </Image.RenderTransform>
                     </Image>
-                    <Button x:Name ="AddButton" Click="AddButtonClick"  Height="66" Width="276"  BorderBrush="Transparent" Background="Transparent" Margin="10,0,0,0" HorizontalAlignment="Right">
+                    <Button x:Name ="AddButton" Click="AddButton_Click"  Height="66" Width="276"  BorderBrush="Transparent" Background="Transparent" Margin="10,0,0,0" HorizontalAlignment="Right">
                         <Image Source="../images/AddToItineraryButton.png" Width="235" Height="36" Stretch="UniformToFill" />
                     </Button>
                 </StackPanel>
@@ -45,18 +48,20 @@
                     <TextBlock Height="425"  TextWrapping="Wrap" Text="Disney On Ice is returning to Calgary for another year of magic from November 17-20. Families have the opportunity to make unforgettable memories joining Mickey and all his Disney friends with the Disney On Ice Road Trip Adventures." FontSize="18" Width="1014"/>
                     <Image Height="444"   Stretch="UniformToFill" Width="278" Source="../images/Info Widget.png"/>
 
+
+
+
                 </StackPanel>
 
             </StackPanel>
-
         </ScrollViewer>
 
         <!-- Top Navigation Bar -->
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
         <!-- Attractions Page Title Button / Logo -->
-        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="189">
+        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="154">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../images/AttractionsPageTitle.png"/>
+                <ImageBrush ImageSource="../images/Preview.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
@@ -117,6 +122,8 @@
         <Button Name="ItineraryButton" Click="ItineraryButtonClick" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/ItineraryButton.png"/>
         </Button>
+        <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
         <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
     </Canvas>

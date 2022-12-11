@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -17,12 +17,12 @@ using System.Windows.Shapes;
 namespace YourYYC.Pages
 {
     /// <summary>
-    /// Interaction logic for Home.xaml
+    /// Interaction logic for CityMapMedium.xaml
     /// </summary>
-    public partial class Home : UserControl
+    public partial class CityMapSmall : UserControl
     {
         MainWindow window;
-        public Home()
+        public CityMapSmall()
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
@@ -72,6 +72,44 @@ namespace YourYYC.Pages
         public void BackButtonClick(object sender, RoutedEventArgs e)
         {
             Switcher.GoBack();
+        }
+
+        private void DowntownPinClick(object sender, RoutedEventArgs e)
+        {
+            InglewoodSelected.Visibility = Visibility.Hidden;
+            PopUp.Visibility = Visibility.Visible;
+            DowntownSelected.Visibility = Visibility.Visible;
+        }
+
+        private void InglewoodPinClick(object sender, RoutedEventArgs e)
+        {
+            DowntownSelected.Visibility = Visibility.Hidden;
+            PopUp.Visibility = Visibility.Visible;
+            InglewoodSelected.Visibility = Visibility.Visible;
+        }
+
+
+        private void ZoomOutClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new CityMapMedium());
+        }
+
+        private void SideBarAttractionsClick(object sender, RoutedEventArgs e)
+        {
+            SideBarEventsTile.Visibility = Visibility.Collapsed;
+            SideBarFoodTile.Visibility = Visibility.Collapsed;
+        }
+
+        private void SideBarEventsClick(object sender, RoutedEventArgs e)
+        {
+            SideBarAttractionsTile.Visibility = Visibility.Collapsed;
+            SideBarFoodTile.Visibility = Visibility.Collapsed;
+        }
+
+        private void SideBarFoodClick(object sender, RoutedEventArgs e)
+        {
+            SideBarEventsTile.Visibility = Visibility.Collapsed;
+            SideBarAttractionsTile.Visibility = Visibility.Collapsed;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using YourYYC;
 using YourYYC.Pages;
 
 namespace YourYYC.Pages
@@ -24,17 +23,12 @@ namespace YourYYC.Pages
     public partial class AttractionPreview : UserControl
     {
         MainWindow window;
-        public int itineraryCount { get; set; }
 
         public AttractionPreview()
         {
-            //InitializeComponent();
+            InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
-        }
-
-        public void AddButtonClick(object sender, RoutedEventArgs e)
-        {
-            //Switcher.Switch(new Food());
+            ItineraryCount.Content = window.itineraryCount.ToString();
         }
 
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
@@ -50,12 +44,12 @@ namespace YourYYC.Pages
         }
         public void LanguageButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new LanguageOption());
         }
 
         public void HelpButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new Help());
         }
         public void PreferencesButtonClick(object sender, RoutedEventArgs e)
         {
@@ -75,11 +69,11 @@ namespace YourYYC.Pages
         }
         public void MapButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new CityMapLarge());
         }
         public void GettingThereButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new GettingThere());
         }
         public void ItineraryButtonClick(object sender, RoutedEventArgs e)
         {

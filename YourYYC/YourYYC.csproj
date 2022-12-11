@@ -12,6 +12,7 @@
 		<None Remove="images\AddToItineraryButton.png" />
 		<None Remove="images\AddToItineraryIcon.png" />
 		<None Remove="images\add_to_itinerary_icon.png" />
+		<None Remove="images\AttractionPreviewFull.png" />
 		<None Remove="images\Attractions.png" />
 		<None Remove="images\BackButton.png" />
 		<None Remove="images\calgary.png" />
@@ -23,6 +24,7 @@
 		<None Remove="images\charcut_tile.png" />
 		<None Remove="images\Chinese.png" />
 		<None Remove="images\CityMapButton.png" />
+		<None Remove="images\CityMapPageTitle.png" />
 		<None Remove="images\ClearAllExport.png" />
 		<None Remove="images\clear_all.png" />
 		<None Remove="images\clear_session.png" />
@@ -30,6 +32,7 @@
 		<None Remove="images\DoneButton.png" />
 		<None Remove="images\email_export.png" />
 		<None Remove="images\English.png" />
+		<None Remove="images\EventPreviewFull.png" />
 		<None Remove="images\Events.png" />
 		<None Remove="images\EventsPageTitle.png" />
 		<None Remove="images\event_sample.png" />
@@ -49,11 +52,15 @@
 		<None Remove="images\HelpText.png" />
 		<None Remove="images\heritage_park_tile.png" />
 		<None Remove="images\HomeButton.png" />
+		<None Remove="images\Info Widget.png" />
 		<None Remove="images\itineraryCircle.png" />
 		<None Remove="images\itinerary_email_export.png" />
 		<None Remove="images\itinerary_text_export.png" />
 		<None Remove="images\language text.png" />
 		<None Remove="images\LocalEatsPageTitle.png" />
+		<None Remove="images\MapLarge.png" />
+		<None Remove="images\MapMedium.png" />
+		<None Remove="images\MapTip.png" />
 		<None Remove="images\Peace_Bridge_Tile_Itinerary.png" />
 		<None Remove="images\PreferencesDialogBG.png" />
 		<None Remove="images\ItineraryButton.png" />
@@ -66,9 +73,13 @@
 		<None Remove="images\AttractionsPageTitle.png" />
 		<None Remove="images\PageBackground.png" />
 		<None Remove="images\PreferencesPageBG.png" />
+		<None Remove="images\Preview.png" />
+		<None Remove="images\PreviewTitle.png" />
 		<None Remove="images\resume_current_session.png" />
 		<None Remove="images\ScrollPageBackground.png" />
+		<None Remove="images\SelectedLocation.png" />
 		<None Remove="images\send.png" />
+		<None Remove="images\SideBar.png" />
 		<None Remove="images\Spanish.png" />
 		<None Remove="images\start_new_session.png" />
 		<None Remove="images\text_export.png" />
@@ -111,12 +122,16 @@
 		<None Remove="images\tiles\restaurants\rouge.png" />
 		<None Remove="images\TitleBar.png" />
 		<None Remove="images\TransitOptions.png" />
+		<None Remove="images\ZoomIcon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Resource Include="images\AddToItineraryButton.png" />
 		<Resource Include="images\AddToItineraryIcon.png" />
 		<Resource Include="images\add_to_itinerary_icon.png" />
+		<Resource Include="images\AttractionPreviewFull.png" />
+		<Resource Include="images\CityMapPageTitle.png" />
+		<Resource Include="images\EventPreviewFull.png" />
 		<Resource Include="images\Attractions.png" />
 		<Resource Include="images\BackButton.png" />
 		<Resource Include="images\calgary.png" />
@@ -154,10 +169,14 @@
 		<Resource Include="images\heritage_park_tile.png" />
 		<Resource Include="images\HomeButton.png" />
 		<Resource Include="images\EventsPageTitle.png" />
+		<Resource Include="images\Info Widget.png" />
 		<Resource Include="images\itineraryCircle.png" />
 		<Resource Include="images\itinerary_email_export.png" />
 		<Resource Include="images\itinerary_text_export.png" />
 		<Resource Include="images\language text.png" />
+		<Resource Include="images\MapLarge.png" />
+		<Resource Include="images\MapMedium.png" />
+		<Resource Include="images\MapTip.png" />
 		<Resource Include="images\MenuBottomBar.png" />
 		<Resource Include="images\Peace_Bridge_Tile_Itinerary.png" />
 		<Resource Include="images\PreferencesDialogBG.png" />
@@ -171,10 +190,14 @@
 		<Resource Include="images\AttractionsPageTitle.png" />
 		<Resource Include="images\PageBackground.png" />
 		<Resource Include="images\PreferencesPageBG.png" />
+		<Resource Include="images\Preview.png" />
+		<Resource Include="images\PreviewTitle.png" />
 		<Resource Include="images\resume_current_session.png" />
 		<Resource Include="images\ScrollPageBackground.png" />
 		<Resource Include="images\PreferencesButton.png" />
+		<Resource Include="images\SelectedLocation.png" />
 		<Resource Include="images\send.png" />
+		<Resource Include="images\SideBar.png" />
 		<Resource Include="images\Spanish.png" />
 		<Resource Include="images\start_new_session.png" />
 		<Resource Include="images\text_export.png" />
@@ -220,6 +243,7 @@
 	  <Resource Include="images\tiles\restaurants\river_cafe.png" />
 	  <Resource Include="images\tiles\restaurants\rouge.png" />
 	  <Resource Include="images\TransitOptions.png" />
+	  <Resource Include="images\ZoomIcon.png" />
 	</ItemGroup>
 
 </Project>
