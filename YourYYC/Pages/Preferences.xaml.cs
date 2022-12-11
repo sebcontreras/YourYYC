@@ -35,6 +35,7 @@ namespace YourYYC.Pages
             attractions = window.attractions;
             attractionList = window.attractionList;
             selectedTripDuration = window.selectedTripDuration;
+            ItineraryCount.Content = window.itineraryCount.ToString();
             SetPreferences();
             SetSelectedTripDuration();
             SetAttractionList();

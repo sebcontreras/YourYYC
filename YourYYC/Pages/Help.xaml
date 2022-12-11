@@ -9,11 +9,11 @@
     <Canvas Height="1024" Width="1440" Cursor="Hand">
         <!-- Window Background -->
         <Canvas.Background>
-            <ImageBrush ImageSource="../images/HelpBackground.png"/>
+            <ImageBrush ImageSource="../images/Help.png"/>
         </Canvas.Background>
         <!-- Attractions List as a Scrollable Page -->
 
-        <Button Name="DoneBtn" Canvas.Left="526" Canvas.Top="728" Width="394" Height="76" HorizontalAlignment="Center" VerticalAlignment="Top" Click="DoneBtnClick">
+        <Button Name="DoneBtn" Opacity="0" Canvas.Left="523" Canvas.Top="747" Width="394" Height="76" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DoneBtnClick">
             <Image Source="../images/DoneButton.png" Stretch="Fill"  Height="78" Width="384"/>
         </Button>
         <!-- Top Navigation Bar -->
@@ -83,5 +83,7 @@
         <Button Name="ItineraryButton" Click="ItineraryButtonClick" Height="83" Width="79" Canvas.Left="1231" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/ItineraryButton.png"/>
         </Button>
+        <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
     </Canvas>
 </UserControl>

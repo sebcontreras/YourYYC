@@ -18,11 +18,18 @@
 		<None Remove="images\Calgary_Tower_Tile_Itinerary.png" />
 		<None Remove="images\calgary_zoo_tile.png" />
 		<None Remove="images\cancel.png" />
+		<None Remove="images\ChangeLanguageBgrd.png" />
+		<None Remove="images\ChangeLanguageTitle.png" />
 		<None Remove="images\charcut_tile.png" />
+		<None Remove="images\Chinese.png" />
 		<None Remove="images\CityMapButton.png" />
+		<None Remove="images\ClearAllExport.png" />
 		<None Remove="images\clear_all.png" />
 		<None Remove="images\clear_session.png" />
+		<None Remove="images\Commute Full Page.png" />
+		<None Remove="images\DoneButton.png" />
 		<None Remove="images\email_export.png" />
+		<None Remove="images\English.png" />
 		<None Remove="images\Events.png" />
 		<None Remove="images\EventsPageTitle.png" />
 		<None Remove="images\event_sample.png" />
@@ -30,13 +37,22 @@
 		<None Remove="images\export_clear_session_timeout.png" />
 		<None Remove="images\Export_Popup.png" />
 		<None Remove="images\find_what_you_love.png" />
+		<None Remove="images\FoodTitleButton.png" />
 		<None Remove="images\food_sample.png" />
+		<None Remove="images\France.png" />
 		<None Remove="images\GettingThereButton.png" />
+		<None Remove="images\GettingThereTitle.png" />
+		<None Remove="images\Help.png" />
+		<None Remove="images\HelpBackground.png" />
 		<None Remove="images\HelpButton.png" />
+		<None Remove="images\HelpFullPage.png" />
+		<None Remove="images\HelpText.png" />
 		<None Remove="images\heritage_park_tile.png" />
 		<None Remove="images\HomeButton.png" />
+		<None Remove="images\itineraryCircle.png" />
 		<None Remove="images\itinerary_email_export.png" />
 		<None Remove="images\itinerary_text_export.png" />
+		<None Remove="images\language text.png" />
 		<None Remove="images\LocalEatsPageTitle.png" />
 		<None Remove="images\Peace_Bridge_Tile_Itinerary.png" />
 		<None Remove="images\PreferencesDialogBG.png" />
@@ -53,6 +69,7 @@
 		<None Remove="images\resume_current_session.png" />
 		<None Remove="images\ScrollPageBackground.png" />
 		<None Remove="images\send.png" />
+		<None Remove="images\Spanish.png" />
 		<None Remove="images\start_new_session.png" />
 		<None Remove="images\text_export.png" />
 		<None Remove="images\tiles\around_calgary\banff.png" />
@@ -93,6 +110,7 @@
 		<None Remove="images\tiles\restaurants\river_cafe.png" />
 		<None Remove="images\tiles\restaurants\rouge.png" />
 		<None Remove="images\TitleBar.png" />
+		<None Remove="images\TransitOptions.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -105,25 +123,41 @@
 		<Resource Include="images\Calgary_Tower_Tile_Itinerary.png" />
 		<Resource Include="images\calgary_zoo_tile.png" />
 		<Resource Include="images\cancel.png" />
+		<Resource Include="images\ChangeLanguageBgrd.png" />
+		<Resource Include="images\ChangeLanguageTitle.png" />
 		<Resource Include="images\charcut_tile.png" />
+		<Resource Include="images\Chinese.png" />
 		<Resource Include="images\CityMapButton.png" />
+		<Resource Include="images\ClearAllExport.png" />
 		<Resource Include="images\clear_all.png" />
 		<Resource Include="images\clear_session.png" />
+		<Resource Include="images\Commute Full Page.png" />
+		<Resource Include="images\DoneButton.png" />
 		<Resource Include="images\email_export.png" />
+		<Resource Include="images\English.png" />
 		<Resource Include="images\Events.png" />
 		<Resource Include="images\event_sample.png" />
 		<Resource Include="images\export.png" />
 		<Resource Include="images\export_clear_session_timeout.png" />
 		<Resource Include="images\Export_Popup.png" />
 		<Resource Include="images\find_what_you_love.png" />
+		<Resource Include="images\FoodTitleButton.png" />
 		<Resource Include="images\food_sample.png" />
+		<Resource Include="images\France.png" />
 		<Resource Include="images\GettingThereButton.png" />
+		<Resource Include="images\GettingThereTitle.png" />
+		<Resource Include="images\Help.png" />
+		<Resource Include="images\HelpBackground.png" />
 		<Resource Include="images\HelpButton.png" />
+		<Resource Include="images\HelpFullPage.png" />
+		<Resource Include="images\HelpText.png" />
 		<Resource Include="images\heritage_park_tile.png" />
 		<Resource Include="images\HomeButton.png" />
 		<Resource Include="images\EventsPageTitle.png" />
+		<Resource Include="images\itineraryCircle.png" />
 		<Resource Include="images\itinerary_email_export.png" />
 		<Resource Include="images\itinerary_text_export.png" />
+		<Resource Include="images\language text.png" />
 		<Resource Include="images\MenuBottomBar.png" />
 		<Resource Include="images\Peace_Bridge_Tile_Itinerary.png" />
 		<Resource Include="images\PreferencesDialogBG.png" />
@@ -141,6 +175,7 @@
 		<Resource Include="images\ScrollPageBackground.png" />
 		<Resource Include="images\PreferencesButton.png" />
 		<Resource Include="images\send.png" />
+		<Resource Include="images\Spanish.png" />
 		<Resource Include="images\start_new_session.png" />
 		<Resource Include="images\text_export.png" />
 		<Resource Include="images\tiles\around_calgary\banff.png" />
@@ -184,6 +219,7 @@
 	  <Resource Include="images\tiles\restaurants\deane_house.png" />
 	  <Resource Include="images\tiles\restaurants\river_cafe.png" />
 	  <Resource Include="images\tiles\restaurants\rouge.png" />
+	  <Resource Include="images\TransitOptions.png" />
 	</ItemGroup>
 
 </Project>

@@ -20,9 +20,12 @@ namespace YourYYC
     /// </summary>
     public partial class Events : UserControl
     {
+        MainWindow window;
         public Events()
         {
             InitializeComponent();
+            window = (MainWindow)Application.Current.MainWindow;
+            ItineraryCount.Content = window.itineraryCount.ToString();
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

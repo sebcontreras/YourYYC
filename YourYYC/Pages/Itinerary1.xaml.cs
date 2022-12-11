@@ -25,6 +25,7 @@ namespace YourYYC.Pages
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
+            ItineraryCount.Content = window.itineraryCount.ToString();
 
             int i = 1;
             foreach (var tile in window.itineraryList)
@@ -34,8 +35,8 @@ namespace YourYYC.Pages
                 var newItemImage = (Image)this.FindName(itemName + "Image");
 
                 newItem.Visibility = Visibility.Visible;
-                newItem.Name = tile[0];                
-                newItemImage.Source = new BitmapImage(new Uri(tile[2]));
+                newItem.Name = tile[0];
+                newItemImage.Source = new BitmapImage(new Uri(tile[2], UriKind.Relative));
 
                 i++;
 
