@@ -18,10 +18,10 @@ namespace YourYYC.Pages
     /// <summary>
     /// Interaction logic for EventsPreview.xaml
     /// </summary>
-    public partial class EventsPreview : UserControl
+    public partial class RestaurentsPreview : UserControl
     {
         MainWindow window;
-        public EventsPreview()
+        public RestaurentsPreview()
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
