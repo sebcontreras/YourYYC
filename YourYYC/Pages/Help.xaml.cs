@@ -51,7 +51,7 @@ namespace YourYYC.Pages
         }
         public void EventsButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food()); // add this
+            Switcher.Switch(new Events()); // add this
         }
         public void FoodButtonClick(object sender, RoutedEventArgs e)
         {
@@ -59,7 +59,7 @@ namespace YourYYC.Pages
         }
         public void MapButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food()); //add this
+            Switcher.Switch(new CityMapLarge());
         }
         public void GettingThereButtonClick(object sender, RoutedEventArgs e)
         {

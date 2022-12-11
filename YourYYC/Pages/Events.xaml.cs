@@ -64,7 +64,7 @@ namespace YourYYC
         }
         public void MapButtonClick(object sender, RoutedEventArgs e)
         {
-            //Switcher.Switch(new Food());
+            Switcher.Switch(new CityMapLarge());
         }
         public void GettingThereButtonClick(object sender, RoutedEventArgs e)
         {
