@@ -35,6 +35,7 @@
     <None Remove="images\CityMapButton.png" />
     <None Remove="images\CityMapTitle.png" />
     <None Remove="images\ClearAllExport.png" />
+    <None Remove="images\ClearSessionBG.png" />
     <None Remove="images\clear_all.png" />
     <None Remove="images\clear_session.png" />
     <None Remove="images\CommuteFullPage.png" />
@@ -153,6 +154,7 @@
     <Resource Include="images\ChangeLanguageTitle.png" />
     <Resource Include="images\CityMapTitle.png" />
     <Resource Include="images\AddedToItinerary.png" />
+    <Resource Include="images\ClearSessionBG.png" />
     <Resource Include="images\CommuteFullPage.png" />
   </ItemGroup>
   <ItemGroup>
