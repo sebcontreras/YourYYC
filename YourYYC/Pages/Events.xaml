@@ -21,11 +21,11 @@
             <!-- Scrollable Page BG as image -->
             <StackPanel x:Name="ContainerPanel" Orientation="Vertical">
                 <StackPanel>
-                    <TextBlock Text="Happening this week" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15"/>
+                    <TextBlock Text="Happening this week" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/disney.png"></Image>
                         </Button>
@@ -33,7 +33,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/art_exhibition.png"></Image>
                         </Button>
@@ -41,7 +41,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/opera.png"></Image>
                         </Button>
@@ -49,7 +49,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/class_albums_live.png"></Image>
                         </Button>
@@ -59,11 +59,11 @@
                     </Canvas>
                 </StackPanel>
                 <StackPanel>
-                    <TextBlock Text="Happening this month" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15"/>
+                    <TextBlock Text="Happening this month" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/live_country_music.png"></Image>
                         </Button>
@@ -71,7 +71,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/disney.png"></Image>
                         </Button>
@@ -79,7 +79,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/art_exhibition.png"></Image>
                         </Button>
@@ -87,7 +87,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/opera.png"></Image>
                         </Button>
