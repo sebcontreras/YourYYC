@@ -50,6 +50,7 @@
     <None Remove="images\EventsPageTitle.png" />
     <None Remove="images\event_sample.png" />
     <None Remove="images\export.png" />
+    <None Remove="images\ExportConfirmationBG.png" />
     <None Remove="images\export_clear_session_timeout.png" />
     <None Remove="images\Export_Popup.png" />
     <None Remove="images\find_what_you_love.png" />
@@ -184,6 +185,7 @@
     <Resource Include="images\Events.png" />
     <Resource Include="images\event_sample.png" />
     <Resource Include="images\export.png" />
+    <Resource Include="images\ExportConfirmationBG.png" />
     <Resource Include="images\export_clear_session_timeout.png" />
     <Resource Include="images\Export_Popup.png" />
     <Resource Include="images\find_what_you_love.png" />

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="YourYYC.Pages.ExportConfirmation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YourYYC.Pages"
+             mc:Ignorable="d">
+
+    <Canvas Height="1024" Width="1440">
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+        <Canvas.Background>
+            <ImageBrush ImageSource="../images/ExportConfirmationBG.png"></ImageBrush>
+        </Canvas.Background>
+
+        <Button x:Name="cancel" Margin="1340,35,10,399" Click="cancelButton_Click" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="../images/cancel.png"></Image>
+        </Button>
+        <Button x:Name="Cancel" Click="cancelButton_Click" Background="Transparent" BorderBrush="Transparent" Height="45" Canvas.Left="438" Canvas.Top="526" Width="267" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="ClearSession" Click="clearSessionButton_Click" Background="Transparent" BorderBrush="Transparent" Height="45" Canvas.Left="738" Canvas.Top="526" Width="266" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</UserControl>
