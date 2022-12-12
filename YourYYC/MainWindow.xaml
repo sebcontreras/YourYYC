@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:YourYYC"
         mc:Ignorable="d"
         Title="MainWindow" SizeToContent="WidthAndHeight"
-        WindowStyle="SingleBorderWindow"
-        >
+        WindowStyle="SingleBorderWindow">
 
     <Window.Resources>
         <ResourceDictionary>

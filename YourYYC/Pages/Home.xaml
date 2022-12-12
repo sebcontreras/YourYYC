@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              >
 
-    <Canvas Name="HomeMain" Height="1024" Width="1440" Cursor="Hand">
+    <Canvas Name="HomeMain" Height="1024" Width="1440" Cursor="Hand" >
 
         <Canvas.LayoutTransform>
             <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
