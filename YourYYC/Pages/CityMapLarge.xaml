@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC.Pages"
              mc:Ignorable="d">
-    
+
     <Canvas Height="1024" Width="1440" Cursor="Hand">
 
         <Canvas.LayoutTransform>
@@ -115,6 +115,7 @@
 
         <!-- Zoom In Button -->
         <Button Name="ZoomIn" Canvas.Left="1360" Canvas.Top="729" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent" Width="50" Click="ZoomInClick"/>
+        <Image Height="20" Canvas.Left="736" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
 
     </Canvas>
