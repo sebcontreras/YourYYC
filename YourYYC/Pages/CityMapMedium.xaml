@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC.Pages"
              mc:Ignorable="d">
-    
+
     <Canvas Height="1024" Width="1440" Cursor="Hand">
 
         <Canvas.LayoutTransform>
@@ -126,6 +126,7 @@
         <!-- Zoom Buttons -->
         <Button Name="ZoomIn" Canvas.Left="1368" Canvas.Top="745" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Width="43" Click="ZoomInClick"/>
         <Button Name="ZoomOut" Canvas.Left="1368" Canvas.Top="808" HorizontalAlignment="Center" Height="45" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Width="43" Click="ZoomOutClick"/>
+        <Image Height="20" Canvas.Left="736" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
     </Canvas>
 </UserControl>

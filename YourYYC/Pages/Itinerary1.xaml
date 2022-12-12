@@ -184,5 +184,6 @@
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
+        <Image Height="20" Canvas.Left="1176" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
