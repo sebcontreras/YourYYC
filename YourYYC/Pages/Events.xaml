@@ -183,5 +183,6 @@
         <!-- Bottom Bar -->
         <Image Height="20" Canvas.Left="300" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
+        <Image Name="ItemMessage" Visibility="Collapsed" Source="/images/ItemAddedMessage.png" Canvas.Left="914" Canvas.Top="803" Width="341" HorizontalAlignment="Center" VerticalAlignment="Top" Height="114"/>
     </Canvas>
 </UserControl>
