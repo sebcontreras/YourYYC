@@ -85,6 +85,15 @@ namespace YourYYC
             new List<string> {"BigT", "BBQ", "../images/tiles/restaurants/bbq/bigT.png", "url"},
         };
 
+        public List<List<string>> events = new List<List<string>>
+        {
+            new List<string> {"DisneyOnIce", "ThisWeek", "../images/tiles/happening_this_week/disney.png", "url"},
+            new List<string> {"ArtExhibition", "ThisWeek", "../images/tiles/happening_this_week/art_exhibition.png", "url"},
+            new List<string> {"Opera", "ThisWeek", "../images/tiles/happening_this_week/opera.png", "url"},
+            new List<string> {"ClassAlbumsLive", "ThisWeek", "../images/tiles/happening_this_week/class_albums_live.png", "url"},
+            new List<string> {"LiveCountryMusic", "ThisWeek", "../images/tiles/happening_this_week/live_country_music.png", "url"},
+        };
+
         public List<List<string>> attractionList = new List<List<string>>();
 
         /**
@@ -159,6 +168,34 @@ namespace YourYYC
         public int RemoveRestaurantFromItinerary(string item)
         {
             foreach (var tile in restaurants)
+            {
+                if (tile.Contains(item) && itineraryList.Contains(tile))
+                {
+                    itineraryList.Remove(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            return itineraryCount;
+        }
+
+        public int AddEventsToItinerary(string newItem)
+        {
+            foreach (var tile in events)
+            {
+                if (tile.Contains(newItem) && !itineraryList.Contains(tile))
+                {
+                    itineraryList.Add(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            return itineraryCount;
+        }
+
+        public int RemoveEventsFromItinerary(string item)
+        {
+            foreach (var tile in events)
             {
                 if (tile.Contains(item) && itineraryList.Contains(tile))
                 {
