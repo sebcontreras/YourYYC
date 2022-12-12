@@ -123,6 +123,10 @@
     <None Remove="images\tiles\nature\edworthy_park.png" />
     <None Remove="images\tiles\nature\heritage_park.png" />
     <None Remove="images\tiles\nature\princess_island_park.png" />
+    <None Remove="images\tiles\restaurants\bbq\bigT.png" />
+    <None Remove="images\tiles\restaurants\bbq\comery_block.png" />
+    <None Remove="images\tiles\restaurants\bbq\cowtown.png" />
+    <None Remove="images\tiles\restaurants\bbq\palamino.png" />
     <None Remove="images\tiles\restaurants\charcut.png" />
     <None Remove="images\tiles\restaurants\deane_house.png" />
     <None Remove="images\tiles\restaurants\river_cafe.png" />
@@ -212,6 +216,10 @@
     <Resource Include="images\tiles\around_calgary\jasper.png" />
     <Resource Include="images\tiles\around_calgary\kananaskis.png" />
     <Resource Include="images\tiles\around_calgary\waterton.png" />
+    <Resource Include="images\tiles\restaurants\bbq\bigT.png" />
+    <Resource Include="images\tiles\restaurants\bbq\comery_block.png" />
+    <Resource Include="images\tiles\restaurants\bbq\cowtown.png" />
+    <Resource Include="images\tiles\restaurants\bbq\palamino.png" />
     <Resource Include="images\TitleBar.png" />
   </ItemGroup>
   <ItemGroup>
