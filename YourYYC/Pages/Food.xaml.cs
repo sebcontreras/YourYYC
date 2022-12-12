@@ -28,6 +28,18 @@ namespace YourYYC.Pages
             ItineraryCount.Content = window.itineraryCount.ToString();
         }
 
+        public void AddToItineraryButton(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            int newCount = window.AddRestaurantToItinerary(btn.Name);
+            ItineraryCount.Content = newCount.ToString();
+        }
+
+        public void RestaurantPreviewClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new RestaurantsPreview());
+        }
+
         public void HomeButtonClick(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new Home());

@@ -73,6 +73,18 @@ namespace YourYYC
             new List<string> {"StudioBell2", "Art", "../images/tiles/downtown_calgary/studio_bell.png", "url"},
         };
 
+        public List<List<string>> restaurants = new List<List<string>>
+        {
+            new List<string> {"DeaneHouse", "MustTry", "../images/tiles/restaurants/deane_house.png", "url"},
+            new List<string> {"Charcut", "MustTry", "../images/tiles/restaurants/charcut.png", "url"},
+            new List<string> {"Rouge", "MustTry", "../images/tiles/restaurants/rouge.png", "url"},
+            new List<string> {"RiverCafe", "MustTry", "../images/tiles/restaurants/river_cafe.png", "url"},
+            new List<string> {"ComeryBlock", "BBQ", "../images/tiles/restaurants/bbq/comery_block.png", "url"},
+            new List<string> {"Cowtown", "BBQ", "../images/tiles/restaurants/bbq/cowtown.png", "url"},
+            new List<string> {"Palamino", "BBQ", "../images/tiles/restaurants/bbq/palamino.png", "url"},
+            new List<string> {"BigT", "BBQ", "../images/tiles/restaurants/bbq/bigT.png", "url"},
+        };
+
         public List<List<string>> attractionList = new List<List<string>>();
 
         /**
@@ -119,6 +131,34 @@ namespace YourYYC
         public int RemoveAttractionFromItinerary(string item)
         {
             foreach (var tile in attractions)
+            {
+                if (tile.Contains(item) && itineraryList.Contains(tile))
+                {
+                    itineraryList.Remove(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            return itineraryCount;
+        }
+
+        public int AddRestaurantToItinerary(string newItem)
+        {
+            foreach (var tile in restaurants)
+            {
+                if (tile.Contains(newItem) && !itineraryList.Contains(tile))
+                {
+                    itineraryList.Add(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            return itineraryCount;
+        }
+
+        public int RemoveRestaurantFromItinerary(string item)
+        {
+            foreach (var tile in restaurants)
             {
                 if (tile.Contains(item) && itineraryList.Contains(tile))
                 {
