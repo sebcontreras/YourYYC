@@ -69,7 +69,7 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                             <Button Canvas.ZIndex="1" x:Name="LiveCountryMusicTile" Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                                 <Image Source="../images/tiles/happening_this_week/live_country_music.png"></Image>
                         </Button>

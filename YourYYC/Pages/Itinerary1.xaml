@@ -190,6 +190,11 @@
                         </Button>
                         <Button x:Name="RemoveStudioBell" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
                             <Image Source="../images/RemoveFromItinerary.png"></Image>
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="5"/>
+                                </Style>
+                            </Button.Resources>
                         </Button>
                     </Canvas>
                 </StackPanel>
