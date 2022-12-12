@@ -142,6 +142,11 @@ namespace YourYYC.Pages
             ItineraryCount2.Content = 0;
         }
 
+        public void AttractionPreviewClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new AttractionPreview());
+        }
+
         public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
