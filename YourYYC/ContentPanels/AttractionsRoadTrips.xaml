@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             mc:Ignorable="d">
     <StackPanel>
         <StackPanel>
             <TextBlock Text="Take a road trip" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
@@ -28,7 +27,7 @@
                 </Button>
             </Canvas>
             <Canvas Width="305" Height="314" Margin="15">
-                <Button Width="305" Height="314" Margin="15" Background="{x:Null}" BorderBrush="{x:Null}">
+                <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                     <Image Source="../images/tiles/around_calgary/jasper.png"></Image>
                 </Button>
                 <Button x:Name="Jasper" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -36,7 +35,7 @@
                 </Button>
             </Canvas>
             <Canvas Width="305" Height="314" Margin="15">
-                <Button Width="305" Height="314" Margin="15" Background="{x:Null}" BorderBrush="{x:Null}">
+                <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                     <Image Source="../images/tiles/around_calgary/kananaskis.png"></Image>
                 </Button>
                 <Button x:Name="Kananaskis" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -46,7 +45,7 @@
         </StackPanel>
         <StackPanel x:Name="Nature2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
             <Canvas Width="305" Height="314" Margin="15">
-                <Button Width="305" Height="314" Margin="15" Background="{x:Null}" BorderBrush="{x:Null}">
+                <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                     <Image Source="../images/tiles/around_calgary/waterton.png"></Image>
                 </Button>
                 <Button x:Name="Waterton" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
