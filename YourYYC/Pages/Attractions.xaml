@@ -145,7 +145,7 @@
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
         <Image Height="20" Canvas.Left="76" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
-        <Image Name="ItemMessage" Visibility="Collapsed" Source="/images/ItemAddedMessage.png" Height="32" Canvas.Left="1118" Canvas.Top="879" Width="133" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Image Name="ItemMessage" Visibility="Collapsed" Source="/images/ItemAddedMessage.png" Canvas.Left="1044" Canvas.Top="838" Width="229" HorizontalAlignment="Left" VerticalAlignment="Center" Height="57"/>
 
     </Canvas>
 </UserControl>
