@@ -196,7 +196,9 @@
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
-        <Image Name="EmptyMessage" Visibility="Visible" Source="/images/EmptyItineraryMessage.png" Height="246" Width="760" Canvas.Left="340" Canvas.Top="337"></Image>
+
+        <Image Name="EmptyMessage" Visibility="Visible" Height="20" Canvas.Left="565" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="368" Width="188" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
 
         <Image Height="20" Canvas.Left="1176" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
