@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:YourYYC"
+             xmlns:local="clr-namespace:YourYYC.Pages"
+             xmlns:window="clr-namespace:YourYYC"
              mc:Ignorable="d">
     
     <Canvas Height="1024" Width="1440" Cursor="Hand">
@@ -20,59 +21,85 @@
         <!-- Attractions List as a Scrollable Page -->
         <ScrollViewer Height="704" Width="1390" Canvas.Left="25" Canvas.Top="140" Cursor="Hand">
             <!-- Scrollable Page BG as image -->
-            <StackPanel>
+            <StackPanel x:Name="ContainerPanel" Orientation="Vertical">
                 <StackPanel>
-                    <TextBlock Text="Must-Try Restaurants" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
+                    <TextBlock Text="Must-Try Restaurants" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction1" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction2" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction3" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction4" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
+                    <!-- for loop that updates x and y -->
+                    <Canvas Width="305" Height="314">
+                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/tiles/restaurants/deane_house.png"></Image>
+                        </Button>
+                        <Button x:Name="DeaneHouse" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="10">
+                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/tiles/restaurants/charcut.png"></Image>
+                        </Button>
+                        <Button x:Name="Charcut" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="10">
+                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/tiles/restaurants/rouge.png"></Image>
+                        </Button>
+                        <Button x:Name="Rouge" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="10">
+                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/tiles/restaurants/river_cafe.png"></Image>
+                        </Button>
+                        <Button x:Name="RiverCafe" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
                 </StackPanel>
                 <StackPanel>
-                    <TextBlock Text="Best BBQ in the City" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
+                    <TextBlock Text="Best BBQ in the City" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction5" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction6" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction7" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction8" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                </StackPanel>
-                <StackPanel>
-                    <TextBlock Text="Fun for the family" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Button x:Name="attraction9" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction10" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction11" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
-                    <Button x:Name="attraction12" Width="305" Height="314" Margin="15">
-                        <Image Source="../images/food_sample.png"></Image>
-                    </Button>
+                    <!-- for loop that updates x and y -->
+                    <Canvas Width="305" Height="314">
+                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/tiles/restaurants/bbq/comery_block.png"></Image>
+                        </Button>
+                        <Button x:Name="ComeryBlock" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="10">
+                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/tiles/restaurants/bbq/cowtown.png"></Image>
+                        </Button>
+                        <Button x:Name="Cowtown" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="10">
+                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/tiles/restaurants/bbq/palamino.png"></Image>
+                        </Button>
+                        <Button x:Name="Palamino" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
+                    <Canvas Width="305" Height="314" Margin="10">
+                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/tiles/restaurants/bbq/bigT.png"></Image>
+                        </Button>
+                        <Button x:Name="BigT" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                    </Canvas>
                 </StackPanel>
             </StackPanel>
+            
 
         </ScrollViewer>
 
