@@ -16,28 +16,29 @@
         <Canvas.Background>
             <ImageBrush ImageSource="../images/Help.png"/>
         </Canvas.Background>
+        
         <!-- Attractions List as a Scrollable Page -->
-
         <Button Name="DoneBtn" Opacity="0" Canvas.Left="523" Canvas.Top="747" Width="394" Height="76" HorizontalAlignment="Left" VerticalAlignment="Top" Click="DoneBtnClick">
             <Image Source="../images/DoneButton.png" Stretch="Fill"  Height="78" Width="384"/>
         </Button>
+        
         <!-- Top Navigation Bar -->
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
 
-        <!-- Attractions Page Title Button / Logo -->
-        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="189">
+        <!-- Preferences Title Button / Logo -->
+        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="100">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../images/HelpText.png"/>
+                <ImageBrush ImageSource="../images/HelpTitle.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
         <!-- Home Button / Logo -->
-        <Button Name="HomeButton"  Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="110" Canvas.Top="50" Background="Transparent">
+        <Button Name="HomeButton" Click="HomeButtonClick" Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="110" Canvas.Top="50" Background="Transparent">
             <Image Source="../images/HomeButton.png"/>
         </Button>
 
         <!-- Back Button / Logo -->
-        <Button Name="BackButton" Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="50" Background="Transparent">
+        <Button Name="BackButton" Click="BackButtonClick" Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="50" Canvas.Top="50" Background="Transparent">
             <Image Source="../images/BackButton.png"/>
         </Button>
 

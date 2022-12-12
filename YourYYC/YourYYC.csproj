@@ -33,7 +33,7 @@
     <None Remove="images\charcut_tile.png" />
     <None Remove="images\Chinese.png" />
     <None Remove="images\CityMapButton.png" />
-    <None Remove="images\CityMapPageTitle.png" />
+    <None Remove="images\CityMapTitle.png" />
     <None Remove="images\ClearAllExport.png" />
     <None Remove="images\clear_all.png" />
     <None Remove="images\clear_session.png" />
@@ -60,15 +60,17 @@
     <None Remove="images\HelpBackground.png" />
     <None Remove="images\HelpButton.png" />
     <None Remove="images\HelpFullPage.png" />
-    <None Remove="images\HelpText.png" />
+    <None Remove="images\HelpTitle.png" />
     <None Remove="images\heritage_park_tile.png" />
     <None Remove="images\HomeButton.png" />
     <None Remove="images\Info Widget.png" />
     <None Remove="images\itineraryCircle.png" />
+    <None Remove="images\ItineraryTitle.png" />
     <None Remove="images\itinerary_email_export.png" />
     <None Remove="images\itinerary_text_export.png" />
     <None Remove="images\language text.png" />
     <None Remove="images\LocalEatsPageTitle.png" />
+    <None Remove="images\LocalEventsTitle.png" />
     <None Remove="images\MapLarge.png" />
     <None Remove="images\MapMedium.png" />
     <None Remove="images\MapTip.png" />
@@ -84,8 +86,10 @@
     <None Remove="images\AttractionsPageTitle.png" />
     <None Remove="images\PageBackground.png" />
     <None Remove="images\PreferencesPageBG.png" />
+    <None Remove="images\PreferenceTitle.png" />
     <None Remove="images\Preview.png" />
     <None Remove="images\PreviewTitle.png" />
+    <None Remove="images\QRCode.png" />
     <None Remove="images\RemoveFromItinerary.png" />
     <None Remove="images\RestaurantPreviewFull.png" />
     <None Remove="images\resume_current_session.png" />
@@ -142,6 +146,9 @@
     <None Remove="images\ZoomIcon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="images\CalgaryTowerTitle.png" />
+    <Resource Include="images\ChangeLanguageTitle.png" />
+    <Resource Include="images\CityMapTitle.png" />
     <Resource Include="images\AddedToItinerary.png" />
     <Resource Include="images\CommuteFullPage.png" />
   </ItemGroup>
@@ -150,8 +157,6 @@
     <Resource Include="images\AddToItineraryIcon.png" />
     <Resource Include="images\add_to_itinerary_icon.png" />
     <Resource Include="images\AttractionPreviewFull.png" />
-    <Resource Include="images\CalgaryTowerTitle.png" />
-    <Resource Include="images\CityMapPageTitle.png" />
     <Resource Include="images\DeaneHouseTitle.png" />
     <Resource Include="images\DisneyOnIceTitle.png" />
     <Resource Include="images\EventPreviewFull.png" />
@@ -162,7 +167,6 @@
     <Resource Include="images\calgary_zoo_tile.png" />
     <Resource Include="images\cancel.png" />
     <Resource Include="images\ChangeLanguageBgrd.png" />
-    <Resource Include="images\ChangeLanguageTitle.png" />
     <Resource Include="images\charcut_tile.png" />
     <Resource Include="images\Chinese.png" />
     <Resource Include="images\CityMapButton.png" />
@@ -187,15 +191,17 @@
     <Resource Include="images\HelpBackground.png" />
     <Resource Include="images\HelpButton.png" />
     <Resource Include="images\HelpFullPage.png" />
-    <Resource Include="images\HelpText.png" />
+    <Resource Include="images\HelpTitle.png" />
     <Resource Include="images\heritage_park_tile.png" />
     <Resource Include="images\HomeButton.png" />
     <Resource Include="images\EventsPageTitle.png" />
     <Resource Include="images\Info Widget.png" />
     <Resource Include="images\itineraryCircle.png" />
+    <Resource Include="images\ItineraryTitle.png" />
     <Resource Include="images\itinerary_email_export.png" />
     <Resource Include="images\itinerary_text_export.png" />
     <Resource Include="images\language text.png" />
+    <Resource Include="images\LocalEventsTitle.png" />
     <Resource Include="images\MapLarge.png" />
     <Resource Include="images\MapMedium.png" />
     <Resource Include="images\MapTip.png" />
@@ -212,9 +218,11 @@
     <Resource Include="images\AttractionsPageTitle.png" />
     <Resource Include="images\PageBackground.png" />
     <Resource Include="images\PreferencesPageBG.png" />
+    <Resource Include="images\PreferenceTitle.png" />
     <Resource Include="images\Preview.png" />
     <Resource Include="images\PreviewTitle.png" />
     <Resource Include="images\RemoveFromItinerary.png" />
+    <Resource Include="images\QRCode.png" />
     <Resource Include="images\RestaurantPreviewFull.png" />
     <Resource Include="images\resume_current_session.png" />
     <Resource Include="images\ScrollPageBackground.png" />

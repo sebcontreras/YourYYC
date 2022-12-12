@@ -30,6 +30,14 @@ namespace YourYYC.Pages
             ItineraryCount.Content = window.itineraryCount.ToString();
             ItineraryCount2.Content = window.itineraryCount.ToString();
 
+            if(window.itineraryCount > 0)
+            {
+                //SuggestedItems.Visibility = Visibility.Visible;
+                //SuggestedTitle.Visibility = Visibility.Visible;
+                EmptyMessage.Visibility= Visibility.Collapsed;
+                ScrollView.Visibility = Visibility.Visible;
+            }
+
             int i = 1;
             foreach (var tile in window.itineraryList)
             {
@@ -50,8 +58,6 @@ namespace YourYYC.Pages
 
         private void exportButton_Click(object sender, RoutedEventArgs e)
         {
-            //mainPanel.Children.Clear();
-            //mainPanel.Children.Add(_export);
             Switcher.Switch(new ExportPopUp());
         }
 
@@ -111,7 +117,12 @@ namespace YourYYC.Pages
                 btn.Name = btn.Tag.ToString();
                 btn.Visibility = Visibility.Collapsed;
                 img.Name = img.Tag.ToString();                
-            }            
+            }
+
+            //SuggestedItems.Visibility = Visibility.Collapsed;
+            //SuggestedTitle.Visibility = Visibility.Collapsed;
+            ScrollView.Visibility = Visibility.Collapsed;
+            EmptyMessage.Visibility = Visibility.Visible;
 
             window.itineraryList.Clear();
             window.itineraryCount = 0;
@@ -126,7 +137,6 @@ namespace YourYYC.Pages
 
             btn.Name = btn.Tag.ToString();
             btn.Visibility = Visibility.Collapsed;
-            //Switcher.Switch(new Itinerary1());
         }
 
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
