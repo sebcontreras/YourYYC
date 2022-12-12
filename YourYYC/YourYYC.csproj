@@ -73,6 +73,7 @@
     <None Remove="images\language text.png" />
     <None Remove="images\LocalEatsPageTitle.png" />
     <None Remove="images\LocalEventsTitle.png" />
+    <None Remove="images\MainBackground2.png" />
     <None Remove="images\MapLarge.png" />
     <None Remove="images\MapMedium.png" />
     <None Remove="images\MapTip.png" />
@@ -206,6 +207,7 @@
     <Resource Include="images\itinerary_text_export.png" />
     <Resource Include="images\language text.png" />
     <Resource Include="images\LocalEventsTitle.png" />
+    <Resource Include="images\MainBackground2.png" />
     <Resource Include="images\MapLarge.png" />
     <Resource Include="images\MapMedium.png" />
     <Resource Include="images\MapTip.png" />

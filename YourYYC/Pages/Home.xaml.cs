@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace YourYYC.Pages
 {
@@ -22,12 +23,48 @@ namespace YourYYC.Pages
     public partial class Home : UserControl
     {
         MainWindow window;
+        DispatcherTimer timer = new DispatcherTimer();
+        int counter = 0;
         public Home()
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
             ItineraryCount.Content = window.itineraryCount.ToString();
+            //autoImgChange();
         }
+        public async Task autoImgChange()
+        {
+            int c = await wait();
+            //timer.Interval = TimeSpan.FromSeconds(4);
+            //timer.Tick += new EventHandler(timer_Tick);
+            //timer.Start();
+        }
+
+        public async Task<int> wait()
+        {
+            await Task.Delay(4000);
+            counter++;            
+            ImageBrush img = new ImageBrush();
+            if (counter % 2 == 0)
+                img.ImageSource = new BitmapImage(new Uri("../../../images/MainBackground2.png", UriKind.Relative));
+            else
+                img.ImageSource = new BitmapImage(new Uri("../../../images/MainBackground.png", UriKind.Relative));
+            HomeMain.Background = img;
+            return counter;
+        }
+
+        private void timer_Tick(object? sender, EventArgs e)
+        {
+            timer.Stop();
+            counter++;
+            ImageBrush img = new ImageBrush();
+            if(counter%2 == 0)
+                img.ImageSource = new BitmapImage(new Uri("../../../images/MainBackground2.png", UriKind.Relative));
+            else
+                img.ImageSource = new BitmapImage(new Uri("../../../images/MainBackground.png", UriKind.Relative));
+            HomeMain.Background = img;
+        }
+
         public void HomeButtonClick(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new Home());
