@@ -30,7 +30,7 @@ namespace YourYYC.Pages
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new ExportPopUp());
+            Switcher.Switch(new Itinerary1());
             //exportGrid.Children.Clear();
         }
 
