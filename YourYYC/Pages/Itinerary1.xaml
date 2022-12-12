@@ -88,7 +88,7 @@
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
 
         <!-- Scroll Section  -->
-        <ScrollViewer Name="ScrollView" Visibility="Visible" Height="706" Width="1390" Canvas.Top="139" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="25">
+        <ScrollViewer Name="ScrollView" Visibility="Collapsed" Height="706" Width="1390" Canvas.Top="139" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="25">
             <StackPanel>
                 <Grid>
                     <TextBlock Text="You have    items saved" FontSize="36" FontWeight="Bold" Width="1043" Margin="10,10,290,10"/>
@@ -151,11 +151,10 @@
                     </Canvas>
                 </StackPanel>
 
-
-                <StackPanel Name="SuggestedTitle" Visibility="Collapsed">
+                <StackPanel Name="SuggestedTitle" Visibility="Visible">
                     <TextBlock Text="You may also like" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
-                <StackPanel Name="SuggestedItems" Visibility="Collapsed" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                <StackPanel Name="SuggestedItems" Visibility="Visible" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Canvas Width="305" Height="314" Margin="15">
                         <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
@@ -195,10 +194,10 @@
                         </Button>
                     </Canvas>
                 </StackPanel>
-
-                <Image Name="EmptyMessage" Visibility="Visible" Source="../images/EmptyItineraryMessage.png" Height="246" Width="760" Canvas.Left="340" Canvas.Top="337"/>
             </StackPanel>
         </ScrollViewer>
+        <Image Name="EmptyMessage" Visibility="Visible" Source="/images/EmptyItineraryMessage.png" Height="246" Width="760" Canvas.Left="340" Canvas.Top="337"></Image>
+
         <Image Height="20" Canvas.Left="1176" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
