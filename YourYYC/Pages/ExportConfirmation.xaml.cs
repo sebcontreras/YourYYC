@@ -18,31 +18,14 @@ namespace YourYYC.Pages
     /// <summary>
     /// Interaction logic for ExportPopUp.xaml
     /// </summary>
-    public partial class ExportPopUp : UserControl
+   
+    public partial class ExportConfirmation: UserControl
     {
         MainWindow window;
-        EmailPopUp _email = new EmailPopUp();
-        TextPopUp _text = new TextPopUp();
-
-        public ExportPopUp()
+        public ExportConfirmation()
         {
             InitializeComponent();
-            this.DataContext = this;
             window = (MainWindow)Application.Current.MainWindow;
-        }
-
-        private void emailButton_Click(object sender, RoutedEventArgs e)
-        {
-            Switcher.Switch(new EmailPopUp());
-            //exportGrid.Children.Clear();
-            //exportGrid.Children.Add(_email);
-        }
-
-        private void textButton_Click(object sender, RoutedEventArgs e)
-        {
-            Switcher.Switch(new TextPopUp());
-            //exportGrid.Children.Clear();
-            //exportGrid.Children.Add(_text);
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
@@ -56,7 +39,8 @@ namespace YourYYC.Pages
             // Preferences newSession = new Preferences();
             // Visibility = Visibility.Hidden;
             // newSession.Show();
-            Switcher.Switch(new ConfirmClearSession());
+            window.ClearState();
+            Switcher.Switch(new Preferences());
         }
     }
 }

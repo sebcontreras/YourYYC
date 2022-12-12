@@ -28,7 +28,7 @@ namespace YourYYC.Pages
 
         private void sendButton_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new Itinerary1());
+            Switcher.Switch(new ExportConfirmation());
             //emailGrid.Children.Clear();
             //emailGrid.Children.Add(_clearSession);
         }

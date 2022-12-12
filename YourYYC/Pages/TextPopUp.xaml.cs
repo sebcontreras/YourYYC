@@ -29,7 +29,7 @@ namespace YourYYC.Pages
 
         private void sendButton_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new Itinerary1());
+            Switcher.Switch(new ExportConfirmation());
             //textGrid.Children.Clear();
             //textGrid.Children.Add(_clearSession);
         }

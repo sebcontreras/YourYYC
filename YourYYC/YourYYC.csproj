@@ -35,6 +35,7 @@
     <None Remove="images\CityMapButton.png" />
     <None Remove="images\CityMapTitle.png" />
     <None Remove="images\ClearAllExport.png" />
+    <None Remove="images\ClearSessionBG.png" />
     <None Remove="images\clear_all.png" />
     <None Remove="images\clear_session.png" />
     <None Remove="images\CommuteFullPage.png" />
@@ -49,6 +50,7 @@
     <None Remove="images\EventsPageTitle.png" />
     <None Remove="images\event_sample.png" />
     <None Remove="images\export.png" />
+    <None Remove="images\ExportConfirmationBG.png" />
     <None Remove="images\export_clear_session_timeout.png" />
     <None Remove="images\Export_Popup.png" />
     <None Remove="images\find_what_you_love.png" />
@@ -153,6 +155,7 @@
     <Resource Include="images\ChangeLanguageTitle.png" />
     <Resource Include="images\CityMapTitle.png" />
     <Resource Include="images\AddedToItinerary.png" />
+    <Resource Include="images\ClearSessionBG.png" />
     <Resource Include="images\CommuteFullPage.png" />
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +185,7 @@
     <Resource Include="images\Events.png" />
     <Resource Include="images\event_sample.png" />
     <Resource Include="images\export.png" />
+    <Resource Include="images\ExportConfirmationBG.png" />
     <Resource Include="images\export_clear_session_timeout.png" />
     <Resource Include="images\Export_Popup.png" />
     <Resource Include="images\find_what_you_love.png" />
