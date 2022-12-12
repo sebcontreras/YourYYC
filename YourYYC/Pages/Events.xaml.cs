@@ -28,9 +28,16 @@ namespace YourYYC
             ItineraryCount.Content = window.itineraryCount.ToString();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
+            Button btn = (Button)sender;
+            int newCount = window.AddEventsToItinerary(btn.Name);
+            ItineraryCount.Content = newCount.ToString();
+        }
 
+        public void EventsPreviewClick(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new EventsPreview());
         }
 
         public void HomeButtonClick(object sender, RoutedEventArgs e)
