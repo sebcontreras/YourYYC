@@ -131,7 +131,13 @@ namespace YourYYC.Pages
             int newCount = window.AddAttractionToItinerary(btn.Name);
             ItineraryCount.Content = newCount.ToString();
 
-            
+            string name = Button.NameProperty.ToString();
+
+            var collapseAdd = (Button)this.FindName(name);
+            collapseAdd.Visibility = Visibility.Collapsed;
+
+            var visibleRemove = (Button)this.FindName("Remove" + name);
+            visibleRemove.Visibility = Visibility.Visible;
         }
 
         public void HomeButtonClick(object sender, RoutedEventArgs e)
