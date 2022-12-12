@@ -107,8 +107,8 @@
 
                 <StackPanel Margin="0,81,0,0">
                     <Image Name="SideBarAttractionsTile" Source="../images/calgary_zoo_tile.png" Height="412" Width="344" Visibility="Visible"/>
-                    <Image Name="SideBarEventsTile" Source="../images/calgary_zoo_tile.png" Height="412" Width="344" Visibility="Visible"/>
-                    <Image Name="SideBarFoodTile" Source="../images/calgary_zoo_tile.png" Height="412" Width="344" Visibility="Visible"/>
+                    <Image Name="SideBarEventsTile" Source="../images/tiles/happening_this_week/art_exhibition.png" Height="412" Width="344" Visibility="Visible"/>
+                    <Image Name="SideBarFoodTile" Source="../images/tiles/restaurants/charcut.png" Height="412" Width="344" Visibility="Visible"/>
                 </StackPanel>
             </Grid>
         </ScrollViewer>
