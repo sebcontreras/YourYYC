@@ -92,7 +92,7 @@
             <StackPanel>
                 <Grid>
                     <TextBlock Text="You have     items saved" FontSize="36" FontWeight="Bold" Width="1043" Margin="10,10,290,10"/>
-                    <Label x:Name="ItineraryCount2"  Content="0" Margin="190,5,306,11" FontSize="36" Foreground="#000000" FontWeight="Bold" />
+                    <Label x:Name="ItineraryCount2"  Content="0" Margin="190,5,306,11" FontSize="36" Foreground="#FFD94539" FontWeight="Bold" />
 
                     <Image Source="../images/ClearAllExport.png" Height="45" Margin="1030,20,10,13"/>
                     <Button Name="ClearAllButton" HorizontalAlignment="Left" Margin="1073,23,0,0" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Height="39" Width="113" Click="ClearAllClick"/>
