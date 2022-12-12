@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="YourYYC.Pages.EmailPopUp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YourYYC.Pages"
+             mc:Ignorable="d">
+    
+    <Canvas Height="1024" Width="1440">
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+
+        <Canvas.Background>
+            <ImageBrush ImageSource="../images/itinerary_email_export.png"/>
+        </Canvas.Background>
+
+        <Button Name="CancelButton" Margin="1350,40" Click="cancelButton_Click" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="../images/cancel.png"/>
+        </Button>
+
+        <Button Name="SendButton" Margin="1000,295" Click="sendButton_Click" Background="Transparent" BorderBrush="Transparent" Height="62">
+            <Image Source="../images/send.png"/>
+            </Button>
+        <TextBox x:Name="EmailTextBox" Text="Enter your email" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="530,308" TextWrapping="Wrap" VerticalAlignment="Center" Width="440" Height="30" Background="Transparent" BorderBrush="Transparent"/>
+    </Canvas>
+</UserControl>

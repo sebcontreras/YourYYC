@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="YourYYC.Pages.ExportClearSession"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YourYYC.Pages"
+        mc:Ignorable="d">
+    
+    <Canvas Height="1024" Width="1440">
+
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+        
+        <Canvas.Background>
+            <ImageBrush ImageSource="../images/export_clear_session_timeout.png"/>
+        </Canvas.Background>
+
+        <Button Name="CancelButton" Margin="1350,40" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="../images/cancel.png"/>
+        </Button>
+
+        <Button Name="StartNewSession" Margin="745,510" Click="newSession" Height="70" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="../images/start_new_session.png"/>
+        </Button>
+        <Button Name="ResumeCurrentSession" Margin="400,510" Height="70" Background="Transparent" BorderBrush="Transparent">
+            <Image Source="../images/resume_current_session.png"/>
+        </Button>
+
+    </Canvas>
+</UserControl>

@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="YourYYC.Pages.ExportPopUp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YourYYC.Pages"
+             mc:Ignorable="d">
+    <Canvas Height="1024" Width="1440">
+        <Canvas.LayoutTransform>
+            <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
+        </Canvas.LayoutTransform>
+        <Canvas.Background>
+            <ImageBrush ImageSource="../images/ScrollPageBackground.png"></ImageBrush>
+        </Canvas.Background>
+        <Canvas Height="474" Width="934" Canvas.Left="253" Canvas.Top="275">
+            <Canvas.Background>
+                <ImageBrush ImageSource="../images/Export_Popup.png"></ImageBrush>
+            </Canvas.Background>
+
+            <Button x:Name="cancel" Width="60" Height="41" Margin="860,25,10,399" Click="cancelButton_Click" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="../images/cancel.png"></Image>
+            </Button>
+            <Button x:Name="ExportEmail" Margin="555,130" Click="emailButton_Click" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="../images/email_export.png" Height="64" Width="322"></Image>
+            </Button>
+            <Button x:Name="ExportText" Margin="555,205" Click="textButton_Click" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="../images/text_export.png" Height="64" Width="322"></Image>
+            </Button>
+            <Button x:Name="ClearSession" Margin="300,390" Click="clearSessionButton_Click" Height="60" Background="Transparent" BorderBrush="Transparent">
+                <Image Source="../images/clear_session.png"></Image>
+            </Button>
+            <Image Height="160" Canvas.Left="60" Source="/images/QRCode.png" Stretch="Fill" Canvas.Top="130" Width="160" RenderTransformOrigin="0.761,1.099"/>
+        </Canvas>
+    </Canvas>
+</UserControl>

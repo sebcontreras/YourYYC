@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="YourYYC.AttractionsPartyMusic"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YourYYC"
+             xmlns:pages="clr-namespace:YourYYC.Pages"
+             mc:Ignorable="d">
+    <StackPanel>
+        <StackPanel>
+            <TextBlock Text="Parties and Music" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
+        </StackPanel>
+        <StackPanel x:Name="Art" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
+            <Canvas Width="305" Height="314" Margin="15">
+                <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="../images/tiles/happening_this_week/class_albums_live.png"></Image>
+                </Button>
+                <Button x:Name="ClassAlbumsLive" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../images/AddToItineraryButton.png"></Image>
+                </Button>
+            </Canvas>
+            <Canvas Width="305" Height="314" Margin="15">
+                <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="../images/tiles/happening_this_week/live_country_music.png"></Image>
+                </Button>
+                <Button x:Name="LiveCountryMusic" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Image Source="../images/AddToItineraryButton.png"></Image>
+                </Button>
+            </Canvas>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
