@@ -114,6 +114,9 @@ namespace YourYYC.Pages
             }            
 
             window.itineraryList.Clear();
+            window.itineraryCount = 0;
+            ItineraryCount.Content = 0;
+            ItineraryCount2.Content = 0;
         }
 
         public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
@@ -122,7 +125,8 @@ namespace YourYYC.Pages
             window.RemoveAttractionFromItinerary(btn.Name);
 
             btn.Name = btn.Tag.ToString();
-            Switcher.Switch(new Itinerary1());
+            btn.Visibility = Visibility.Collapsed;
+            //Switcher.Switch(new Itinerary1());
         }
 
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
