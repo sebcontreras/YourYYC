@@ -95,18 +95,21 @@ namespace YourYYC.Pages
 
         private void SideBarAttractionsClick(object sender, RoutedEventArgs e)
         {
+            SideBarAttractionsTile.Visibility = Visibility.Visible;
             SideBarEventsTile.Visibility = Visibility.Collapsed;
             SideBarFoodTile.Visibility = Visibility.Collapsed;
         }
 
         private void SideBarEventsClick(object sender, RoutedEventArgs e)
         {
+            SideBarEventsTile.Visibility = Visibility.Visible;
             SideBarAttractionsTile.Visibility = Visibility.Collapsed;
             SideBarFoodTile.Visibility = Visibility.Collapsed;
         }
 
         private void SideBarFoodClick(object sender, RoutedEventArgs e)
         {
+            SideBarFoodTile.Visibility = Visibility.Visible;
             SideBarEventsTile.Visibility = Visibility.Collapsed;
             SideBarAttractionsTile.Visibility = Visibility.Collapsed;
         }
