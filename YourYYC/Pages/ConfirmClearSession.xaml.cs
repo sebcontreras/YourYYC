@@ -18,12 +18,14 @@ namespace YourYYC.Pages
     /// <summary>
     /// Interaction logic for ExportPopUp.xaml
     /// </summary>
+   
     public partial class ConfirmClearSession: UserControl
     {
-
+        MainWindow window;
         public ConfirmClearSession()
         {
             InitializeComponent();
+            window = (MainWindow)Application.Current.MainWindow;
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
@@ -37,6 +39,7 @@ namespace YourYYC.Pages
             // Preferences newSession = new Preferences();
             // Visibility = Visibility.Hidden;
             // newSession.Show();
+            window.ClearState();
             Switcher.Switch(new Preferences());
         }
     }

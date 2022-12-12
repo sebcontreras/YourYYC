@@ -53,8 +53,6 @@ namespace YourYYC.Pages
 
         private void clearSessionButton_Click(object sender, RoutedEventArgs e)
         {
-            window.ClearState();
-            Switcher.Switch(new Preferences());
             // Preferences newSession = new Preferences();
             // Visibility = Visibility.Hidden;
             // newSession.Show();
