@@ -41,6 +41,7 @@
     <None Remove="images\DisneyOnIceTitle.png" />
     <None Remove="images\DoneButton.png" />
     <None Remove="images\email_export.png" />
+    <None Remove="images\EmptyItineraryMessage.png" />
     <None Remove="images\English.png" />
     <None Remove="images\EventPreviewFull.png" />
     <None Remove="images\Events.png" />
@@ -156,6 +157,7 @@
     <Resource Include="images\AttractionPreviewFull.png" />
     <Resource Include="images\DeaneHouseTitle.png" />
     <Resource Include="images\DisneyOnIceTitle.png" />
+    <Resource Include="images\EmptyItineraryMessage.png" />
     <Resource Include="images\EventPreviewFull.png" />
     <Resource Include="images\Attractions.png" />
     <Resource Include="images\BackButton.png" />
