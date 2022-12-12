@@ -85,6 +85,7 @@
     <None Remove="images\AttractionsPageTitle.png" />
     <None Remove="images\PageBackground.png" />
     <None Remove="images\PreferencesPageBG.png" />
+    <None Remove="images\PreferenceTitle.png" />
     <None Remove="images\Preview.png" />
     <None Remove="images\PreviewTitle.png" />
     <None Remove="images\RestaurantPreviewFull.png" />
@@ -213,6 +214,7 @@
     <Resource Include="images\AttractionsPageTitle.png" />
     <Resource Include="images\PageBackground.png" />
     <Resource Include="images\PreferencesPageBG.png" />
+    <Resource Include="images\PreferenceTitle.png" />
     <Resource Include="images\Preview.png" />
     <Resource Include="images\PreviewTitle.png" />
     <Resource Include="images\RestaurantPreviewFull.png" />
