@@ -20,6 +20,7 @@ namespace YourYYC.Pages
     public partial class Itinerary1 : UserControl
     {
         MainWindow window;
+        List<string> itemNames= new List<string>();
 
         public Itinerary1()
         {
@@ -39,6 +40,7 @@ namespace YourYYC.Pages
                 newItem.Visibility = Visibility.Visible;
                 newItem.Name = tile[0];
                 newItemImage.Source = new BitmapImage(new Uri(tile[2], UriKind.Relative));
+                itemNames.Add(itemName);
 
                 i++;
 
@@ -100,22 +102,18 @@ namespace YourYYC.Pages
         }
 
         private void ClearAllClick(object sender, RoutedEventArgs e)
-        {
-            int i = 1;
-            foreach (var tile in window.itineraryList)
+        {            
+            foreach(var item in itemNames)
             {
-                String rename = "attraction" + i.ToString();
-                var removeItem = (Canvas)this.FindName(tile[0]);
-                removeItem.Name = rename;
-                removeItem.Visibility= Visibility.Collapsed;
+                var btn = (Canvas)this.FindName(item);
+                var img = (Image)this.FindName(item + "Image");
 
-                i++;
-
-                if (i > 8) break;
-            }
+                btn.Name = btn.Tag.ToString();
+                btn.Visibility = Visibility.Collapsed;
+                img.Name = img.Tag.ToString();                
+            }            
 
             window.itineraryList.Clear();
-            Switcher.Switch(new Itinerary1());
         }
 
         public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
