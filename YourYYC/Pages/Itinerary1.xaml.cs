@@ -27,14 +27,19 @@ namespace YourYYC.Pages
             InitializeComponent();
             this.DataContext = this;
             window = (MainWindow)Application.Current.MainWindow;
+            setScreen();
+        }
+
+        public void setScreen()
+        {
             ItineraryCount.Content = window.itineraryCount.ToString();
             ItineraryCount2.Content = window.itineraryCount.ToString();
 
-            if(window.itineraryCount > 0)
+            if (window.itineraryCount > 0)
             {
                 //SuggestedItems.Visibility = Visibility.Visible;
                 //SuggestedTitle.Visibility = Visibility.Visible;
-                EmptyMessage.Visibility= Visibility.Collapsed;
+                EmptyMessage.Visibility = Visibility.Collapsed;
                 ScrollView.Visibility = Visibility.Visible;
             }
 
@@ -44,10 +49,12 @@ namespace YourYYC.Pages
                 String itemName = "attraction" + i.ToString();
                 var newItem = (Canvas)this.FindName(itemName);
                 var newItemImage = (Image)this.FindName(itemName + "Image");
+                var newItemRemove = (Button)this.FindName(itemName + "Remove");
 
                 newItem.Visibility = Visibility.Visible;
                 newItem.Name = tile[0];
                 newItemImage.Source = new BitmapImage(new Uri(tile[2], UriKind.Relative));
+                newItemRemove.Name = "Remove" + tile[0];
                 itemNames.Add(itemName);
 
                 i++;
@@ -108,15 +115,20 @@ namespace YourYYC.Pages
         }
 
         private void ClearAllClick(object sender, RoutedEventArgs e)
-        {            
-            foreach(var item in itemNames)
+        {
+            ClearAll();
+        }
+
+        public void ClearAll()
+        {
+            foreach (var item in itemNames)
             {
                 var btn = (Canvas)this.FindName(item);
                 var img = (Image)this.FindName(item + "Image");
 
                 btn.Name = btn.Tag.ToString();
                 btn.Visibility = Visibility.Collapsed;
-                img.Name = img.Tag.ToString();                
+                img.Name = img.Tag.ToString();
             }
 
             //SuggestedItems.Visibility = Visibility.Collapsed;
@@ -132,18 +144,26 @@ namespace YourYYC.Pages
 
         public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
         {
-            Canvas btn = (Canvas)sender;
-            window.RemoveAttractionFromItinerary(btn.Name);
+            Button btn = (Button)sender;
+            string btnName = btn.Name.Substring(6);
+            int newCount = window.RemoveGenericFromItinerary(btnName);
+            ItineraryCount.Content = newCount.ToString();
 
-            btn.Name = btn.Tag.ToString();
-            btn.Visibility = Visibility.Collapsed;
+            // ClearAll();
+            // setScreen();
+            Switcher.Switch(new Itinerary1());
         }
 
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            window.AddAttractionToItinerary(btn.Name);
-            Switcher.Switch(new Itinerary1());
+            string btnName = btn.Name;
+            window.AddGenericToItinerary(btnName);
+            var tile = (Canvas)this.FindName(btnName + "Tile");
+            tile.Visibility = Visibility.Collapsed;
+
+            setScreen();
+            // Switcher.Switch(new Itinerary1());
         }
     }
 }

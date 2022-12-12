@@ -207,5 +207,69 @@ namespace YourYYC
             return itineraryCount;
         }
 
+        public int RemoveGenericFromItinerary(string item)
+        {
+            foreach (var tile in events)
+            {
+                if (tile.Contains(item) && itineraryList.Contains(tile))
+                {
+                    itineraryList.Remove(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            foreach (var tile in restaurants)
+            {
+                if (tile.Contains(item) && itineraryList.Contains(tile))
+                {
+                    itineraryList.Remove(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            foreach (var tile in attractions)
+            {
+                if (tile.Contains(item) && itineraryList.Contains(tile))
+                {
+                    itineraryList.Remove(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            return itineraryCount;
+        }
+
+        public int AddGenericToItinerary(string newItem)
+        {
+            foreach (var tile in events)
+            {
+                if (tile.Contains(newItem) && !itineraryList.Contains(tile))
+                {
+                    itineraryList.Add(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            foreach (var tile in restaurants)
+            {
+                if (tile.Contains(newItem) && !itineraryList.Contains(tile))
+                {
+                    itineraryList.Add(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            foreach (var tile in attractions)
+            {
+                if (tile.Contains(newItem) && !itineraryList.Contains(tile))
+                {
+                    itineraryList.Add(tile);
+                    itineraryCount = itineraryList.Count();
+                    break;
+                }
+            }
+            return itineraryCount;
+        }
+
     }
 }
