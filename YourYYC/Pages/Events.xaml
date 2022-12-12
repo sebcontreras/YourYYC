@@ -164,7 +164,7 @@
         </Button>
 
         <!-- City Map button -->
-        <Button Name="CityMapButton" Height="83" Width="83" Canvas.Left="789" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
+        <Button Click="MapButtonClick" Name="CityMapButton" Height="83" Width="83" Canvas.Left="789" Canvas.Bottom="39" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/CityMapButton.png"/>
         </Button>
 

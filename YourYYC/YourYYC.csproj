@@ -161,7 +161,6 @@
     <Resource Include="images\AttractionPreviewFull.png" />
     <Resource Include="images\DeaneHouseTitle.png" />
     <Resource Include="images\DisneyOnIceTitle.png" />
-    <Resource Include="images\EmptyItineraryMessage.png" />
     <Resource Include="images\EventPreviewFull.png" />
     <Resource Include="images\Attractions.png" />
     <Resource Include="images\BackButton.png" />
@@ -190,6 +189,7 @@
     <Resource Include="images\France.png" />
     <Resource Include="images\GettingThereButton.png" />
     <Resource Include="images\GettingThereTitle.png" />
+    <Resource Include="images\EmptyItineraryMessage.png" />
     <Resource Include="images\Help.png" />
     <Resource Include="images\HelpBackground.png" />
     <Resource Include="images\HelpButton.png" />
