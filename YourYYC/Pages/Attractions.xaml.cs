@@ -150,6 +150,7 @@ namespace YourYYC.Pages
 
         void timer_Tick(object sender, EventArgs e)
         {
+            timer.Stop();
             ItemMessage.Visibility= Visibility.Collapsed;
         }
 

@@ -23,11 +23,11 @@
             <!-- Scrollable Page BG as image -->
             <StackPanel x:Name="ContainerPanel">
                 <StackPanel>
-                    <TextBlock Text="Recommended for you" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15"/>
+                    <TextBlock Text="Recommended for you" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Canvas.ZIndex="1" x:Name="CalgaryZooTile" Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         </Button>
@@ -38,7 +38,7 @@
                             <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Canvas.ZIndex="1" x:Name="CalgaryTowerTile" Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/fun_for_the_family/calgary_tower.png"></Image>
                         </Button>
@@ -49,7 +49,7 @@
                             <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Canvas.ZIndex="1" x:Name="HeritageParkTile" Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/fun_for_the_family/heritage_park.png"></Image>
                         </Button>
@@ -60,7 +60,7 @@
                             <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Canvas.ZIndex="1" x:Name="StudioBellTile" Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/downtown_calgary/studio_bell.png"></Image>
                         </Button>
