@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using YourYYC.Pages;
 
 namespace YourYYC
@@ -21,6 +22,7 @@ namespace YourYYC
     public partial class Events : UserControl
     {
         MainWindow window;
+        DispatcherTimer timer = new DispatcherTimer();
         public Events()
         {
             InitializeComponent();
@@ -41,6 +43,18 @@ namespace YourYYC
 
             Button tile = (Button)this.FindName(btn.Name + "Tile");
             tile.Opacity = 0.5;
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(3);
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+            ItemMessage.Visibility = Visibility.Visible;
+        }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            timer.Stop();
+            ItemMessage.Visibility = Visibility.Collapsed;
         }
 
         public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)

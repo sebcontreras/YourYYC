@@ -27,7 +27,7 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Canvas.ZIndex="1" x:Name="DeaneHouseTile" Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/deane_house.png"></Image>
                         </Button>
@@ -179,5 +179,7 @@
         <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
         <Image Height="20" Canvas.Left="516" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <Image Name="ItemMessage" Visibility="Collapsed" Source="/images/ItemAddedMessage.png" Canvas.Left="914" Canvas.Top="803" Width="341" HorizontalAlignment="Center" VerticalAlignment="Top" Height="114"/>
     </Canvas>
 </UserControl>

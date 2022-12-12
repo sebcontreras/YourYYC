@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace YourYYC.Pages
 {
@@ -34,6 +35,7 @@ namespace YourYYC.Pages
         AttractionsShopping shopping = new AttractionsShopping();
         AttractionsHistory history= new AttractionsHistory();
         AttractionsScience science= new AttractionsScience();
+        DispatcherTimer timer = new DispatcherTimer();
 
         public Attractions()
         {
@@ -138,6 +140,18 @@ namespace YourYYC.Pages
 
             Button tile = (Button)this.FindName(btn.Name + "Tile");
             tile.Opacity = 0.5;
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(3);
+            timer.Tick += new EventHandler(timer_Tick);
+            timer.Start();
+            ItemMessage.Visibility= Visibility.Visible;
+        }
+
+        void timer_Tick(object sender, EventArgs e)
+        {
+            timer.Stop();
+            ItemMessage.Visibility= Visibility.Collapsed;
         }
 
         public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
