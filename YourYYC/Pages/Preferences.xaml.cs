@@ -27,10 +27,12 @@ namespace YourYYC.Pages
         string selectedTripDuration;
         List<List<string>> attractions;
         List<List<string>> attractionList;
+        bool newSession;
         public Preferences()
         {
             InitializeComponent();
             window = (MainWindow)Application.Current.MainWindow;
+            newSession = window.CanGoBack;
             selectedPreferences = window.selectedPreferences;
             attractions = window.attractions;
             attractionList = window.attractionList;
@@ -153,7 +155,7 @@ namespace YourYYC.Pages
 
         public void DoneButtonClick(object sender, RoutedEventArgs e)
         {
-            if (window.CanGoBack)
+            if (newSession)
             {
                 SetAttractionList();
                 Switcher.Switch(new Attractions());

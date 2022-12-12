@@ -131,6 +131,17 @@ namespace YourYYC
             itineraryList = new List<List<string>>();
             selectedPreferences = new List<string>();
             selectedTripDuration = "";
+            while (this.CanGoBack)
+            {
+                try
+                {
+                    this.RemoveBackEntry();
+                }
+                catch (Exception ex)
+                {
+                    break;
+                }
+            }
         }
 
         public int AddAttractionToItinerary(string newItem)
