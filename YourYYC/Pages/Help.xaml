@@ -24,10 +24,10 @@
         <!-- Top Navigation Bar -->
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
 
-        <!-- Attractions Page Title Button / Logo -->
-        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="189">
+        <!-- Help Page Title Button / Logo -->
+        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="100">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../images/HelpText.png"/>
+                <ImageBrush ImageSource="../images/HelpTitle.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
