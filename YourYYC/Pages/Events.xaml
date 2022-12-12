@@ -105,8 +105,11 @@
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
 
         <!-- Events Page Title Button / Logo -->
-        <Image Height="50" Canvas.Left="170" Source="/images/TitleBar.png" Stretch="Fill" Canvas.Top="40" Width="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Image Height="42" Canvas.Left="203" Source="/images/EventsPageTitle.png" Stretch="Fill" Canvas.Top="44" Width="172"/>
+        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="189">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="../images/LocalEventsTitle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
 
         <!-- Home Button / Logo -->
         <Button Click="HomeButtonClick" Name="HomeButton" Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="110" Canvas.Top="50" Background="Transparent">
@@ -169,7 +172,7 @@
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
 
         <!-- Bottom Bar -->
-        <Image Height="20" Canvas.Left="300" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="1043" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Image Height="20" Canvas.Left="300" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
     </Canvas>
 </UserControl>

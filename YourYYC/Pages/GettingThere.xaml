@@ -31,10 +31,13 @@
         <!-- Top Navigation Bar -->
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
 
-        <!-- Events Page Title Button / Logo -->
-        <Image Height="50" Canvas.Left="170" Source="/images/TitleBar.png" Stretch="Fill" Canvas.Top="40" Width="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Image Height="30" Canvas.Left="208" Source="/images/GettingThereTitle.png" Stretch="UniformToFill" Canvas.Top="50" Width="186" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-
+        <!-- Getting There Title Button / Logo -->
+        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="232">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="../images/GettingThereTitle.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        
         <!-- Home Button / Logo -->
         <Button Name="HomeButton" Click="HomeButtonClick" Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="110" Canvas.Top="50" Background="Transparent">
             <Image Source="../images/HomeButton.png"/>
@@ -94,5 +97,6 @@
         </Button>
         <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
+        <Image Height="20" Canvas.Left="956" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
