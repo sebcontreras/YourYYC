@@ -135,6 +135,8 @@ namespace YourYYC.Pages
 
             var visibleRemove = (Button)this.FindName("Remove" + btn.Name);
             visibleRemove.Visibility = Visibility.Visible;
+
+            ItemMessage.Visibility = Visibility.Visible;
         }
 
         public void HomeButtonClick(object sender, RoutedEventArgs e)

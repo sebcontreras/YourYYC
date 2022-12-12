@@ -151,10 +151,10 @@
                     </Canvas>
                 </StackPanel>
 
-                <StackPanel>
+                <StackPanel Name="SuggestedTitle" Visibility="Collapsed">
                     <TextBlock Text="You may also like" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                <StackPanel Name="SuggestedItems" Visibility="Collapsed" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
                     <Canvas Width="305" Height="314" Margin="15">
                         <Button Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
@@ -196,5 +196,6 @@
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
+        <Image Height="20" Canvas.Left="1176" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>

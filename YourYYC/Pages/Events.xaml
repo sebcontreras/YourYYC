@@ -172,7 +172,7 @@
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
 
         <!-- Bottom Bar -->
-        <Image Height="20" Canvas.Left="300" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="1043" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Image Height="20" Canvas.Left="300" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
     </Canvas>
 </UserControl>
