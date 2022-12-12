@@ -31,9 +31,9 @@
         <!-- Top Navigation Bar -->
         <Rectangle Height="80" Canvas.Left="25" Canvas.Top="25" Canvas.Right="25" Width="1390" Fill="#FFF3EFEA" RadiusX="25" RadiusY="25"/>
         <!-- Attractions Page Title Button / Logo -->
-        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="154">
+        <Rectangle Height="50" Canvas.Left="170" Canvas.Top="40" Width="236" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Rectangle.Fill>
-                <ImageBrush ImageSource="../images/PreviewTitle.png"/>
+                <ImageBrush ImageSource="../images/DisneyOnIceTitle.png"/>
             </Rectangle.Fill>
         </Rectangle>
 
