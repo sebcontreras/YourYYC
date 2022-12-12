@@ -23,6 +23,7 @@
     <None Remove="images\Attractions.png" />
     <None Remove="images\BackButton.png" />
     <None Remove="images\calgary.png" />
+    <None Remove="images\CalgaryTowerTitle.png" />
     <None Remove="images\Calgary_Tower_Tile_Itinerary.png" />
     <None Remove="images\calgary_zoo_tile.png" />
     <None Remove="images\cancel.png" />
@@ -35,7 +36,8 @@
     <None Remove="images\ClearAllExport.png" />
     <None Remove="images\clear_all.png" />
     <None Remove="images\clear_session.png" />
-    <None Remove="images\Commute Full Page.png" />
+    <None Remove="images\CommuteFullPage.png" />
+    <None Remove="images\DeaneHouseTitle.png" />
     <None Remove="images\DoneButton.png" />
     <None Remove="images\email_export.png" />
     <None Remove="images\English.png" />
@@ -82,6 +84,7 @@
     <None Remove="images\PreferencesPageBG.png" />
     <None Remove="images\Preview.png" />
     <None Remove="images\PreviewTitle.png" />
+    <None Remove="images\RestaurantPreviewFull.png" />
     <None Remove="images\resume_current_session.png" />
     <None Remove="images\ScrollPageBackground.png" />
     <None Remove="images\SelectedLocation.png" />
@@ -136,11 +139,16 @@
     <None Remove="images\ZoomIcon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="images\CommuteFullPage.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Resource Include="images\AddToItineraryButton.png" />
     <Resource Include="images\AddToItineraryIcon.png" />
     <Resource Include="images\add_to_itinerary_icon.png" />
     <Resource Include="images\AttractionPreviewFull.png" />
+    <Resource Include="images\CalgaryTowerTitle.png" />
     <Resource Include="images\CityMapPageTitle.png" />
+    <Resource Include="images\DeaneHouseTitle.png" />
     <Resource Include="images\EventPreviewFull.png" />
     <Resource Include="images\Attractions.png" />
     <Resource Include="images\BackButton.png" />
@@ -156,7 +164,6 @@
     <Resource Include="images\ClearAllExport.png" />
     <Resource Include="images\clear_all.png" />
     <Resource Include="images\clear_session.png" />
-    <Resource Include="images\Commute Full Page.png" />
     <Resource Include="images\DoneButton.png" />
     <Resource Include="images\email_export.png" />
     <Resource Include="images\English.png" />
@@ -202,6 +209,7 @@
     <Resource Include="images\PreferencesPageBG.png" />
     <Resource Include="images\Preview.png" />
     <Resource Include="images\PreviewTitle.png" />
+    <Resource Include="images\RestaurantPreviewFull.png" />
     <Resource Include="images\resume_current_session.png" />
     <Resource Include="images\ScrollPageBackground.png" />
     <Resource Include="images\PreferencesButton.png" />
@@ -258,7 +266,6 @@
     <Resource Include="images\TransitOptions.png" />
     <Resource Include="images\ZoomIcon.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup Condition="$(VisualStudioVersion) == '17.0'">
     <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>$(SSDTPath)\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>

@@ -5,9 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:YourYYC.Pages"
              mc:Ignorable="d">
-    
+
     <Canvas Height="1024" Width="1440" Cursor="Hand">
-        
+
         <Canvas.LayoutTransform>
             <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
         </Canvas.LayoutTransform>
@@ -22,9 +22,10 @@
             <!-- Scrollable Page BG as image -->
             <StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Image Source="../images/Commute Full page.png" Stretch="UniformToFill" Height="3476" Width="1320"/>
+                    <Image Source="/images/CommuteFullPage.png" Stretch="Fill" Width="1340" Height="2654" Margin="0,0,39,0" />
                 </StackPanel>
             </StackPanel>
+
         </ScrollViewer>
 
         <!-- Top Navigation Bar -->
@@ -32,7 +33,7 @@
 
         <!-- Events Page Title Button / Logo -->
         <Image Height="50" Canvas.Left="170" Source="/images/TitleBar.png" Stretch="Fill" Canvas.Top="40" Width="4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Image Height="42" Canvas.Left="203" Source="/images/GettingThereTitle.png" Stretch="Fill" Canvas.Top="44" Width="172"/>
+        <Image Height="30" Canvas.Left="208" Source="/images/GettingThereTitle.png" Stretch="UniformToFill" Canvas.Top="50" Width="186" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
         <!-- Home Button / Logo -->
         <Button Name="HomeButton" Click="HomeButtonClick" Height="30" Width="30" BorderBrush="Transparent" Canvas.Left="110" Canvas.Top="50" Background="Transparent">
