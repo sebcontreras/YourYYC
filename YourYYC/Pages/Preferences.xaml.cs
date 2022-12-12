@@ -154,7 +154,7 @@ namespace YourYYC.Pages
         public void DoneButtonClick(object sender, RoutedEventArgs e)
         {
             SetAttractionList();
-            Switcher.GoBack();
+            Switcher.Switch(new Attractions());
         }
 
         public void ClearAllButtonClick(object sender, RoutedEventArgs e)

@@ -108,7 +108,7 @@ namespace YourYYC
         {
             InitializeComponent();
             Switcher.pageSwitcher = this;
-            Switcher.Switch(new Home());
+            Switcher.Switch(new Preferences());
         }
 
         public void Navigate(UserControl nextPage)
