@@ -24,8 +24,10 @@ namespace YourYYC.Pages
         public Itinerary1()
         {
             InitializeComponent();
+            this.DataContext = this;
             window = (MainWindow)Application.Current.MainWindow;
             ItineraryCount.Content = window.itineraryCount.ToString();
+            ItineraryCount2.Content = window.itineraryCount.ToString();
 
             int i = 1;
             foreach (var tile in window.itineraryList)
