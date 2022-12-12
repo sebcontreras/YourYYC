@@ -43,7 +43,7 @@
         </Button>
 
         <!-- Language Button -->
-        <Button Name="LanguageButton"  Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
+        <Button Name="LanguageButton" Click="LanguageButtonClick" Height="30" Width="30" Canvas.Left="1100" Canvas.Top="50" BorderBrush="Transparent" Background="Transparent">
             <Image Source="../images/LanguageButton.png"/>
         </Button>
 
