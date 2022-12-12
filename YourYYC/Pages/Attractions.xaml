@@ -145,5 +145,7 @@
         <Image Source="../images/itineraryCircle.png" Canvas.Left="1281" Canvas.Top="894" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
 
+        <Image Name="ItemMessage" Visibility="Collapsed" Source="../images/ItemAddedMessage.png" Height="32" Canvas.Left="1118" Canvas.Top="879" Width="133" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
     </Canvas>
 </UserControl>
