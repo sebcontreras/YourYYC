@@ -117,6 +117,7 @@ namespace YourYYC.Pages
         private void ClearAllClick(object sender, RoutedEventArgs e)
         {
             ClearAll();
+            Switcher.Switch(new Itinerary1());
         }
 
         public void ClearAll()
