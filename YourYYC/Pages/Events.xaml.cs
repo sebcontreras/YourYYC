@@ -31,8 +31,32 @@ namespace YourYYC
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            int newCount = window.AddEventsToItinerary(btn.Name);
+            int newCount = window.AddAttractionToItinerary(btn.Name);
             ItineraryCount.Content = newCount.ToString();
+
+            btn.Visibility = Visibility.Collapsed;
+
+            var visibleRemove = (Button)this.FindName("Remove" + btn.Name);
+            visibleRemove.Visibility = Visibility.Visible;
+
+            Button tile = (Button)this.FindName(btn.Name + "Tile");
+            tile.Opacity = 0.5;
+        }
+
+        public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            string btnName = btn.Name.Substring(6);
+            int newCount = window.RemoveAttractionFromItinerary(btnName);
+            ItineraryCount.Content = newCount.ToString();
+
+            btn.Visibility = Visibility.Collapsed;
+
+            Button addButton = (Button)this.FindName(btnName);
+            addButton.Visibility = Visibility.Visible;
+
+            Button tile = (Button)this.FindName(btnName + "Tile");
+            tile.Opacity = 1;
         }
 
         public void EventsPreviewClick(object sender, RoutedEventArgs e)

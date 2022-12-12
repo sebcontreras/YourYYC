@@ -16,6 +16,7 @@
     <StartupObject>YourYYC.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="images\AddedToItinerary.png" />
     <None Remove="images\AddToItineraryButton.png" />
     <None Remove="images\AddToItineraryIcon.png" />
     <None Remove="images\add_to_itinerary_icon.png" />
@@ -90,6 +91,7 @@
     <None Remove="images\Preview.png" />
     <None Remove="images\PreviewTitle.png" />
     <None Remove="images\QRCode.png" />
+    <None Remove="images\RemoveFromItinerary.png" />
     <None Remove="images\RestaurantPreviewFull.png" />
     <None Remove="images\resume_current_session.png" />
     <None Remove="images\ScrollPageBackground.png" />
@@ -148,6 +150,7 @@
     <Resource Include="images\CalgaryTowerTitle.png" />
     <Resource Include="images\ChangeLanguageTitle.png" />
     <Resource Include="images\CityMapTitle.png" />
+    <Resource Include="images\AddedToItinerary.png" />
     <Resource Include="images\CommuteFullPage.png" />
   </ItemGroup>
   <ItemGroup>
@@ -220,6 +223,7 @@
     <Resource Include="images\PreferenceTitle.png" />
     <Resource Include="images\Preview.png" />
     <Resource Include="images\PreviewTitle.png" />
+    <Resource Include="images\RemoveFromItinerary.png" />
     <Resource Include="images\QRCode.png" />
     <Resource Include="images\RestaurantPreviewFull.png" />
     <Resource Include="images\resume_current_session.png" />

@@ -26,34 +26,40 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
                     <Canvas Width="305" Height="314" Margin="15">
-                        <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
-                            <Image Source="../images/tiles/happening_this_week/disney.png"></Image>
+                            <Button Canvas.ZIndex="1" x:Name="DisneyOnIceTile" Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                                <Image Source="../images/tiles/happening_this_week/disney.png"></Image>
                         </Button>
-                        <Button x:Name="DisneyOnIce" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
+                        <Button Canvas.ZIndex="2" x:Name="DisneyOnIce" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                        <Button Canvas.ZIndex="2" x:Name="RemoveDisneyOnIce" Click="RemoveFromItineraryButton" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
                     <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/art_exhibition.png"></Image>
                         </Button>
-                        <Button x:Name="ArtExhibition" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="ArtExhibition" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="15">
-                        <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Canvas Width="305" Height="314" Margin="10">
+                        <Button Canvas.ZIndex="1" x:Name="OperaTile" Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/opera.png"></Image>
                         </Button>
-                        <Button x:Name="Opera" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Canvas.ZIndex="2" x:Name="Opera" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                        <Button Canvas.ZIndex="2" x:Name="RemoveOpera" Click="RemoveFromItineraryButton" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
                     <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/class_albums_live.png"></Image>
                         </Button>
-                        <Button x:Name="ClassAlbumsLive" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="ClassAlbumsLive" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
@@ -63,19 +69,22 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314" Margin="15">
-                        <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
-                            <Image Source="../images/tiles/happening_this_week/live_country_music.png"></Image>
+                    <Canvas Width="305" Height="314" Margin="10">
+                            <Button Canvas.ZIndex="1" x:Name="LiveCountryMusicTile" Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                                <Image Source="../images/tiles/happening_this_week/live_country_music.png"></Image>
                         </Button>
-                        <Button x:Name="LiveCountryMusic" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
+                        <Button Canvas.ZIndex="2" x:Name="LiveCountryMusic" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                        <Button Canvas.ZIndex="2" x:Name="RemoveLiveCountryMusic" Click="RemoveFromItineraryButton" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
                     <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/disney.png"></Image>
                         </Button>
-                        <Button x:Name="DisneyOnIce2" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
+                        <Button x:Name="DisneyOnIce2" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
@@ -83,7 +92,7 @@
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/art_exhibition.png"></Image>
                         </Button>
-                        <Button x:Name="ArtExhibition2" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="ArtExhibition2" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
@@ -91,7 +100,7 @@
                         <Button Click="EventsPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/happening_this_week/opera.png"></Image>
                         </Button>
-                        <Button x:Name="Opera2" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="Opera2" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
