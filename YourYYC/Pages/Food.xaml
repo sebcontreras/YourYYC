@@ -23,11 +23,11 @@
             <!-- Scrollable Page BG as image -->
             <StackPanel x:Name="ContainerPanel" Orientation="Vertical">
                 <StackPanel>
-                    <TextBlock Text="Must-Try Restaurants" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15"/>
+                    <TextBlock Text="Must-Try Restaurants" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/deane_house.png"></Image>
                         </Button>
@@ -35,7 +35,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/charcut.png"></Image>
                         </Button>
@@ -43,7 +43,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/rouge.png"></Image>
                         </Button>
@@ -51,7 +51,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/river_cafe.png"></Image>
                         </Button>
@@ -61,11 +61,11 @@
                     </Canvas>
                 </StackPanel>
                 <StackPanel>
-                    <TextBlock Text="Best BBQ in the City" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15"/>
+                    <TextBlock Text="Best BBQ in the City" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
-                    <Canvas Width="305" Height="314">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/bbq/comery_block.png"></Image>
                         </Button>
@@ -73,7 +73,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/bbq/cowtown.png"></Image>
                         </Button>
@@ -81,7 +81,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/bbq/palamino.png"></Image>
                         </Button>
@@ -89,7 +89,7 @@
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
-                    <Canvas Width="305" Height="314" Margin="10">
+                    <Canvas Width="305" Height="314" Margin="15">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/bbq/bigT.png"></Image>
                         </Button>
