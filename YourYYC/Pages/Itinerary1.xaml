@@ -87,7 +87,7 @@
                     <Button Name="Export" HorizontalAlignment="Left" Margin="1212,0,0,0" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent" Height="38" Width="114" Click="exportButton_Click"/>
                 </Grid>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Canvas x:Name="attraction1" Width="305" Height="314" Margin="15" Tag="attraction1" Visibility="Visible">
+                    <Canvas x:Name="attraction1" Width="305" Height="314" Margin="15" Tag="attraction1" Visibility="Collapsed">
                         <Image x:Name="attraction1Image" Tag="attraction1Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="1" Canvas.Right="38" Canvas.Top="262" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Canvas.Left="38">
                             <Image Source="../images/RemoveFromItinerary.png"></Image>

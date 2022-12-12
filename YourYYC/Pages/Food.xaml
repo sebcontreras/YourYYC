@@ -28,18 +28,21 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
                     <!-- for loop that updates x and y -->
                     <Canvas Width="305" Height="314">
-                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <Button Canvas.ZIndex="1" x:Name="DeaneHouseTile" Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/deane_house.png"></Image>
                         </Button>
-                        <Button x:Name="DeaneHouse" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
+                        <Button Canvas.ZIndex="2" x:Name="DeaneHouse" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                        <Button Canvas.ZIndex="2" x:Name="RemoveDeaneHouse" Click="RemoveFromItineraryButton" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
                     <Canvas Width="305" Height="314" Margin="10">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/charcut.png"></Image>
                         </Button>
-                        <Button x:Name="Charcut" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="Charcut" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
@@ -47,7 +50,7 @@
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/rouge.png"></Image>
                         </Button>
-                        <Button x:Name="Rouge" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="Rouge" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
@@ -55,7 +58,7 @@
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/river_cafe.png"></Image>
                         </Button>
-                        <Button x:Name="RiverCafe" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="RiverCafe" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
@@ -69,7 +72,7 @@
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/bbq/comery_block.png"></Image>
                         </Button>
-                        <Button x:Name="ComeryBlock" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
+                        <Button x:Name="ComeryBlock" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
@@ -77,23 +80,26 @@
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/bbq/cowtown.png"></Image>
                         </Button>
-                        <Button x:Name="Cowtown" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="Cowtown" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>
                     <Canvas Width="305" Height="314" Margin="10">
-                        <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <Button Canvas.ZIndex="1" x:Name="PalaminoTile" Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/bbq/palamino.png"></Image>
                         </Button>
-                        <Button x:Name="Palamino" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button Canvas.ZIndex="2" x:Name="Palamino" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
+                        </Button>
+                        <Button Canvas.ZIndex="2" x:Name="RemovePalamino" Click="RemoveFromItineraryButton" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}">
+                            <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
                     <Canvas Width="305" Height="314" Margin="10">
                         <Button Click="RestaurantPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/restaurants/bbq/bigT.png"></Image>
                         </Button>
-                        <Button x:Name="BigT" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="BigT" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                     </Canvas>

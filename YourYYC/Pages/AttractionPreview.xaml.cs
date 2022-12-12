@@ -38,6 +38,22 @@ namespace YourYYC
             ItineraryCount.Content = newCount.ToString();
         }
 
+        public void RemoveFromItineraryButton(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)sender;
+            string btnName = btn.Name.Substring(6);
+            int newCount = window.RemoveAttractionFromItinerary(btnName);
+            ItineraryCount.Content = newCount.ToString();
+
+            btn.Visibility = Visibility.Collapsed;
+
+            Button addButton = (Button)this.FindName(btnName);
+            addButton.Visibility = Visibility.Visible;
+
+            Button tile = (Button)this.FindName(btnName + "Tile");
+            tile.Opacity = 1;
+        }
+
         public void HomeButtonClick(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new Home());
