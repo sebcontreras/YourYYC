@@ -34,6 +34,8 @@ namespace YourYYC.Pages
             {
                 SuggestedItems.Visibility = Visibility.Visible;
                 SuggestedTitle.Visibility = Visibility.Visible;
+                EmptyMessage.Visibility= Visibility.Collapsed;
+                //ScrollView.Visibility = Visibility.Visible;
             }
 
             int i = 1;
@@ -119,6 +121,8 @@ namespace YourYYC.Pages
 
             SuggestedItems.Visibility = Visibility.Collapsed;
             SuggestedTitle.Visibility = Visibility.Collapsed;
+            //ScrollView.Visibility = Visibility.Collapsed;
+            EmptyMessage.Visibility = Visibility.Visible;
 
             window.itineraryList.Clear();
             window.itineraryCount = 0;

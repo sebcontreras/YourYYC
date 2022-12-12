@@ -76,7 +76,7 @@
         <Label x:Name="ItineraryCount"  Content="0" Canvas.Left="1286" Canvas.Top="888" FontSize="24" Foreground="#FFD94539" />
 
         <!-- Scroll Section  -->
-        <ScrollViewer Height="706" Width="1390" Canvas.Top="139" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="25">
+        <ScrollViewer Name="ScrollView" Visibility="Visible" Height="706" Width="1390" Canvas.Top="139" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="25">
             <StackPanel>
                 <Grid>
                     <TextBlock Text="You have    items saved" FontSize="36" FontWeight="Bold" Width="1043" Margin="10,10,290,10"/>
@@ -87,7 +87,7 @@
                     <Button Name="Export" HorizontalAlignment="Left" Margin="1212,0,0,0" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent" Height="38" Width="114" Click="exportButton_Click"/>
                 </Grid>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" UseLayoutRounding="False">
-                    <Canvas x:Name="attraction1" Width="305" Height="314" Margin="15" Tag="attraction1" Visibility="Visible">
+                    <Canvas x:Name="attraction1" Width="305" Height="314" Margin="15" Tag="attraction1" Visibility="Collapsed">
                         <Image x:Name="attraction1Image" Tag="attraction1Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         <Button Click="RemoveFromItineraryButton" Opacity="1" Canvas.Right="38" Canvas.Top="262" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Canvas.Left="38">
                             <Image Source="../images/RemoveFromItinerary.png"></Image>
@@ -139,6 +139,7 @@
                     </Canvas>
                 </StackPanel>
 
+
                 <StackPanel Name="SuggestedTitle" Visibility="Collapsed">
                     <TextBlock Text="You may also like" FontSize="36" FontWeight="Bold" Width="1297" Margin="15,15,15,5"/>
                 </StackPanel>
@@ -182,6 +183,8 @@
                         </Button>
                     </Canvas>
                 </StackPanel>
+
+                <Image Name="EmptyMessage" Visibility="Visible" Source="../images/EmptyItineraryMessage.png" Height="246" Width="760" Canvas.Left="340" Canvas.Top="337"/>
             </StackPanel>
         </ScrollViewer>
     </Canvas>
