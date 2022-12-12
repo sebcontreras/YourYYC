@@ -22,7 +22,7 @@
             <!-- Scrollable Page BG as image -->
             <Canvas Height="1400" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
                 <Image Source="../images/RestaurantPreviewFull.png" Stretch="UniformToFill" Width="1340"/>
-                <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="1001" Canvas.Top="428" Height="56" Width="312" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="100" Canvas.Left="1001" Canvas.Top="428" Height="56" Width="312" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
                     <Image Source="../images/AddToItineraryButton.png"></Image>
                 </Button>
             </Canvas>

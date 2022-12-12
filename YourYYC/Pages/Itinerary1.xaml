@@ -92,13 +92,12 @@
             <StackPanel>
                 <Grid>
                     <TextBlock Text="You have     items saved" FontSize="36" FontWeight="Bold" Width="1043" Margin="10,10,290,10"/>
-                    <Label x:Name="ItineraryCount2"  Content="0" Margin="190,5,306,11" FontSize="36" Foreground="#000000" FontWeight="Bold" />
-
+                    <Label x:Name="ItineraryCount2"  Content="0" Margin="190,5,306,11" FontSize="36" Foreground="#FFD94539" FontWeight="Bold" />
                     <Image Source="../images/ClearAllExport.png" Height="45" Margin="1030,20,10,13"/>
                     <Button Name="ClearAllButton" HorizontalAlignment="Left" Margin="1073,23,0,0" VerticalAlignment="Top" BorderBrush="Transparent" Background="Transparent" Height="39" Width="113" Click="ClearAllClick"/>
                     <Button Name="Export" HorizontalAlignment="Left" Margin="1212,0,0,0" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent" Height="38" Width="114" Click="exportButton_Click"/>
                 </Grid>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" UseLayoutRounding="False" Margin="15,15,15,5">
                     <Canvas x:Name="attraction1" Width="305" Height="314" Margin="15" Tag="attraction1" Visibility="Collapsed">
                         <Button Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image x:Name="attraction1Image" Tag="attraction1Image" Width="305" Height="314" Source="../images/tiles/nature/calgary_zoo.png"></Image>
@@ -175,7 +174,7 @@
                         <Button Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/nature/calgary_zoo.png"></Image>
                         </Button>
-                        <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="CalgaryZoo" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="50" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                         <Button x:Name="RemoveCalgaryZoo" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
@@ -186,7 +185,7 @@
                         <Button Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/fun_for_the_family/calgary_tower.png"></Image>
                         </Button>
-                        <Button x:Name="CalgaryTower" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <Button x:Name="CalgaryTower" Click="AddToItineraryButton" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="50" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
                         <Button x:Name="RemoveCalgaryTower" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
@@ -197,10 +196,10 @@
                         <Button Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/fun_for_the_family/heritage_park.png"></Image>
                         </Button>
-                        <Button x:Name="HeritagePark" Click="AddToItineraryButton" Visibility="Visible" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="HeritagePark" Click="AddToItineraryButton" Visibility="Visible" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="60" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
-                        <Button x:Name="RemoveHeritagePark" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
+                        <Button x:Name="RemoveHeritagePark" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="60" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
                             <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
@@ -208,10 +207,10 @@
                         <Button Click="AttractionPreviewClick" Width="305" Height="314" Background="{x:Null}" BorderBrush="{x:Null}">
                             <Image Source="../images/tiles/downtown_calgary/studio_bell.png"></Image>
                         </Button>
-                        <Button x:Name="StudioBell" Click="AddToItineraryButton" Visibility="Visible" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="StudioBell" Click="AddToItineraryButton" Visibility="Visible" Opacity="0" Canvas.Left="38" Canvas.Top="258" Height="60" Width="229" HorizontalAlignment="Center" VerticalAlignment="Center">
                             <Image Source="../images/AddToItineraryButton.png"></Image>
                         </Button>
-                        <Button x:Name="RemoveStudioBell" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="37" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
+                        <Button x:Name="RemoveStudioBell" Visibility="Collapsed" Canvas.Left="38" Canvas.Top="261" Height="60" Width="229" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Transparent" BorderBrush="Transparent">
                             <Image Source="../images/RemoveFromItinerary.png"></Image>
                         </Button>
                     </Canvas>
@@ -219,6 +218,6 @@
             </StackPanel>
         </ScrollViewer>
 
-        <Image Name="EmptyMessage" Visibility="Visible" Canvas.Left="77" Source="/images/EmptyItineraryMessage.png" Stretch="Fill" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Top" Height="233" Width="1237"/>
+        <Image Name="EmptyMessage" Visibility="Visible" Canvas.Left="77" Source="/images/EmptyItineraryMessage.png" Stretch="Fill" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Top" Height="233" Width="1250"/>
     </Canvas>
 </UserControl>
