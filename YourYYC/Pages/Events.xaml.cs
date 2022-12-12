@@ -31,7 +31,7 @@ namespace YourYYC
         public void AddToItineraryButton(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
-            int newCount = window.AddAttractionToItinerary(btn.Name);
+            int newCount = window.AddEventsToItinerary(btn.Name);
             ItineraryCount.Content = newCount.ToString();
 
             btn.Visibility = Visibility.Collapsed;
@@ -47,7 +47,7 @@ namespace YourYYC
         {
             Button btn = (Button)sender;
             string btnName = btn.Name.Substring(6);
-            int newCount = window.RemoveAttractionFromItinerary(btnName);
+            int newCount = window.RemoveEventsFromItinerary(btnName);
             ItineraryCount.Content = newCount.ToString();
 
             btn.Visibility = Visibility.Collapsed;
