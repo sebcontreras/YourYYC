@@ -20,12 +20,15 @@ namespace YourYYC.Pages
     /// </summary>
     public partial class ExportPopUp : UserControl
     {
+        MainWindow window;
         EmailPopUp _email = new EmailPopUp();
         TextPopUp _text = new TextPopUp();
 
         public ExportPopUp()
         {
             InitializeComponent();
+            this.DataContext = this;
+            window = (MainWindow)Application.Current.MainWindow;
         }
 
         private void emailButton_Click(object sender, RoutedEventArgs e)
@@ -50,9 +53,7 @@ namespace YourYYC.Pages
 
         private void clearSessionButton_Click(object sender, RoutedEventArgs e)
         {
-            // Preferences newSession = new Preferences();
-            // Visibility = Visibility.Hidden;
-            // newSession.Show();
+            window.ClearState();
             Switcher.Switch(new Preferences());
         }
     }

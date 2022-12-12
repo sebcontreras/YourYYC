@@ -125,6 +125,14 @@ namespace YourYYC
             }
         }
 
+        public void ClearState()
+        {
+            itineraryCount = 0;
+            itineraryList = new List<List<string>>();
+            selectedPreferences = new List<string>();
+            selectedTripDuration = "";
+        }
+
         public int AddAttractionToItinerary(string newItem)
         {
             foreach (var tile in attractions)
