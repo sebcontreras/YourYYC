@@ -219,5 +219,6 @@
         </ScrollViewer>
 
         <Image Name="EmptyMessage" Visibility="Visible" Canvas.Left="77" Source="/images/EmptyItineraryMessage.png" Stretch="Fill" Canvas.Top="207" HorizontalAlignment="Left" VerticalAlignment="Top" Height="233" Width="1250"/>
+        <Image Height="20" Canvas.Left="1177" Source="/images/MenuBottomBar.png" Stretch="Fill" Canvas.Top="987" Width="188" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Canvas>
 </UserControl>
