@@ -88,6 +88,7 @@
     <None Remove="images\PreferenceTitle.png" />
     <None Remove="images\Preview.png" />
     <None Remove="images\PreviewTitle.png" />
+    <None Remove="images\QRCode.png" />
     <None Remove="images\RestaurantPreviewFull.png" />
     <None Remove="images\resume_current_session.png" />
     <None Remove="images\ScrollPageBackground.png" />
@@ -217,6 +218,7 @@
     <Resource Include="images\PreferenceTitle.png" />
     <Resource Include="images\Preview.png" />
     <Resource Include="images\PreviewTitle.png" />
+    <Resource Include="images\QRCode.png" />
     <Resource Include="images\RestaurantPreviewFull.png" />
     <Resource Include="images\resume_current_session.png" />
     <Resource Include="images\ScrollPageBackground.png" />

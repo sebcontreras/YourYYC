@@ -11,11 +11,12 @@
         <Canvas.LayoutTransform>
             <ScaleTransform x:Name="ScaleTransform"  ScaleX="0.7" ScaleY="0.7" />
         </Canvas.LayoutTransform>
-        
+
         <Canvas.Background>
             <ImageBrush ImageSource="../images/Export_Popup.png"/>
+
         </Canvas.Background>
-        
+
         <Button x:Name="cancel" Width="60" Height="41" Margin="730,10,10,399" Click="cancelButton_Click" Background="Transparent" BorderBrush="Transparent">
             <Image Source="../images/cancel.png"></Image>
         </Button>
@@ -28,5 +29,6 @@
         <Button x:Name="ClearSession" Margin="240,365" Click="clearSessionButton_Click" Height="60" Background="Transparent" BorderBrush="Transparent">
             <Image Source="../images/clear_session.png"></Image>
         </Button>
+        <Image Height="160" Canvas.Left="42" Source="/images/QRCode.png" Stretch="Fill" Canvas.Top="113" Width="160"/>
     </Canvas>
 </UserControl>
