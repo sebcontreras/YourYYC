@@ -1,13 +1,13 @@
 # YourYYC
-YourYYC: CPSC 481 Vertical Prototype
+YourYYC: Vertical Prototype
 
 ## Group 23
-- Sebastian Contreras / 30062418
-- Maham Fatima / 30133564
-- Vaibhav Kapoor / 30068106
-- Minji Kim / 30024716
-- Ethan Macson / 30072232
-
+- Sebastian Contreras
+- Maham Fatima 
+- Vaibhav Kapoor
+- Minji Kim 
+- Ethan Macson
+  
 ## Brief
 YourYYC tourist information kiosk is designed to help users make the most of their trip by providing information about local events, attractions, and restaurants, as well as helping them save their selected spots to their personal device to plan their trip. YourYYC kiosk aims to serve as a digital replacement to the traditional pamphlet and brochure system in an attempt to reduce paper waste and become a more interactive experience for the newer generation of travelers visiting the city for a short stay who will make up the majority of our potential users.
 
